@@ -1,2 +1,2 @@
 # kavalanddylan.ninja
-Kaval and Dylans circus of a website
+Kaval and Dylan's circus of a website
