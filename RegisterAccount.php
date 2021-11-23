@@ -3,6 +3,9 @@
     <link rel="stylesheet" href="Stylesheet.css">
     <title>User Login Form</title>
 </head>
+<header>
+    <a href="index.html"></a><h2>Home</h2></a>
+</header>
 <body>
 <form method="post" action="CreateAccount.php">
     <fieldset>
