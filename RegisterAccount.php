@@ -7,11 +7,14 @@
 <form method="post" action="CreateAccount.php">
     <fieldset>
         <legend><h2>Driver Registration Form</h2></legend>
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" maxlength="50" required/>
+        <br><br>
         <label for="firstname">First Name:</label>
-        <input type="text" id="firstname" name="firstname" maxlength="30" required/>
+        <input type="text" id="firstname" name="firstname" maxlength="25" required/>
         <br><br>
         <label for="lastname">Last Name:</label>
-        <input type="text" id="lastname" name="lastname" maxlength="30" required/>
+        <input type="text" id="lastname" name="lastname" maxlength="25" required/>
         <br><br>
         <label for="team">Team:</label>
         <select name="Team" id="team">
