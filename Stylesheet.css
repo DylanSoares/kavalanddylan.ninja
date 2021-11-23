@@ -1,7 +1,9 @@
 h3 {
-    color: darkorange;
+    color: white;
     alignment: center;
-    text-align: center;
+}
+h2{
+    color: orange;
 }
 body {
     background-color: #373737;
