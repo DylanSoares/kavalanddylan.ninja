@@ -9,11 +9,8 @@ body {
     background-color: #373737;
 }
 
-text {
-    color: white;
-}
-
-input {
+input, label {
     background-color: dimgrey;
     color: white;
 }
+
