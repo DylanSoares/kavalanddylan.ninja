@@ -9,10 +9,10 @@
         <legend><h2>Driver Registration Form</h2></legend>
         <label for="firstname">First Name:</label>
         <input type="text" id="firstname" name="firstname" maxlength="30" required/>
-
+        <br><br>
         <label for="lastname">Last Name:</label>
         <input type="text" id="lastname" name="lastname" maxlength="30" required/>
-
+        <br><br>
         <label for="team">Team:</label>
         <select name="Team" id="team">
             <option value="subaru_motorsports">Subaru Motorsports</option>
@@ -22,7 +22,7 @@
             <option value="hyundai_motorsport">Hyundai Motorsport</option>
             <option value="citroen_world_rally_team">Citroën World Rally Team</option>
         </select>
-
+        <br><br>
         <label for="car">Car:</label>
         <select name="Car" id="car">
             <optgroup label="Subaru Cars">
@@ -53,10 +53,10 @@
                 <option value="citroen_ds3_wrc">Citroën DS3 WRC</option>
             </optgroup>
         </select>
-
+        <br><br>
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" maxlength="100" required/>
-
+        <br><br>
         <p><input type="submit" name="submit" value="login"/></p>
     </fieldset>
 </form>
