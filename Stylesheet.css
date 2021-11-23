@@ -2,7 +2,7 @@ h3 {
     color: white;
     alignment: center;
 }
-h2{
+h1{
     color: orange;
 }
 body {
@@ -10,5 +10,10 @@ body {
 }
 
 text {
+    color: white;
+}
+
+input {
+    background-color: dimgrey;
     color: white;
 }
