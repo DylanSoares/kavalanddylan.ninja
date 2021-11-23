@@ -1,7 +1,12 @@
 h3 {
-    color: black;
+    color: darkorange;
     alignment: center;
+    text-align: center;
 }
 body {
     background-color: #373737;
+}
+
+text {
+    color: white;
 }
