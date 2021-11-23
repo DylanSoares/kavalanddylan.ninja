@@ -4,7 +4,7 @@
     <title>User Login Form</title>
 </head>
 <header>
-    <a href="index.html"></a><h2>Home</h2></a>
+    <a href="index.html"><h2>Home</h2></a>
 </header>
 <body>
 <form method="post" action="CreateAccount.php">
