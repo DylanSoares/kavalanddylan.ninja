@@ -36,6 +36,7 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#welcome">Welcome</a></li>
                 <li class="nav-item"><a class="nav-link" href="#tracks">Courses</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 <li class="nav-item"><a class="nav-link" href="../index.html">Log Out</a></li>
@@ -43,8 +44,23 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
         </div>
     </div>
 </nav>
+<!-- About-->
+<section class="about-section text-center" id="welcome" name="welcome">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-white mb-4">Rally course notes, done badly.</h2>
+                <p class="text-white-50">
+                    Rally Co is a free website where you can get some truely confusing course notes based on routes in the
+                    <a href="https://www.kelowna.ca/">Kelowna area.</a>
+                    Get directions for the KFC Sprint just as Kaval and Dylan would give them!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- Projects-->
-<section class="about-section projects-section" id="tracks">
+<section class="projects-section bg-dark" id="tracks">
     <div class="container px-4 px-lg-5">
         <!-- Featured Project Row-->
         <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
