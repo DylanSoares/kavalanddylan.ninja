@@ -17,9 +17,30 @@
                     <!-- Email address input-->
                     <div class="row input-group-newsletter">
                         <div class="col"><input class="form-control" type="email" id="email" name="email" maxlength="50" required placeholder="Enter email address..." aria-label="Enter email address..."/></div>
-                        <br><br>
                         <div class="col"><input class="form-control" type="text" id="firstname" name="firstname" maxlength="25" required placeholder="Enter first name..." aria-label="Enter first name..."/></div>
                         <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Submit</button></div>
+                    </div>
+                    <!-- First name input-->
+                    <div class="row input-group-newsletter">
+                        <div class="col"><input class="form-control" type="text" id="firstname" name="firstname" maxlength="25" required placeholder="Enter first name..." aria-label="Enter first name..."/></div>
+                    </div>
+                    <!-- Last name input-->
+                    <div class="row input-group-newsletter">
+                        <div class="col"><input class="form-control" type="text" id="lastname" name="lastname" maxlength="25" required placeholder="Enter last name..." aria-label="Enter last name..."/></div>
+                    </div>
+                    <!-- Team input-->
+                    <div class="row input-group-newsletter">
+                        <div class="col">
+                            <label class="col-form-label" for="team">Team:</label>
+                            <select class="form-control" name="Team" id="team" required>
+                            <option value="subaru_motorsports">Subaru Motorsports</option>
+                            <option value="mitsubishi_ralliart">Mitsubishi Ralliart</option>
+                            <option value="toyota_gazoo_racing">Toyota Gazoo Racing</option>
+                            <option value="ford_world_rally_team">Ford World Rally Team</option>
+                            <option value="hyundai_motorsport">Hyundai Motorsport</option>
+                            <option value="citroen_world_rally_team">Citroën World Rally Team</option>
+                        </select>
+                       </div>
                     </div>
                 </form>
             </div>
