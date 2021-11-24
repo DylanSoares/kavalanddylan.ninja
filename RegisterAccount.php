@@ -94,18 +94,7 @@ $result = mysqli_query($mysqli, $sql) or die(mysqli_error($mysqli));
 
 if ($firstname != null && mysqli_num_rows($result) >= 1) {
     /*TODO get this to not mess us the header*/
-    $v8 = new V8Js();
-
-    /* validate.js */
-    $JS = <<< EOT
-    let text;
-
-    text = "Email alaredy exists";
-    document.getElementById("emailText").innerHTML = text;
-    EOT;
-
-    var_dump($v8->executeString($JS, 'validate.js'));
-
+    echo "<script type=\"text/javascript\">validateEmail()</script>";
 } else if ($firstname != null && mysqli_num_rows($result) == 0) {
     //email isnt already in the system
 
@@ -134,6 +123,7 @@ if ($firstname != null && mysqli_num_rows($result) >= 1) {
           rel="stylesheet"/>
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/Stylesheet.css" rel="stylesheet"/>
+    <script src="js/validation.js"></script>
 </head>
 <body id="page-top">
 <!-- Navigation-->
