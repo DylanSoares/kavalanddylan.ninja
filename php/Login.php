@@ -1,5 +1,7 @@
-<!Doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<!--https://startbootstrap.com/theme/grayscale-->
+<!--Took the theme from here-->
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -15,7 +17,7 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="../css/Stylesheet.css" rel="stylesheet" />
 </head>
-<body id=" ">
+<body id="page-top">
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container px-4 px-lg-5">
@@ -26,30 +28,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#tracks">Courses</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./RegisterAccount.php">Register</a></li>
             </ul>
         </div>
     </div>
 </nav>
-<!-- Masthead-->
-<header class="masthead">
-    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-        <div class="d-flex justify-content-center">
-            <div class="text-center">
-                <h1 class="mx-auto my-0 text-uppercase">Rally Co</h1>
-                <h2 class="text-white-50 mx-auto mt-2 mb-5">A place to get some of the worst course notes known to man.</h2>
-                <!--TODO add login function, same page? new page? Who knows-->
-                <a class="btn btn-primary" href="">Login</a>
-                <a class="btn btn-primary" href="RegisterAccount.php">Reigster</a>
-            </div>
-        </div>
-    </div>
+<!-- Just code here like normal Ill fix your form styling and whatnot after-->
 
-<?php
-
-?>
 
 </body>
 </html>
