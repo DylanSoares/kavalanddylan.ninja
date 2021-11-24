@@ -148,7 +148,7 @@ if ($firstname != null && mysqli_num_rows($result) >= 1) {
             <div class="col-md-10 col-lg-8 mx-auto text-center">
                 <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
                 <h2 class="text-white mb-5">Driver Registration</h2>
-                <form onsubmit="return validateForm()" method="post" name="contactForm" id="contactForm"
+                <form method="post" name="contactForm" id="contactForm"
                       action="RegisterAccount.php"
                       class="form-signup">
                     <!-- Email address input-->
