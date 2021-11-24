@@ -16,7 +16,7 @@ $password = $_POST['password'];
 $car = $_POST['car'];
 $team = $_POST['team'];
 $email = strtolower($_POST["email"]);
-$sql = "SELECT email FROM drivers WHERE email = '" . $email .
+$sql = "SELECT email FROM Drivers WHERE email = '" . $email .
     "'";
 
 $result = mysqli_query($mysqli, $sql) or die(mysqli_error($mysqli));
@@ -28,7 +28,7 @@ account.</p>";
 }else if($firstname != null && mysqli_num_rows($result) == 0) {
     //email isnt already in the system
 
-    $sql2 = "INSERT INTO drivers (email, fname, lname, team, car, pword) VALUES (\"{$email}\",\"{$firstname}\",\"{$lastname}\",\"{$team}\",\"{$car}\",SHA1(\"{$password}\"))";
+    $sql2 = "INSERT INTO Drivers (email, fname, lname, team, car, pword) VALUES (\"{$email}\",\"{$firstname}\",\"{$lastname}\",\"{$team}\",\"{$car}\",SHA1(\"{$password}\"))";
 
     $result2 = mysqli_query($mysqli, $sql2) or die(mysqli_error($mysqli));
     //TODO add a login link here as well
