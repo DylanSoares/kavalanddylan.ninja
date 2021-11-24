@@ -5,22 +5,16 @@ function updateEmail() {
 }
 
 function validateForm() {
-    let php = "<?php $mysqli = mysqli_connect(\"localhost\", \"cs213user\", \"letmein\", \"RALLYCO\");" +
-        "$email = strtolower($_POST[\"email\"]);" +
-        "$sql = \"SELECT email FROM Drivers WHERE email = '\" . $email .\n" +
-        "\"'\";" +
-        "if (mysqli_num_rows($result) >= 1) {" +
-        "echo \"<script type=\"text/javascript\">validateForm(false)</script>\";}" +
-        "else {validateFormBool(true);}?>";
-    let result = console.log(php);
-    return (result);
-}
 
-function validateFromBool(status) {
-    if (status === false) {
-        updateEmail()
-        return false;
-    }else{
-        return true;
-    }
+    var xmlhttp = new XMLHttpRequest();
+/*    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("txtHint").innerHTML = this.responseText;
+        }
+    };*/
+    xmlhttp.open("GET", "emailValidation.php", true);
+    xmlhttp.send();
+
+    return xmlhttp;
+
 }
