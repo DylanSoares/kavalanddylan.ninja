@@ -156,7 +156,10 @@ if ($firstname != null && mysqli_num_rows($result) >= 1) {
                         <div class="col"><input class="form-control" type="email" id="email" name="email" maxlength="50"
                                                 required placeholder="Enter email address..."
                                                 aria-label="Enter email address..."/></div>
-                        <p id="emailText"></p>
+                        <div class="col-auto">
+                            <p class="form-text" id="emailText"></p>
+                        </div>
+
                     </div>
                     <br>
                     <!-- First name input-->
