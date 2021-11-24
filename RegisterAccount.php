@@ -13,9 +13,32 @@ $mysqli = mysqli_connect("localhost", "cs213user", "letmein", "RALLYCO");
 $firstname = $_POST["firstname"];
 $lastname = $_POST['lastname'];
 $password = $_POST['password'];
-$car = filter_input(INPUT_POST, 'car', FILTER_SANITIZE_STRING);
-$team = filter_input(INPUT_POST, 'team', FILTER_SANITIZE_STRING);
+$team = $_POST['team'];
 $email = strtolower($_POST["email"]);
+
+if(isset($_POST['car'])) {
+    $car=$_POST['car'];
+    switch ($car[0]) {
+        case "subaru_impreza_wrc":
+            $car="Subaru Impreza WRC";
+            break;
+        case "subaru_wrx_sti":
+            $car="Subaru WRX STI";
+            break;
+        case "mitsubishi_lancer_wrc":
+            $car="Mitsubishi Lancer WRC";
+            break;
+        case "mitsubishi_lancer_evo":
+            $car="Mitsubishi Lancer EVO";
+            break;
+        case "mitsubishi_xpander_ap4":
+            $car="Mitsubishi XPANDER AP4";
+            break;
+        case "toyota_yaris_wrc":
+            $car="Toyota Yaris WRC";
+            break;
+    }
+}
 
 $sql = "SELECT email FROM Drivers WHERE email = '" . $email .
     "'";
@@ -23,6 +46,7 @@ $sql = "SELECT email FROM Drivers WHERE email = '" . $email .
 $result = mysqli_query($mysqli, $sql) or die(mysqli_error($mysqli));
 
 if ($firstname != null && mysqli_num_rows($result) >= 1) {
+    /*TODO get this to not mess us the header*/
     echo "<p>Your
 email address has already been used! Please use a different email address for a new
 account.</p>";
