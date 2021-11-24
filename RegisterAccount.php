@@ -16,7 +16,8 @@
                 <form method="post" id="contactForm" action="CreateAccount.php" class="form-signup">
                     <!-- Email address input-->
                     <div class="row input-group-newsletter">
-                        <div class="col"><input class="form-control" type="email" id="email" name="email" maxlength="50" required placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
+                        <div class="col"><input class="form-control" type="email" id="email" name="email" maxlength="50" required placeholder="Enter email address..." aria-label="Enter email address..."/></div>
+                        <div class="col"><input class="form-control" type="text" id="firstname" name="firstname" maxlength="25" required placeholder="Enter first name..." aria-label="Enter first name..."/></div>
                         <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Submit</button></div>
                     </div>
                 </form>
