@@ -52,7 +52,7 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
             <div class="col-xl-4 col-lg-5">
                 <div class="featured-text text-center text-lg-left">
                     <h4 class="text-white">Costco Cup</h4>
-                    <p class="text-black-50 mb-0">Costco Cup is a prestigious rally event attended by many. Though some say the chaos doesn't end even after you arrive.</p>
+                    <p class="text-white-50 mb-0">Costco Cup is a prestigious rally event attended by many. Though some say the chaos doesn't end even after you arrive.</p>
                 </div>
             </div>
         </div>
@@ -64,7 +64,7 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
                     <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-left">
                             <h4 class="text-white">KFC Sprint</h4>
-                            <p class="mb-0 text-white-50">The KFC Sprint is a college students main event, often done with limited time. A true showcase in parking lot maneuvering.</p>
+                            <p class="mb-0 text-white-50">The KFC Sprint is a college student's main event, often done with limited time. A true showcase in parking lot maneuvering.</p>
                             <hr class="d-none d-lg-block mb-0 ms-0" />
                         </div>
                     </div>
