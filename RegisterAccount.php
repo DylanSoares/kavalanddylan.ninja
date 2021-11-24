@@ -19,9 +19,6 @@
                         <div class="col"><input class="form-control" type="email" id="email" name="email" maxlength="50"
                                                 required placeholder="Enter email address..."
                                                 aria-label="Enter email address..."/></div>
-                        <div class="col-auto">
-                            <button class="btn btn-primary" id="submitButton" type="submit">Submit</button>
-                        </div>
                     </div>
                     <br>
                     <!-- First name input-->
@@ -33,14 +30,16 @@
                     <br>
                     <!-- Last name input-->
                     <div class="row input-group-newsletter">
-                        <div class="col"><input class="form-control" type="text" id="lastname" name="lastname"
-                                                maxlength="25" required placeholder="Enter last name..."
-                                                aria-label="Enter last name..."/></div>
+                        <div class="col">
+                            <input class="form-control" type="text" id="lastname" name="lastname"
+                                   maxlength="25" required placeholder="Enter last name..."
+                                   aria-label="Enter last name..."/></div>
                     </div>
                     <br>
                     <!-- Team input-->
                     <div class="row input-group-newsletter">
                         <div class="col">
+                            <label for="team">Select Team</label>
                             <select class="form-control" name="Team" id="team" required>
                                 <option value="subaru_motorsports">Subaru Motorsports</option>
                                 <option value="mitsubishi_ralliart">Mitsubishi Ralliart</option>
@@ -51,6 +50,7 @@
                             </select>
                         </div>
                         <div class="col-auto">
+                            <label for="car">Select car:</label>
                             <select class="form-control" name="Car" id="car" required>
                                 <optgroup label="Subaru Cars">
                                     <option value="subaru_s8_wrc">Subaru S8 WRC</option>
@@ -83,6 +83,17 @@
                         </div>
                     </div>
                     <br>
+                    <div class="row input-group-newsletter">
+                        <div class="col">
+                            <input class="form-control" type="password" id="password" name="password" maxlength="100"
+                                   placeholder="Enter last name..."
+                                   aria-label="Enter last name..."
+                                   required/>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-primary" id="submitButton" type="submit">Submit</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
