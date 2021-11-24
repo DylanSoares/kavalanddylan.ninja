@@ -2170,6 +2170,7 @@ progress {
     font-size: inherit;
     line-height: 1.5;
     align-content: left;
+    color: #ffffff;
 }
 
 .col-form-label-lg {
