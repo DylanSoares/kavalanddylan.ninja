@@ -32,11 +32,10 @@ if (mysqli_num_rows($result) == 1) {
     setcookie("auth", session_id(), time() + 60 * 30, "/", "", 0);
 
     header("Location: landing_page.php");
-    exit;
     //create display string
 
 } else {
     //redirect back to login form if not authorized
     header("Location: ../Login.html");
-    exit;
 }
+exit;
