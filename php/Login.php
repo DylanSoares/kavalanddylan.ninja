@@ -35,7 +35,9 @@
     </div>
 </nav>
 <!-- Just code here like normal Ill fix your form styling and whatnot after-->
+<?php
 
+?>
 
 </body>
 </html>
