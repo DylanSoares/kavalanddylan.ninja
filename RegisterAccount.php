@@ -50,7 +50,7 @@
                             </select>
                         </div>
                         <div class="col-auto">
-                            <label class="col-form-label" for="car">Select Car:</label>
+                            <label class="col-form-label" for="car">Select Car</label>
                             <select class="form-control" name="Car" id="car" required>
                                 <optgroup label="Subaru Cars">
                                     <option value="subaru_s8_wrc">Subaru S8 WRC</option>
