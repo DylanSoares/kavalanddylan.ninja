@@ -17,7 +17,15 @@ $team = $_POST['team'];
 $email = strtolower($_POST["email"]);
 $car = $_POST['car'];
 
-switch ($car) {
+if(isset($_POST['submit'])){
+    if(!empty($_POST['car'])) {
+        $carSelected = $_POST['car'];
+    }
+    if(!empty($_POST['team'])) {
+        $teamSelected = $_POST['team'];
+    }
+}
+/*switch ($car.value) {
     case "subaru_impreza_wrc":
         $car = "Subaru Impreza WRC";
         break;
@@ -36,7 +44,7 @@ switch ($car) {
     case "toyota_yaris_wrc":
         $car = "Toyota Yaris WRC";
         break;
-}
+}*/
 
 
 $sql = "SELECT email FROM Drivers WHERE email = '" . $email .
@@ -52,7 +60,7 @@ account.</p>";
 } else if ($firstname != null && mysqli_num_rows($result) == 0) {
     //email isnt already in the system
 
-    $sql2 = "INSERT INTO Drivers (email, fname, lname, team, car, pword) VALUES (\"{$email}\",\"{$firstname}\",\"{$lastname}\",\"{$team}\",\"{$car}\",SHA1(\"{$password}\"))";
+    $sql2 = "INSERT INTO Drivers (email, fname, lname, team, car, pword) VALUES (\"{$email}\",\"{$firstname}\",\"{$lastname}\",\"{$teamSelected}\",\"{$carSelected}\",SHA1(\"{$password}\"))";
 
     $result2 = mysqli_query($mysqli, $sql2) or die(mysqli_error($mysqli));
     //TODO add a login link here as well
