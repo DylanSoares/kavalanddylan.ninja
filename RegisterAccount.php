@@ -148,7 +148,7 @@ if ($firstname != null) {
                                                 required placeholder="Enter email address..."
                                                 aria-label="Enter email address..."/></div>
                         <div class="col-auto">
-                            <p class="form-text" id="emailText"></p>
+                            <p class="form-text" id="emailText">Invalid Email</p>
                         </div>
 
                     </div>
