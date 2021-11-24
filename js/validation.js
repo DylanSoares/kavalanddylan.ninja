@@ -12,7 +12,7 @@ function validateForm() {
         "if (mysqli_num_rows($result) >= 1) {" +
         "echo \"<script type=\"text/javascript\">validateForm(false)</script>\";}" +
         "else {validateForm(true)}?>";
-    console.log(php);
+    return (console.log(php));
 }
 
 function validateForm(status) {
