@@ -5,7 +5,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
 -->
 <?php
 //connect to server and select database
-/*$mysqli = mysqli_connect("localhost", "cs213user", "letmein", "RALLYCO");
+$mysqli = mysqli_connect("localhost", "cs213user", "letmein", "RALLYCO");
 
 //For more info about mysqli functions, go to the site below:
 //http://www.w3schools.com/php/php_ref_mysqli.asp
@@ -13,8 +13,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
 $firstname = $_POST["firstname"];
 $lastname = $_POST['lastname'];
 $password = $_POST['password'];
+$car = $_POST['car'];
+$team = $_POST['team'];
 $email = strtolower($_POST["email"]);
-$sql = "SELECT email FROM members WHERE email = '" . $email .
+$sql = "SELECT email FROM drivers WHERE email = '" . $email .
     "'";
 
 $result = mysqli_query($mysqli, $sql) or die(mysqli_error($mysqli));
@@ -26,17 +28,13 @@ account.</p>";
 }else if($firstname != null && mysqli_num_rows($result) == 0) {
     //email isnt already in the system
 
-    $sql2 = "INSERT INTO members (firstname, lastname, email, password, age, gender, startdate)".
-        " VALUES (\"".$firstname."\",\"".$lastname."\",\"".$email."\", SHA1(\"".$password."\"),".$age.",\"".$gender."\", CURDATE())";
+    $sql2 = "INSERT INTO drivers (email, fname, lname, team, car, pword) VALUES (\"{$email}\",\"{$firstname}\",\"{$lastname}\",\"{$team}\",\"{$car}\",SHA1(\"{$password}\"))";
 
     $result2 = mysqli_query($mysqli, $sql2) or die(mysqli_error($mysqli));
-
-    mkdir("/var/www/html/uploaddir/".$email, 0733);
-
-    echo "<p>Your account has been created!</p>";
-    echo "<a href=\"userlogin.html\">Return to Login</a>";
+    //TODO add a login link here as well
+    echo "<h2 class=\"text-white-50 mx-auto mt-2 mb-5\">Success, account created!</h2>";
 }
-*/
+
 ?>
 <html lang="en">
 <head>
