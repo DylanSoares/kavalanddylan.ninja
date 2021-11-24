@@ -18,7 +18,7 @@ $email = strtolower($_POST["email"]);
 
 if(isset($_POST['car'])) {
     $car=$_POST['car'];
-    switch ($car[0]) {
+    switch ($car) {
         case "subaru_impreza_wrc":
             $car="Subaru Impreza WRC";
             break;
