@@ -1,6 +1,6 @@
 <?php
 //login php to handle the login,
-//if successful should go to landing_page.html
+//if successful should go to landing_page.php
 //if not redirect
 session_start();
 //check for required fields from the form
@@ -24,12 +24,14 @@ if (mysqli_num_rows($result) == 1) {
         $f_name = stripslashes($info['firstname']);
         $l_name = stripslashes($info['lastname']);
         $email = stripslashes($info['email']);
+        $team = stripslashes($info['team']);
+        $car = stripslashes($info['car']);
     }
 
     //set authorization cookie using curent Session ID
     setcookie("auth", session_id(), time() + 60 * 30, "/", "", 0);
 
-    header("Location: ../landing_page.html");
+    header("Location: ../landing_page.php");
     exit;
     //create display string
 
