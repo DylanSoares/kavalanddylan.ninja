@@ -103,7 +103,7 @@ if ($firstname != null && mysqli_num_rows($result) >= 1) {
     $result2 = mysqli_query($mysqli, $sql2) or die(mysqli_error($mysqli));
 
     echo "<script> alert(\"Account created successfully\");</script>";
-    header("Location: ./Login.php");
+    header("Location: ../Login.html");
     exit();
 }
 
