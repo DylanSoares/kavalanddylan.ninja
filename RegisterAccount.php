@@ -17,7 +17,7 @@
                     <!-- Email address input-->
                     <div class="row input-group-newsletter">
                         <div class="col"><input class="form-control" type="email" id="email" name="email" maxlength="50" required placeholder="Enter email address..." aria-label="Enter email address..."/></div>
-                        <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Submit</button></div>
+                        <div class="col-auto"><button class="btn btn-primary" id="submitButton" type="submit">Submit</button></div>
                     </div><br>
                     <!-- First name input-->
                     <div class="row input-group-newsletter">
