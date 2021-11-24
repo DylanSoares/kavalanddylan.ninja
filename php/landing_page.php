@@ -44,21 +44,19 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
         </div>
     </div>
 </nav>
-<!-- About-->
-<section class="bg-dark text-center" id="welcome" name="welcome">
-    <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8">
-                <h2 class="text-white mb-4">Rally course notes, done badly.</h2>
-                <p class="text-white-50">
-                    Rally Co is a free website where you can get some truely confusing course notes based on routes in the
-                    <a href="https://www.kelowna.ca/">Kelowna area.</a>
-                    Get directions for the KFC Sprint just as Kaval and Dylan would give them!
-                </p>
+<!-- Masthead-->
+<header id="welcome" class="masthead">
+    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+        <div class="d-flex justify-content-center">
+            <div class="text-center">
+                <h1 class="mx-auto my-0 text-uppercase">Rally Co</h1>
+                <h2 class="text-white-50 mx-auto mt-2 mb-5">A place to get some of the worst course notes known to man.</h2>
+                <!--<a class="btn btn-primary" href="Login.html">Login</a>
+                <a class="btn btn-primary" href="RegisterAccount.php">Register</a>-->
             </div>
         </div>
     </div>
-</section>
+</header>
 <!-- Projects-->
 <section class="about-section projects-section" id="tracks">
     <div class="container px-4 px-lg-5">
