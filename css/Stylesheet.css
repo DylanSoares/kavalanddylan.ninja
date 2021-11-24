@@ -2169,6 +2169,7 @@ progress {
     margin-bottom: 0;
     font-size: inherit;
     line-height: 1.5;
+    alignment: left;
 }
 
 .col-form-label-lg {
