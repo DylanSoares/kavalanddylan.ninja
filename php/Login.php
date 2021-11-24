@@ -36,6 +36,37 @@
     </div>
 </nav>
 <!-- Just code here like normal Ill fix your form styling and whatnot after-->
+<section class="signup-section" id="signup">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-10 col-lg-8 mx-auto text-center">
+                <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                <h2 class="text-white mb-5">Login:</h2>
+                <form method="post" name="loginForm" id="loginForm" action = "">
+                      <!--TODO add another page for validating login info
+                      action="RegisterAccount.php"
+                      class="form-signup">-->
+                    <!-- Email address input-->
+                    <div class="row input-group-newsletter">
+                        <div class="col"><input class="form-control" type="email" id="email" name="email" maxlength="50"
+                                                required placeholder="Enter email address..."
+                                                aria-label="Enter email address..."/></div>
+
+                    </div>
+                    <br>
+                    <div class="row input-group-newsletter">
+                        <div class="col">
+                            <input class="form-control" type="password" id="password" name="password" maxlength="100"
+                                   placeholder="Enter password..."
+                                   aria-label="Enter password..."
+                                   required/>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-primary" id="submitButton" type="submit">Submit</button>
+                        </div>
+                    </div>
+
+               </form>
 <?php
 
 ?>
