@@ -1,6 +1,5 @@
 <?php
 //login php to handle the login
-session_start();
 
 //connect to server and select database
 $mysqli = mysqli_connect("localhost", "cs213user", "letmein", "RALLYCO");
