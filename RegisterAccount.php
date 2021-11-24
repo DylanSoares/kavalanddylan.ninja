@@ -13,9 +13,7 @@ $mysqli = mysqli_connect("localhost", "cs213user", "letmein", "RALLYCO");
 $firstname = $_POST["firstname"];
 $lastname = $_POST['lastname'];
 $password = $_POST['password'];
-$team = $_POST['team'];
 $email = strtolower($_POST["email"]);
-$car = $_POST['car'];
 
 if(isset($_POST['submit'])){
     if(!empty($_POST['car'])) {
