@@ -87,7 +87,6 @@ if (isset($_POST['team'])) {
 }
 
 if ($firstname != null) {
-    //email isnt already in the system
 
     $sql2 = "INSERT INTO Drivers (email, fname, lname, team, car, pword) VALUES (\"{$email}\",\"{$firstname}\",\"{$lastname}\",\"{$teamSelected}\",\"{$carSelected}\",SHA1(\"{$password}\"))";
 

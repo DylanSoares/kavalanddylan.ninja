@@ -1,4 +1,4 @@
-function validateEmail() {
+function updateEmail() {
     let text;
     text = "Email alaredy exists";
     document.getElementById("emailText").innerHTML = text;
@@ -10,12 +10,14 @@ function validateForm() {
         "$sql = \"SELECT email FROM Drivers WHERE email = '\" . $email .\n" +
         "\"'\";" +
         "if (mysqli_num_rows($result) >= 1) {" +
-        "echo \"<script type=\"text/javascript\">validateForm(false)</script>\";}?>";
+        "echo \"<script type=\"text/javascript\">validateForm(false)</script>\";}" +
+        "else {validateForm(true)}?>";
     console.log(php);
 }
 
 function validateForm(status) {
     if (status === false) {
+        updateEmail()
         return false;
     }else{
         return true;
