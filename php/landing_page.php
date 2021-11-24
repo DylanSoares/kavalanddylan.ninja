@@ -59,6 +59,7 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
 <section class="about-section projects-section" id="tracks">
     <div class="container px-4 px-lg-5">
         <!-- Featured Project Row-->
+        <!--TODO Costo Cup Query-->
         <a href="">
         <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
             <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/Coscto_Cup.jpg" alt="..." /></div>
@@ -71,6 +72,7 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
         </div>
         </a>
         <!-- Project One Row-->
+        <!--TODO KFC Sprint Query-->
         <a href="">
         <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
             <div class="col-lg-6"><img class="img-fluid" src="../assets/img/KFC_Sprint.jpg" alt="..." /></div>
@@ -88,6 +90,7 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
         </div>
         </a>
         <!-- Project Two Row-->
+        <!--TODO Orchard Park Run Query-->
         <a href="">
         <div class="row gx-0 justify-content-center">
             <div class="col-lg-6"><img class="img-fluid" src="../assets/img/Orchard_Park_Run.jpg" alt="..." /></div>
