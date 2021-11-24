@@ -12,7 +12,8 @@ function validateForm() {
         "if (mysqli_num_rows($result) >= 1) {" +
         "echo \"<script type=\"text/javascript\">validateForm(false)</script>\";}" +
         "else {validateFormBool(true);}?>";
-    return (console.log(php));
+    let result = console.log(php);
+    return (result);
 }
 
 function validateFromBool(status) {
