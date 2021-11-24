@@ -51,8 +51,8 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
             <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/Coscto_Cup.jpg" alt="..." /></div>
             <div class="col-xl-4 col-lg-5">
                 <div class="featured-text text-center text-lg-left">
-                    <h4 class="text-white">Shoreline</h4>
-                    <p class="text-white-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+                    <h4 class="text-white">Costco Cup</h4>
+                    <p class="text-black-50 mb-0">Costco Cup is a prestigious rally event attended by many. Though some say the chaos doesn't end even after you arrive.</p>
                 </div>
             </div>
         </div>
@@ -63,8 +63,8 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
                 <div class="bg-black text-center h-100 project">
                     <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-left">
-                            <h4 class="text-white">Misty</h4>
-                            <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                            <h4 class="text-white">KFC Sprint</h4>
+                            <p class="mb-0 text-white-50">The KFC Sprint is a college students main event, often done with limited time. A true showcase in parking lot maneuvering.</p>
                             <hr class="d-none d-lg-block mb-0 ms-0" />
                         </div>
                     </div>
@@ -78,8 +78,8 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
                 <div class="bg-black text-center h-100 project">
                     <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-right">
-                            <h4 class="text-white">Mountains</h4>
-                            <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                            <h4 class="text-white">Orchard Park Run</h4>
+                            <p class="mb-0 text-white-50">The Orchard Park Run is an intermediate stage. Featuring an increase in difficulty over the KFC Sprint, many new drivers find the highway challenging.</p>
                             <hr class="d-none d-lg-block mb-0 me-0" />
                         </div>
                     </div>
