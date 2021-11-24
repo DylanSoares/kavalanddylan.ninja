@@ -15,30 +15,29 @@ $lastname = $_POST['lastname'];
 $password = $_POST['password'];
 $team = $_POST['team'];
 $email = strtolower($_POST["email"]);
+$car = $_POST['car'];
 
-if(isset($_POST['car'])) {
-    $car=$_POST['car'];
-    switch ($car) {
-        case "subaru_impreza_wrc":
-            $car="Subaru Impreza WRC";
-            break;
-        case "subaru_wrx_sti":
-            $car="Subaru WRX STI";
-            break;
-        case "mitsubishi_lancer_wrc":
-            $car="Mitsubishi Lancer WRC";
-            break;
-        case "mitsubishi_lancer_evo":
-            $car="Mitsubishi Lancer EVO";
-            break;
-        case "mitsubishi_xpander_ap4":
-            $car="Mitsubishi XPANDER AP4";
-            break;
-        case "toyota_yaris_wrc":
-            $car="Toyota Yaris WRC";
-            break;
-    }
+switch ($car) {
+    case "subaru_impreza_wrc":
+        $car = "Subaru Impreza WRC";
+        break;
+    case "subaru_wrx_sti":
+        $car = "Subaru WRX STI";
+        break;
+    case "mitsubishi_lancer_wrc":
+        $car = "Mitsubishi Lancer WRC";
+        break;
+    case "mitsubishi_lancer_evo":
+        $car = "Mitsubishi Lancer EVO";
+        break;
+    case "mitsubishi_xpander_ap4":
+        $car = "Mitsubishi XPANDER AP4";
+        break;
+    case "toyota_yaris_wrc":
+        $car = "Toyota Yaris WRC";
+        break;
 }
+
 
 $sql = "SELECT email FROM Drivers WHERE email = '" . $email .
     "'";
@@ -50,7 +49,7 @@ if ($firstname != null && mysqli_num_rows($result) >= 1) {
     echo "<p>Your
 email address has already been used! Please use a different email address for a new
 account.</p>";
-}else if($firstname != null && mysqli_num_rows($result) == 0) {
+} else if ($firstname != null && mysqli_num_rows($result) == 0) {
     //email isnt already in the system
 
     $sql2 = "INSERT INTO Drivers (email, fname, lname, team, car, pword) VALUES (\"{$email}\",\"{$firstname}\",\"{$lastname}\",\"{$team}\",\"{$car}\",SHA1(\"{$password}\"))";
@@ -61,6 +60,8 @@ account.</p>";
 }
 
 ?>
+
+
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
