@@ -138,7 +138,7 @@ account.</p>";
                     <div class="row input-group-newsletter">
                         <div class="col">
                             <label class="col-form-label" for="team">Select Team</label>
-                            <select class="form-control" name="Team" id="team" required>
+                            <select class="form-control" name="team" id="team" required>
                                 <option value="subaru_motorsports">Subaru Motorsports</option>
                                 <option value="mitsubishi_ralliart">Mitsubishi Ralliart</option>
                                 <option value="toyota_gazoo_racing">Toyota Gazoo Racing</option>
@@ -149,7 +149,7 @@ account.</p>";
                         </div>
                         <div class="col-auto">
                             <label class="col-form-label" for="car">Select Car</label>
-                            <select class="form-control" name="Car" id="car" required>
+                            <select class="form-control" name="car" id="car" required>
                                 <optgroup label="Subaru Cars">
                                     <option value="subaru_s8_wrc">Subaru S8 WRC</option>
                                     <option value="subaru_impreza_wrc">Subaru Impreza WRC</option>
