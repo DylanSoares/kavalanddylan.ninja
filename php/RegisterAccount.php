@@ -92,17 +92,14 @@ $sql = "SELECT email FROM Drivers WHERE email = '" . $email .
 $result = mysqli_query($mysqli, $sql) or die(mysqli_error($mysqli));
 
 if ($firstname != null && mysqli_num_rows($result) >= 1) {
-    /*TODO get this to not mess us the header*/
-    echo "";
-    return false;
+
+    echo "<script> alert(\"Email already exists\");</script>";
 } else if ($firstname != null && mysqli_num_rows($result) == 0) {
-    //email isnt already in the system
 
     $sql2 = "INSERT INTO Drivers (email, fname, lname, team, car, pword) VALUES (\"{$email}\",\"{$firstname}\",\"{$lastname}\",\"{$teamSelected}\",\"{$carSelected}\",SHA1(\"{$password}\"))";
-
     $result2 = mysqli_query($mysqli, $sql2) or die(mysqli_error($mysqli));
-    //TODO add a login link here as well
-    /*echo "<h2 class=\"text-white-50 mx-auto mt-2 mb-5\">Success, account created!</h2>";*/
+
+    echo "<script> alert(\"Account created successfully\");</script>";
 }
 
 ?>
