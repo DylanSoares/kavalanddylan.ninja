@@ -48,7 +48,7 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
     <div class="container px-4 px-lg-5">
         <!-- Featured Project Row-->
         <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-            <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/bg-masthead.jpg" alt="..." /></div>
+            <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/Coscto_Cup.jpg" alt="..." /></div>
             <div class="col-xl-4 col-lg-5">
                 <div class="featured-text text-center text-lg-left">
                     <h4 class="text-white">Shoreline</h4>
@@ -58,7 +58,7 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
         </div>
         <!-- Project One Row-->
         <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-            <div class="col-lg-6"><img class="img-fluid" src="../assets/img/demo-image-01.jpg" alt="..." /></div>
+            <div class="col-lg-6"><img class="img-fluid" src="../assets/img/KFC_Sprint.jpg" alt="..." /></div>
             <div class="col-lg-6">
                 <div class="bg-black text-center h-100 project">
                     <div class="d-flex h-100">
@@ -73,7 +73,7 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
         </div>
         <!-- Project Two Row-->
         <div class="row gx-0 justify-content-center">
-            <div class="col-lg-6"><img class="img-fluid" src="../assets/img/demo-image-02.jpg" alt="..." /></div>
+            <div class="col-lg-6"><img class="img-fluid" src="../assets/img/Orchard_Park_Run.jpg" alt="..." /></div>
             <div class="col-lg-6 order-lg-first">
                 <div class="bg-black text-center h-100 project">
                     <div class="d-flex h-100">
