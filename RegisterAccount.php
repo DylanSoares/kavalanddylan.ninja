@@ -14,35 +14,31 @@ $firstname = $_POST["firstname"];
 $lastname = $_POST['lastname'];
 $password = $_POST['password'];
 $email = strtolower($_POST["email"]);
-
-if(isset($_POST['submit'])){
-    if(!empty($_POST['car'])) {
-        $carSelected = $_POST['car'];
-    }
-    if(!empty($_POST['team'])) {
-        $teamSelected = $_POST['team'];
+$teamSelected = "";
+if (isset($_POST['car'])) {
+    $car = $_POST['car'];
+    switch ($car) {
+        case "subaru_impreza_wrc":
+            $carSelected = "Subaru Impreza WRC";
+            break;
+        case "subaru_wrx_sti":
+            $car = "Subaru WRX STI";
+            break;
+        case "mitsubishi_lancer_wrc":
+            $car = "Mitsubishi Lancer WRC";
+            break;
+        case "mitsubishi_lancer_evo":
+            $car = "Mitsubishi Lancer EVO";
+            break;
+        case "mitsubishi_xpander_ap4":
+            $car = "Mitsubishi XPANDER AP4";
+            break;
+        case "toyota_yaris_wrc":
+            $car = "Toyota Yaris WRC";
+            break;
     }
 }
-/*switch ($car.value) {
-    case "subaru_impreza_wrc":
-        $car = "Subaru Impreza WRC";
-        break;
-    case "subaru_wrx_sti":
-        $car = "Subaru WRX STI";
-        break;
-    case "mitsubishi_lancer_wrc":
-        $car = "Mitsubishi Lancer WRC";
-        break;
-    case "mitsubishi_lancer_evo":
-        $car = "Mitsubishi Lancer EVO";
-        break;
-    case "mitsubishi_xpander_ap4":
-        $car = "Mitsubishi XPANDER AP4";
-        break;
-    case "toyota_yaris_wrc":
-        $car = "Toyota Yaris WRC";
-        break;
-}*/
+
 
 
 $sql = "SELECT email FROM Drivers WHERE email = '" . $email .
