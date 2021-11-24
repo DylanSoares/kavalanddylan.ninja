@@ -1,7 +1,5 @@
 <?php
-//login php to handle the login,
-//if successful should go to landing_page.php
-//if not redirect
+//login php to handle the login
 session_start();
 
 //connect to server and select database
@@ -32,7 +30,6 @@ if (mysqli_num_rows($result) == 1) {
 
     header("Location: landing_page.php");
     //create display string
-
 } else {
     //redirect back to login form if not authorized
     header("Location: ../Login.html");
