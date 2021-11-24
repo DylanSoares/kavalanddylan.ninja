@@ -36,9 +36,9 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#tracks">Courses</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html">Log Out</a></li>
             </ul>
         </div>
     </div>
