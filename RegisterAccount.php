@@ -39,7 +39,7 @@ if (isset($_POST['car'])) {
             $carSelected = "Toyota GR Yaris Rally1";
             break;
         case "ford_fiesta_wrc":
-            $carSelected ="Ford Fiesta WRC";
+            $carSelected = "Ford Fiesta WRC";
             break;
         case "ford_fiesta_rs_wrc":
             $carSelected = "Ford Fiesta RS WRC";
@@ -51,10 +51,10 @@ if (isset($_POST['car'])) {
             $carSelected = "Hyundai i20 Coupe WRC";
             break;
         case "hyundai_i20_n_rally1":
-            $carSelected ="Hyundai i20 N Rally1";
+            $carSelected = "Hyundai i20 N Rally1";
             break;
         case "citroen_c3_wrc":
-            $carSelected ="Citroën C3 WRC";
+            $carSelected = "Citroën C3 WRC";
             break;
         case "citroen_ds3_wrc":
             $carSelected = "Citroën DS3 WRC";
@@ -87,7 +87,6 @@ if (isset($_POST['team'])) {
 }
 
 
-
 $sql = "SELECT email FROM Drivers WHERE email = '" . $email .
     "'";
 
@@ -95,9 +94,12 @@ $result = mysqli_query($mysqli, $sql) or die(mysqli_error($mysqli));
 
 if ($firstname != null && mysqli_num_rows($result) >= 1) {
     /*TODO get this to not mess us the header*/
-/*    echo "<p>Your
-email address has already been used! Please use a different email address for a new
-account.</p>";*/
+    $v8 = new V8Js();
+
+    /* basic.js */
+    $JS = file("js/validate.js");
+    var_dump($v8->executeString($JS, 'validate.js'));
+
 } else if ($firstname != null && mysqli_num_rows($result) == 0) {
     //email isnt already in the system
 
@@ -109,7 +111,6 @@ account.</p>";*/
 }
 
 ?>
-
 
 <html lang="en">
 <head>
@@ -152,12 +153,14 @@ account.</p>";*/
             <div class="col-md-10 col-lg-8 mx-auto text-center">
                 <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
                 <h2 class="text-white mb-5">Driver Registration</h2>
-                <form method="post" id="contactForm" action="RegisterAccount.php" class="form-signup">
+                <form method="post" name="contactForm" id="contactForm" action="RegisterAccount.php"
+                      class="form-signup">
                     <!-- Email address input-->
                     <div class="row input-group-newsletter">
                         <div class="col"><input class="form-control" type="email" id="email" name="email" maxlength="50"
                                                 required placeholder="Enter email address..."
                                                 aria-label="Enter email address..."/></div>
+                        <p id="emailText"></p>
                     </div>
                     <br>
                     <!-- First name input-->
