@@ -59,6 +59,7 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
 <section class="about-section projects-section" id="tracks">
     <div class="container px-4 px-lg-5">
         <!-- Featured Project Row-->
+        <a href="">
         <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
             <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/Coscto_Cup.jpg" alt="..." /></div>
             <div class="col-xl-4 col-lg-5">
@@ -68,7 +69,9 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
                 </div>
             </div>
         </div>
+        </a>
         <!-- Project One Row-->
+        <a href="">
         <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
             <div class="col-lg-6"><img class="img-fluid" src="../assets/img/KFC_Sprint.jpg" alt="..." /></div>
             <div class="col-lg-6">
@@ -83,7 +86,9 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
                 </div>
             </div>
         </div>
+        </a>
         <!-- Project Two Row-->
+        <a href="">
         <div class="row gx-0 justify-content-center">
             <div class="col-lg-6"><img class="img-fluid" src="../assets/img/Orchard_Park_Run.jpg" alt="..." /></div>
             <div class="col-lg-6 order-lg-first">
@@ -98,6 +103,7 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
                 </div>
             </div>
         </div>
+        </a>
     </div>
 </section>
 <!-- Contact-->
