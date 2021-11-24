@@ -25,7 +25,7 @@
                     <div class="row input-group-newsletter">
                         <div class="col"><input class="form-control" type="text" id="firstname" name="firstname"
                                                 maxlength="25" required placeholder="Enter first name..."
-                                                aria-label="Enter first name..."/></div>
+                                                aria-label="Enter first name..." pattern="^[a-zA-Z ,.'-]+$"/></div>
                     </div>
                     <br>
                     <!-- Last name input-->
@@ -33,7 +33,7 @@
                         <div class="col">
                             <input class="form-control" type="text" id="lastname" name="lastname"
                                    maxlength="25" required placeholder="Enter last name..."
-                                   aria-label="Enter last name..."/></div>
+                                   aria-label="Enter last name..." pattern="^[a-zA-Z ,.'-]+$"/></div>
                     </div>
                     <br>
                     <!-- Team input-->
