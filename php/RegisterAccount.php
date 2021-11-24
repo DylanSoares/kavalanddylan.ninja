@@ -93,7 +93,7 @@ $result = mysqli_query($mysqli, $sql) or die(mysqli_error($mysqli));
 
 if ($firstname != null && mysqli_num_rows($result) >= 1) {
     /*TODO get this to not mess us the header*/
-    echo "<script type=\"text/javascript\">updateEmail()</script>";
+    echo "";
     return false;
 } else if ($firstname != null && mysqli_num_rows($result) == 0) {
     //email isnt already in the system
@@ -114,7 +114,7 @@ if ($firstname != null && mysqli_num_rows($result) >= 1) {
     <meta name="description" content=""/>
     <meta name="author" content=""/>
     <title>Kaval & Dylan's Rally Co</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico"/>
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
@@ -122,8 +122,7 @@ if ($firstname != null && mysqli_num_rows($result) >= 1) {
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet"/>
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/Stylesheet.css" rel="stylesheet"/>
-    <script src="js/validation.js"></script>
+    <link href="../css/Stylesheet.css" rel="stylesheet"/>
 </head>
 <body id="page-top">
 <!-- Navigation-->
@@ -138,7 +137,7 @@ if ($firstname != null && mysqli_num_rows($result) >= 1) {
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html"">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html"">Home</a></li>
             </ul>
         </div>
     </div>
@@ -149,17 +148,14 @@ if ($firstname != null && mysqli_num_rows($result) >= 1) {
             <div class="col-md-10 col-lg-8 mx-auto text-center">
                 <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
                 <h2 class="text-white mb-5">Driver Registration</h2>
-                <form onsubmit="return validateForm()" method="post" name="contactForm" id="contactForm" action="RegisterAccount.php"
+                <form onsubmit="return validateForm()" method="post" name="contactForm" id="contactForm"
+                      action="RegisterAccount.php"
                       class="form-signup">
                     <!-- Email address input-->
                     <div class="row input-group-newsletter">
                         <div class="col"><input class="form-control" type="email" id="email" name="email" maxlength="50"
                                                 required placeholder="Enter email address..."
                                                 aria-label="Enter email address..."/></div>
-                        <div class="col-auto">
-                            <p class="form-text" id="emailText"></p>
-                        </div>
-
                     </div>
                     <br>
                     <!-- First name input-->
@@ -247,5 +243,5 @@ if ($firstname != null && mysqli_num_rows($result) >= 1) {
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
-<script src="js/scripts.js"></script>
+<script src="../js/scripts.js"></script>
 </html>
