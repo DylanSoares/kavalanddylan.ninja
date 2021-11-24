@@ -10,7 +10,7 @@
 <form method="post" action="CreateAccount.php">
     <fieldset>
         <legend><h2>Driver Registration Form</h2></legend>
-        <label for="email">E-Mail:</label>
+        <label class="form-label" for="email">E-Mail:</label>
         <input type="email" id="email" name="email" maxlength="50" required/>
         <br><br>
         <label for="firstname">First Name:</label>
