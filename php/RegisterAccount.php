@@ -20,6 +20,9 @@ if (isset($_POST['car'])) {
         case "subaru_impreza_wrc":
             $carSelected = "Subaru Impreza WRC";
             break;
+        case "subaru_s8_wrc":
+            $carSelected = "Subaru S8 WRC";
+            break;
         case "subaru_wrx_sti":
             $carSelected = "Subaru WRX STI";
             break;
