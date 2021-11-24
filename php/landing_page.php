@@ -44,7 +44,7 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
     </div>
 </nav>
 <!-- Projects-->
-<section class="projects-section bg-dark" id="tracks">
+<section class="projects-section bg-dark about-section" id="tracks">
     <div class="container px-4 px-lg-5">
         <!-- Featured Project Row-->
         <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
