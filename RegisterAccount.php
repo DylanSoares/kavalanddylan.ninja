@@ -96,8 +96,14 @@ if ($firstname != null && mysqli_num_rows($result) >= 1) {
     /*TODO get this to not mess us the header*/
     $v8 = new V8Js();
 
-    /* basic.js */
-    $JS = file("js/validate.js");
+    /* validate.js */
+    $JS = <<< EOT
+    let text;
+
+    text = "Email alaredy exists";
+    document.getElementById("emailText").innerHTML = text;
+    EOT;
+
     var_dump($v8->executeString($JS, 'validate.js'));
 
 } else if ($firstname != null && mysqli_num_rows($result) == 0) {
