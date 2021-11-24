@@ -4195,6 +4195,7 @@ textarea.form-control-lg {
     flex-basis: 100%;
     flex-grow: 1;
     align-items: center;
+    color: #2c3034;
 }
 
 .navbar-toggler {
@@ -4604,7 +4605,7 @@ textarea.form-control-lg {
 }
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: #4b4b4b;
+    color: #fff;
 }
 .navbar-dark .navbar-toggler {
     color: rgba(255, 255, 255, 0.55);
