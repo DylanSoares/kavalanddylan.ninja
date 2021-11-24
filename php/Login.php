@@ -6,7 +6,7 @@ session_start();
 //check for required fields from the form
 
 //connect to server and select database
-$mysqli = mysqli_connect("localhost", "cs213user", "letmein", "testDB");
+$mysqli = mysqli_connect("localhost", "cs213user", "letmein", "RALLYCO");
 
 //create and issue the query
 $targetname = filter_input(INPUT_POST, 'email');
