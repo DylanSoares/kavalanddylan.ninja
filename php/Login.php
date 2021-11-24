@@ -18,6 +18,7 @@
     <link href="../css/Stylesheet.css" rel="stylesheet" />
 </head>
 <body id="page-top">
+<h2>login test</h2>
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container px-4 px-lg-5">
@@ -35,7 +36,9 @@
     </div>
 </nav>
 <!-- Just code here like normal Ill fix your form styling and whatnot after-->
+<?php
 
+?>
 
 </body>
 </html>
