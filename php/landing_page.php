@@ -50,7 +50,7 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
         <div class="d-flex justify-content-center">
             <div class="text-center">
                 <h1 class="mx-auto my-0 text-uppercase">Rally Co</h1>
-                <h2 class="text-white-50 mx-auto mt-2 mb-5">A place to get some of the worst course notes known to man.</h2>
+                <h2 class="text-white-50 mx-auto mt-2 mb-5">Welcome! Click a course to get started.</h2>
                 <!--<a class="btn btn-primary" href="Login.html">Login</a>
                 <a class="btn btn-primary" href="RegisterAccount.php">Register</a>-->
             </div>
