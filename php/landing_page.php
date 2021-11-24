@@ -50,7 +50,7 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
         <div class="d-flex justify-content-center">
             <div class="text-center">
                 <h1 class="mx-auto my-0 text-uppercase">Welcome</h1>
-                <h2 class="text-white-50 mx-auto mt-2 mb-5">Click a course to get randomly generated course notes.</h2>
+                <h2 class="text-white-50 mx-auto mt-2 mb-5">Click a course to get randomly generated course notes. RALLY CO is not responsible for accidents.</h2>
                 <!--<a class="btn btn-primary" href="Login.html">Login</a>
                 <a class="btn btn-primary" href="RegisterAccount.php">Register</a>-->
             </div>
