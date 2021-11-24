@@ -149,7 +149,7 @@ if ($firstname != null && mysqli_num_rows($result) >= 1) {
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5">
             <div class="col-md-10 col-lg-8 mx-auto text-center">
-                <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                <!--<i class="far fa-paper-plane fa-2x mb-2 text-white"></i>-->
                 <h2 class="text-white mb-5">Driver Registration</h2>
                 <form method="post" name="contactForm" id="contactForm"
                       action="RegisterAccount.php"
