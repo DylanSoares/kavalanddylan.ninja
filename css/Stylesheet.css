@@ -4195,7 +4195,6 @@ textarea.form-control-lg {
     flex-basis: 100%;
     flex-grow: 1;
     align-items: center;
-    color: #2c3034;
 }
 
 .navbar-toggler {
@@ -11525,7 +11524,7 @@ body {
         color: #fff;
     }
     #mainNav.navbar-shrink {
-        background-color: #fff;
+        background-color: #3a3a3a;
     }
     #mainNav.navbar-shrink .navbar-brand {
         color: #000;
