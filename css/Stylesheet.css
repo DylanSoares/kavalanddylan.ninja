@@ -2169,7 +2169,7 @@ progress {
     margin-bottom: 0;
     font-size: inherit;
     line-height: 1.5;
-    align-content: left;
+    align-self: flex-start;
     color: #ffffff;
 }
 

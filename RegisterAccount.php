@@ -39,7 +39,7 @@
                     <!-- Team input-->
                     <div class="row input-group-newsletter">
                         <div class="col">
-                            <label for="team">Select Team</label>
+                            <label class="col-form-label"  for="team">Select Team</label>
                             <select class="form-control" name="Team" id="team" required>
                                 <option value="subaru_motorsports">Subaru Motorsports</option>
                                 <option value="mitsubishi_ralliart">Mitsubishi Ralliart</option>
@@ -50,7 +50,7 @@
                             </select>
                         </div>
                         <div class="col-auto">
-                            <label for="car">Select car:</label>
+                            <label class="col-form-label" for="car">Select car:</label>
                             <select class="form-control" name="Car" id="car" required>
                                 <optgroup label="Subaru Cars">
                                     <option value="subaru_s8_wrc">Subaru S8 WRC</option>
@@ -86,8 +86,8 @@
                     <div class="row input-group-newsletter">
                         <div class="col">
                             <input class="form-control" type="password" id="password" name="password" maxlength="100"
-                                   placeholder="Enter last name..."
-                                   aria-label="Enter last name..."
+                                   placeholder="Enter password..."
+                                   aria-label="Enter password..."
                                    required/>
                         </div>
                         <div class="col-auto">
