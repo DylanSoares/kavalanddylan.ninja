@@ -59,7 +59,7 @@
                                    placeholder="Enter password..."
                                    aria-label="Enter password..."
                                    required/>
-                        </div>
+                        </div><br>
                         <div class="col-auto">
                             <button class="btn btn-primary" id="submitButton" type="submit">Submit</button>
                         </div>
