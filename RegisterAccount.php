@@ -88,6 +88,7 @@ if (isset($_POST['team'])) {
 
 if ($firstname != null) {
 
+
     $sql2 = "INSERT INTO Drivers (email, fname, lname, team, car, pword) VALUES (\"{$email}\",\"{$firstname}\",\"{$lastname}\",\"{$teamSelected}\",\"{$carSelected}\",SHA1(\"{$password}\"))";
 
     $result2 = mysqli_query($mysqli, $sql2) or die(mysqli_error($mysqli));

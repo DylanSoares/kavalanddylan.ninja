@@ -12,10 +12,10 @@ function validateForm() {
         "if (mysqli_num_rows($result) >= 1) {" +
         "echo \"<script type=\"text/javascript\">validateForm(false)</script>\";}" +
         "else {validateFormBool(true)}?>";
-    return (console.log(php));
+    return false;
 }
 
-function validateFormBool(status) {
+function validateFromBool(status) {
     if (status === false) {
         updateEmail()
         return false;
