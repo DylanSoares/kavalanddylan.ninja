@@ -2,7 +2,6 @@
 //login php to handle the login,
 //if successful should go to landing_page.php
 //if not redirect
-session_start();
 
 if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
     header("Location: landing_page.php");
