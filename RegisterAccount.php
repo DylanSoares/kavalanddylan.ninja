@@ -1,19 +1,85 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to edit this template
+-->
+<?php
+//connect to server and select database
+/*$mysqli = mysqli_connect("localhost", "cs213user", "letmein", "RALLYCO");
+
+//For more info about mysqli functions, go to the site below:
+//http://www.w3schools.com/php/php_ref_mysqli.asp
+
+$firstname = $_POST["firstname"];
+$lastname = $_POST['lastname'];
+$password = $_POST['password'];
+$email = strtolower($_POST["email"]);
+$sql = "SELECT email FROM members WHERE email = '" . $email .
+    "'";
+
+$result = mysqli_query($mysqli, $sql) or die(mysqli_error($mysqli));
+
+if ($firstname != null && mysqli_num_rows($result) >= 1) {
+    echo "<p>Your
+email address has already been used! Please use a different email address for a new
+account.</p>";
+}else if($firstname != null && mysqli_num_rows($result) == 0) {
+    //email isnt already in the system
+
+    $sql2 = "INSERT INTO members (firstname, lastname, email, password, age, gender, startdate)".
+        " VALUES (\"".$firstname."\",\"".$lastname."\",\"".$email."\", SHA1(\"".$password."\"),".$age.",\"".$gender."\", CURDATE())";
+
+    $result2 = mysqli_query($mysqli, $sql2) or die(mysqli_error($mysqli));
+
+    mkdir("/var/www/html/uploaddir/".$email, 0733);
+
+    echo "<p>Your account has been created!</p>";
+    echo "<a href=\"userlogin.html\">Return to Login</a>";
+}
+*/
+?>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/Stylesheet.css">
-    <title>User Login Form</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Kaval & Dylan's Rally Co</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/Stylesheet.css" rel="stylesheet"/>
 </head>
-<header>
-    <a href="index.html"><h2>Home</h2></a>
-</header>
-<body>
+<body id="page-top">
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#page-top">Kaval & Dylan Rally Co</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html"">Home</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 <section class="signup-section" id="signup">
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5">
             <div class="col-md-10 col-lg-8 mx-auto text-center">
                 <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
                 <h2 class="text-white mb-5">Driver Registration</h2>
-                <form method="post" id="contactForm" action="CreateAccount.php" class="form-signup">
+                <form method="post" id="contactForm" action="RegisterAccount.php" class="form-signup">
                     <!-- Email address input-->
                     <div class="row input-group-newsletter">
                         <div class="col"><input class="form-control" type="email" id="email" name="email" maxlength="50"
@@ -39,7 +105,7 @@
                     <!-- Team input-->
                     <div class="row input-group-newsletter">
                         <div class="col">
-                            <label class="col-form-label"  for="team">Select Team</label>
+                            <label class="col-form-label" for="team">Select Team</label>
                             <select class="form-control" name="Team" id="team" required>
                                 <option value="subaru_motorsports">Subaru Motorsports</option>
                                 <option value="mitsubishi_ralliart">Mitsubishi Ralliart</option>
@@ -99,64 +165,12 @@
         </div>
     </div>
 </section>
-
-<!--<fieldset>
-    <legend><h2>Driver Registration Form</h2></legend>
-    <label class="form-label" for="email">E-Mail:</label>
-    <input type="email" id="email" name="email" maxlength="50" required/>
-    <br><br>
-    <label for="firstname">First Name:</label>
-    <input type="text" id="firstname" name="firstname" maxlength="25" required/>
-    <br><br>
-    <label for="lastname">Last Name:</label>
-    <input type="text" id="lastname" name="lastname" maxlength="25" required/>
-    <br><br>
-    <label for="team">Team:</label>
-    <select name="Team" id="team">
-        <option value="subaru_motorsports">Subaru Motorsports</option>
-        <option value="mitsubishi_ralliart">Mitsubishi Ralliart</option>
-        <option value="toyota_gazoo_racing">Toyota Gazoo Racing</option>
-        <option value="ford_world_rally_team">Ford World Rally Team</option>
-        <option value="hyundai_motorsport">Hyundai Motorsport</option>
-        <option value="citroen_world_rally_team">Citroën World Rally Team</option>
-    </select>
-    <br><br>
-    <label for="car">Car:</label>
-    <select name="Car" id="car">
-        <optgroup label="Subaru Cars">
-            <option value="subaru_s8_wrc">Subaru S8 WRC</option>
-            <option value="subaru_impreza_wrc">Subaru Impreza WRC</option>
-            <option value="subaru_wrx_sti">Subaru WRX STI</option>
-        </optgroup>
-        <optgroup label="Mitsubishi Cars">
-            <option value="mitsubishi_lancer_wrc">Mitsubishi Lancer WRC</option>
-            <option value="mitsubishi_lancer_evo">Mitsubishi Lancer EVO</option>
-            <option value="mitsubishi_xpander_ap4">Mitsubishi XPANDER AP4</option>
-        </optgroup>
-        <optgroup label="Toyota Cars">
-            <option value="toyota_yaris_wrc">Toyota Yaris WRC</option>
-            <option value="toyota_yaris_rally1">Toyota GR Yaris Rally1</option>
-        </optgroup>
-        <optgroup label="Ford Cars">
-            <option value="ford_fiesta_wrc">Ford Fiesta WRC</option>
-            <option value="ford_fiesta_rs_wrc">Ford Fiesta RS WRC</option>
-            <option value="ford_puma_rally1">Ford Puma Rally1</option>
-        </optgroup>
-        <optgroup label="Hyundai Cars">
-            <option value="hyundai_i20_coupe_wrc">Hyundai i20 Coupe WRC</option>
-            <option value="hyundai_i20_n_rally1">Hyundai i20 N Rally1</option>
-        </optgroup>
-        <optgroup label="Citroën Cars">
-            <option value="citroen_c3_wrc">Citroën C3 WRC</option>
-            <option value="citroen_ds3_wrc">Citroën DS3 WRC</option>
-        </optgroup>
-    </select>
-    <br><br>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" maxlength="100" required/>
-    <br><br>
-    <p><input type="submit" name="submit" value="login"/></p>
-</fieldset>
-</form>-->
 </body>
+<footer class="footer bg-black small text-center text-white-50">
+    <div class="container px-4 px-lg-5">Copyright &copy; Your Website 2021</div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
 </html>
