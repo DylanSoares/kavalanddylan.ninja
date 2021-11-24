@@ -7,8 +7,25 @@
     <a href="index.html"><h2>Home</h2></a>
 </header>
 <body>
-<form method="post" action="CreateAccount.php">
-    <fieldset>
+<section class="signup-section" id="signup">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-10 col-lg-8 mx-auto text-center">
+                <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                <h2 class="text-white mb-5">Driver Registration</h2>
+                <form method="post" id="contactForm" action="CreateAccount.php" class="form-signup">
+                    <!-- Email address input-->
+                    <div class="row input-group-newsletter">
+                        <div class="col"><input class="form-control" type="email" id="email" name="email" maxlength="50" required placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
+                        <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Submit</button></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--<fieldset>
         <legend><h2>Driver Registration Form</h2></legend>
         <label class="form-label" for="email">E-Mail:</label>
         <input type="email" id="email" name="email" maxlength="50" required/>
@@ -65,6 +82,6 @@
         <br><br>
         <p><input type="submit" name="submit" value="login"/></p>
     </fieldset>
-</form>
+</form>-->
 </body>
 </html>
