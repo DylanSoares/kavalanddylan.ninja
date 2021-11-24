@@ -45,7 +45,7 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
     </div>
 </nav>
 <!-- About-->
-<section class="about-section text-center" id="welcome" name="welcome">
+<section class="bg-dark text-center" id="welcome" name="welcome">
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-lg-8">
@@ -60,7 +60,7 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
     </div>
 </section>
 <!-- Projects-->
-<section class="projects-section bg-dark" id="tracks">
+<section class="about-section projects-section" id="tracks">
     <div class="container px-4 px-lg-5">
         <!-- Featured Project Row-->
         <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
