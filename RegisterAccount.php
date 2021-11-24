@@ -13,9 +13,10 @@ $mysqli = mysqli_connect("localhost", "cs213user", "letmein", "RALLYCO");
 $firstname = $_POST["firstname"];
 $lastname = $_POST['lastname'];
 $password = $_POST['password'];
-$car = $_POST['car'];
-$team = $_POST['team'];
+$car = filter_input(INPUT_POST, 'car', FILTER_SANITIZE_STRING);
+$team = filter_input(INPUT_POST, 'team', FILTER_SANITIZE_STRING);
 $email = strtolower($_POST["email"]);
+
 $sql = "SELECT email FROM Drivers WHERE email = '" . $email .
     "'";
 
