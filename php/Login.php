@@ -12,7 +12,7 @@ $mysqli = mysqli_connect("localhost", "cs213user", "letmein", "RALLYCO");
 $targetname = filter_input(INPUT_POST, 'email');
 $targetpasswd = filter_input(INPUT_POST, 'password');
 $sql = "SELECT email, fname, lname, team, car FROM Drivers WHERE email = '" . $targetname .
-    "' AND password = SHA1('" . $targetpasswd . "')";
+    "' AND pword = SHA1('" . $targetpasswd . "')";
 
 $result = mysqli_query($mysqli, $sql) or die(mysqli_error($mysqli));
 
