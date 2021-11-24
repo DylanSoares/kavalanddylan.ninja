@@ -11524,13 +11524,13 @@ body {
         color: #fff;
     }
     #mainNav.navbar-shrink {
-        background-color: #3a3a3a;
+        background-color: rgba(37, 37, 37, 0.85);
     }
     #mainNav.navbar-shrink .navbar-brand {
-        color: #000;
+        color: #fff;
     }
     #mainNav.navbar-shrink .nav-link {
-        color: #000;
+        color: #fff;
         padding: 1.5rem 1.5rem 1.25rem;
         border-bottom: 0.25rem solid transparent;
     }
@@ -11538,7 +11538,7 @@ body {
         color: #ff4800;
     }
     #mainNav.navbar-shrink .nav-link:active {
-        color: #467370;
+        color: #e5511c;
     }
     #mainNav.navbar-shrink .nav-link.active {
         color: #ff4800;
