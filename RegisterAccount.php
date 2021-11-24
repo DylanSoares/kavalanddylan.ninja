@@ -9,103 +9,103 @@ $mysqli = mysqli_connect("localhost", "cs213user", "letmein", "RALLYCO");
 
 //For more info about mysqli functions, go to the site below:
 //http://www.w3schools.com/php/php_ref_mysqli.asp
-if (isset($_POST['submit'])) {
-    $firstname = $_POST["firstname"];
-    $lastname = $_POST['lastname'];
-    $password = $_POST['password'];
-    $email = strtolower($_POST["email"]);
-    if (isset($_POST['car'])) {
-        $car = $_POST['car'];
-        switch ($car) {
-            case "subaru_impreza_wrc":
-                $carSelected = "Subaru Impreza WRC";
-                break;
-            case "subaru_wrx_sti":
-                $carSelected = "Subaru WRX STI";
-                break;
-            case "mitsubishi_lancer_wrc":
-                $carSelected = "Mitsubishi Lancer WRC";
-                break;
-            case "mitsubishi_lancer_evo":
-                $carSelected = "Mitsubishi Lancer EVO";
-                break;
-            case "mitsubishi_xpander_ap4":
-                $carSelected = "Mitsubishi XPANDER AP4";
-                break;
-            case "toyota_yaris_wrc":
-                $carSelected = "Toyota Yaris WRC";
-                break;
-            case "toyota_yaris_rally1":
-                $carSelected = "Toyota GR Yaris Rally1";
-                break;
-            case "ford_fiesta_wrc":
-                $carSelected = "Ford Fiesta WRC";
-                break;
-            case "ford_fiesta_rs_wrc":
-                $carSelected = "Ford Fiesta RS WRC";
-                break;
-            case "ford_puma_rally1":
-                $carSelected = "Ford Puma Rally1";
-                break;
-            case "hyundai_i20_coupe_wrc":
-                $carSelected = "Hyundai i20 Coupe WRC";
-                break;
-            case "hyundai_i20_n_rally1":
-                $carSelected = "Hyundai i20 N Rally1";
-                break;
-            case "citroen_c3_wrc":
-                $carSelected = "Citroën C3 WRC";
-                break;
-            case "citroen_ds3_wrc":
-                $carSelected = "Citroën DS3 WRC";
-                break;
-        }
+
+$firstname = $_POST["firstname"];
+$lastname = $_POST['lastname'];
+$password = $_POST['password'];
+$email = strtolower($_POST["email"]);
+if (isset($_POST['car'])) {
+    $car = $_POST['car'];
+    switch ($car) {
+        case "subaru_impreza_wrc":
+            $carSelected = "Subaru Impreza WRC";
+            break;
+        case "subaru_wrx_sti":
+            $carSelected = "Subaru WRX STI";
+            break;
+        case "mitsubishi_lancer_wrc":
+            $carSelected = "Mitsubishi Lancer WRC";
+            break;
+        case "mitsubishi_lancer_evo":
+            $carSelected = "Mitsubishi Lancer EVO";
+            break;
+        case "mitsubishi_xpander_ap4":
+            $carSelected = "Mitsubishi XPANDER AP4";
+            break;
+        case "toyota_yaris_wrc":
+            $carSelected = "Toyota Yaris WRC";
+            break;
+        case "toyota_yaris_rally1":
+            $carSelected = "Toyota GR Yaris Rally1";
+            break;
+        case "ford_fiesta_wrc":
+            $carSelected ="Ford Fiesta WRC";
+            break;
+        case "ford_fiesta_rs_wrc":
+            $carSelected = "Ford Fiesta RS WRC";
+            break;
+        case "ford_puma_rally1":
+            $carSelected = "Ford Puma Rally1";
+            break;
+        case "hyundai_i20_coupe_wrc":
+            $carSelected = "Hyundai i20 Coupe WRC";
+            break;
+        case "hyundai_i20_n_rally1":
+            $carSelected ="Hyundai i20 N Rally1";
+            break;
+        case "citroen_c3_wrc":
+            $carSelected ="Citroën C3 WRC";
+            break;
+        case "citroen_ds3_wrc":
+            $carSelected = "Citroën DS3 WRC";
+            break;
     }
+}
 
-    if (isset($_POST['team'])) {
-        $team = $_POST['team'];
-        switch ($team) {
-            case "subaru_motorsports":
-                $teamSelected = "Subaru Motorsports";
-                break;
-            case "mitsubishi_ralliart":
-                $teamSelected = "Mitsubishi Ralliart";
-                break;
-            case "toyota_gazoo_racing":
-                $teamSelected = "Toyota Gazoo Racing";
-                break;
-            case "ford_world_rally_team":
-                $teamSelected = "Ford World Rally Team";
-                break;
-            case "hyundai_motorsport":
-                $teamSelected = "THyundai Motorsport";
-                break;
-            case "citroen_world_rally_team":
-                $teamSelected = "Citroën World Rally Team";
-                break;
-        }
+if (isset($_POST['team'])) {
+    $team = $_POST['team'];
+    switch ($team) {
+        case "subaru_motorsports":
+            $teamSelected = "Subaru Motorsports";
+            break;
+        case "mitsubishi_ralliart":
+            $teamSelected = "Mitsubishi Ralliart";
+            break;
+        case "toyota_gazoo_racing":
+            $teamSelected = "Toyota Gazoo Racing";
+            break;
+        case "ford_world_rally_team":
+            $teamSelected = "Ford World Rally Team";
+            break;
+        case "hyundai_motorsport":
+            $teamSelected = "THyundai Motorsport";
+            break;
+        case "citroen_world_rally_team":
+            $teamSelected = "Citroën World Rally Team";
+            break;
     }
+}
 
 
-    $sql = "SELECT email FROM Drivers WHERE email = '" . $email .
-        "'";
 
-    $result = mysqli_query($mysqli, $sql) or die(mysqli_error($mysqli));
+$sql = "SELECT email FROM Drivers WHERE email = '" . $email .
+    "'";
 
-    if (mysqli_num_rows($result) >= 1) {
-        /*TODO get this to not mess us the header*/
-/*        echo "<p>Your
+$result = mysqli_query($mysqli, $sql) or die(mysqli_error($mysqli));
+
+if ($firstname != null && mysqli_num_rows($result) >= 1) {
+    /*TODO get this to not mess us the header*/
+/*    echo "<p>Your
 email address has already been used! Please use a different email address for a new
 account.</p>";*/
-    } else if (mysqli_num_rows($result) == 0) {
-        //email isnt already in the system
+} else if ($firstname != null && mysqli_num_rows($result) == 0) {
+    //email isnt already in the system
 
-        $sql2 = "INSERT INTO Drivers (email, fname, lname, team, car, pword) VALUES (\"{$email}\",\"{$firstname}\",\"{$lastname}\",\"{$teamSelected}\",\"{$carSelected}\",SHA1(\"{$password}\"))";
+    $sql2 = "INSERT INTO Drivers (email, fname, lname, team, car, pword) VALUES (\"{$email}\",\"{$firstname}\",\"{$lastname}\",\"{$teamSelected}\",\"{$carSelected}\",SHA1(\"{$password}\"))";
 
-        $result2 = mysqli_query($mysqli, $sql2) or die(mysqli_error($mysqli));
-        //TODO add a login link here as well
-//        echo "<h2 class=\"text-white-50 mx-auto mt-2 mb-5\">Success, account created!</h2>";
-    }
+    $result2 = mysqli_query($mysqli, $sql2) or die(mysqli_error($mysqli));
+    //TODO add a login link here as well
+    /*echo "<h2 class=\"text-white-50 mx-auto mt-2 mb-5\">Success, account created!</h2>";*/
 }
 
 ?>
