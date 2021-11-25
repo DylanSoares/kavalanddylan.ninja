@@ -77,7 +77,7 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
         <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
             <div class="col-lg-6"><img class="img-fluid" src="../assets/img/KFC_Sprint.jpg" alt="..." /></div>
             <div class="col-lg-6">
-                <div class="bg-black text-center h-100 project">
+                <div class="bg-mid text-center h-100 project">
                     <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-left">
                             <h4 class="text-white">KFC Sprint</h4>
@@ -95,7 +95,7 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
         <div class="row gx-0 justify-content-center">
             <div class="col-lg-6"><img class="img-fluid" src="../assets/img/Orchard_Park_Run.jpg" alt="..." /></div>
             <div class="col-lg-6 order-lg-first">
-                <div class="bg-black text-center h-100 project">
+                <div class="bg-mid text-center h-100 project">
                     <div class="d-flex h-100">
                         <div class="project-text w-100 my-auto text-center text-lg-right">
                             <h4 class="text-white">Orchard Park Run</h4>
