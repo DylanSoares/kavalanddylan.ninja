@@ -7996,6 +7996,7 @@ textarea.form-control-lg {
 }
 
 .bg-mid {
+    --bs-bg-opacity: 1;
     background-color: #2c3034;
 }
 
