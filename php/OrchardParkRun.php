@@ -35,6 +35,16 @@
         </div>
     </div>
 </nav>
+<!-- Masthead-->
+<header id="welcome" class="masthead">
+    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+        <div class="d-flex justify-content-center">
+            <div class="text-center">
+                <h1 class="mx-auto my-0 text-uppercase">Orchard Park Run</h1>
+            </div>
+        </div>
+    </div>
+</header>
 <section class="about-section text-center" id="about">
     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
         <div class="d-flex justify-content-center">
