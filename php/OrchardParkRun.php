@@ -49,7 +49,7 @@
         </div>
     </div>
 </header>
-<section class="about-section text-center" name="about" id="about">
+<section class="about-section text-center" id="about">
     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
         <div class="d-flex justify-content-center">
             <table class="table">
