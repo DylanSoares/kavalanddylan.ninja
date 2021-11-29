@@ -56,6 +56,7 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
     </div>
 </header>
 <!-- Projects-->
+<!-- TODO fix https://discord.com/channels/799860504407310346/892065204127563806/914956923105869955 -->
 <section class="about-section projects-section" id="tracks">
     <div class="container px-4 px-lg-5 text-center mb-4 mt-4 bg-dark">
         <div class="row gx-4 gx-lg-5 justify-content-center">
