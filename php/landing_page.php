@@ -60,7 +60,7 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
     <div class="container px-4 px-lg-5 text-center  bg-dark">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-lg-8">
-                <h1 class="text-white mb-4">Courses</h1>
+                <h1 class="text-white mb-4 mt-4">Courses</h1>
             </div>
         </div>
     </div>
@@ -123,7 +123,7 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
     <div class="container px-4 px-lg-5 text-center  bg-dark">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-lg-8">
-                <h1 class="text-white mb-4">Contact</h1>
+                <h1 class="text-white mb-4 mt-4">Contact</h1>
             </div>
         </div>
     </div>
