@@ -55,8 +55,10 @@
            onclick="$.getScript('../js/GenerateAgain.js', function() {onClick();});">Generate Again</a>
         <a class="btn btn-primary" href="LandingPage.php#tracks">Select Track</a>
     </div>
-    <div class="container px-4 px-lg-5  h-100 align-items-center justify-content-center">
-        <div class=" justify-content-center">
+    <!--this display flex and the columns resizing give the anchor in the .js file a run for its money-->
+    <!-- its why it shakes up and down a little bit on new generation, making the columns all fixed size would fix this-->
+    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+        <div class="d-flex justify-content-center">
             <table class="table">
                 <thead>
                 <tr>
