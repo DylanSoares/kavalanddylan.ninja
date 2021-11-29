@@ -50,6 +50,10 @@
     </div>
 </header>
 <section class="about-section text-center" id="about">
+    <div>
+        <a id="generate" class="btn btn-primary"
+           onclick="$.getScript('../js/GenerateAgain.js', function() {onClick();});">Generate Again</a>
+    </div>
     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
         <div class="d-flex justify-content-center">
             <table class="table">
@@ -105,10 +109,6 @@
                 </tbody>
             </table>
         </div>
-    </div>
-    <div>
-        <a id="generate" class="btn btn-primary"
-           onclick="$.getScript('../js/GenerateAgain.js', function() {onClick();});">Generate Again</a>
     </div>
 </section>
 
