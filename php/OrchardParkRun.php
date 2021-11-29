@@ -55,6 +55,7 @@
                 <thead>
                 <tr>
                     <th>Turn No.</th>
+                    <th>Turn Direction</th>
                     <th>Note</th>
                 </tr>
                 </thead>
@@ -86,7 +87,7 @@
 
                 //echo table rows for each row returned
                 while ($row = $result->fetch_assoc()) {
-                    echo "<tr><td>" . $row["Turn_ID"] . "</td><td>";
+                    echo "<tr><td>" . $row["Turn_ID"] ."</td><td>" . $row["Turn_Dir"] . "</td><td>";
                     switch ($row["Turn_Dir"]) {
                         case "left":
                             $leftQuote = mt_rand(0, sizeof($_leftArr)-1);
