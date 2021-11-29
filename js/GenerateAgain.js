@@ -1,2 +1,3 @@
+
 location.reload();
-location.href= ""+this.url+"#about";
+location.href= ""+document.location+"#about";
