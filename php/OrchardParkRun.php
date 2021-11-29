@@ -37,30 +37,30 @@
 </nav>
 <!-- Masthead-->
 
-<!-- -->
-<?php
-mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-$mysqli = mysqli_connect("localhost", "cosc219", "letmein", "Drivers");
+<section class="about-section text-center" id="about">
+    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+        <div class="d-flex justify-content-center">
+            <table>
+                <?php
+                mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+                $mysqli = mysqli_connect("localhost", "cosc219", "letmein", "Drivers");
 
-//echo "<h2>Members Table:</h2><br>";
-$sql = "SELECT * FROM members_table";
-$result = $mysqli->query($sql);
-echo "<header id=\"welcome\" class=\"masthead\">
-    <div class=\"container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center\">
-        <div class=\"d-flex justify-content-center\">";
+                //echo "<h2>Members Table:</h2><br>";
+                $sql = "SELECT * FROM members_table";
+                $result = $mysqli->query($sql);
 
-echo "<table>";
-//echo table header for the first row
-echo "<tr><td><p>email</p></td><td><p>fname</p></td><td><p>lname</p></td><td><p>team</p></td></tr>";
-//echo table rows for each row returned
-while ($row = $result->fetch_assoc()) {
-    echo "<tr><td><p>" . $row["email"] . "</p></td><td><p>" . $row["fname"] . "</p></td><td><p>" . $row["lname"] . "</p></td><td><p>" . $row["team"] . "</p></td></tr>";
-}
+                //echo table header for the first row
+                echo "<tr><td><p>email</p></td><td><p>fname</p></td><td><p>lname</p></td><td><p>team</p></td></tr>";
+                //echo table rows for each row returned
+                while ($row = $result->fetch_assoc()) {
+                    echo "<tr><td><p>" . $row["email"] . "</p></td><td><p>" . $row["fname"] . "</p></td><td><p>" . $row["lname"] . "</p></td><td><p>" . $row["team"] . "</p></td></tr>";
+                }
+                ?>
+            </table>
+        </div>
+    </div>
+</section>
 
-echo "</table><br>";
-echo "</div></div></header>";
-
-?>
 </body>
 <footer class="footer bg-black small text-center text-white-50">
     <div class="container px-4 px-lg-5">Copyright &copy; Your Website 2021</div>
