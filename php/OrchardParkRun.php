@@ -56,7 +56,7 @@
                 $result = $mysqli->query($sql);
                 //echo table rows for each row returned
                 while ($row = $result->fetch_assoc()) {
-                    echo "<tr><td><p>" . $row["email"] . "</p></td><td><p>" . $row["fname"] . "</p></td><td><p>" . $row["lname"] . "</p></td><td><p>" . $row["team"] . "</p></td></tr>";
+                    echo "<tr><td>" . $row["email"] . "</td><td>" . $row["fname"] . "</td><td>" . $row["lname"] . "</td><td>" . $row["team"] . "</td></tr>";
                 }
                 ?>
                 </tbody>
