@@ -79,8 +79,8 @@
 
                 $rightTurns = "SELECT turnQuote FROM RightTurns";
                 $rightResult = $mysqli->query($rightTurns);
-                while ($row2 = $rightResult->fetch_assoc()) {
-                    $_rightArr[$j] = $row2["turnQuote"];
+                while ($row = $rightResult->fetch_assoc()) {
+                    $_rightArr[$j] = $row["turnQuote"];
                     $j++;
                 }
 
@@ -89,11 +89,11 @@
                     echo "<tr><td>" . $row["Turn_ID"] . "</td><td>";
                     switch ($row["Turn_Dir"]) {
                         case "left":
-                            $leftQuote = mt_rand(0, sizeof($_leftArr));
+                            $leftQuote = mt_rand(0, sizeof($_leftArr)-1);
                             echo $_leftArr[$leftQuote];
                             break;
                         case "right":
-                            $rightQuote = mt_rand(0, sizeof($_rightArr));
+                            $rightQuote = mt_rand(0, sizeof($_rightArr)-1);
                             echo $_rightArr[$rightQuote];
                             break;
                     }
