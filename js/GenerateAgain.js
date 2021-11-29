@@ -1,4 +1,4 @@
 $( "#generate" ).click(function() {
     location.reload();
-    location.href= ""+document.location+"#about";
+    location.href=document.location+"#about";
 });

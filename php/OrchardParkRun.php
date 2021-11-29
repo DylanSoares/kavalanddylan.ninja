@@ -104,7 +104,7 @@
                 ?>
                 </tbody>
             </table>
-            <a id="generate" class="btn btn-primary" href="javascript:location.reload();location.href=document.location+'#about';">Generate Again</a>
+            <a id="generate" class="btn btn-primary">Generate Again</a>
         </div>
     </div>
 </section>
