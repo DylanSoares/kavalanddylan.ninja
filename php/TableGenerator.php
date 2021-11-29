@@ -5,6 +5,8 @@ function GenerateTable($mysqli, $result) {
     $_leftArr[0] = "";
     $_rightArr[0] = "";
 
+    $output = "";
+
     $leftTurns = "SELECT turnQuote FROM LeftTurns";
     $leftResult = $mysqli->query($leftTurns);
     while ($row = $leftResult->fetch_assoc()) {
@@ -21,17 +23,19 @@ function GenerateTable($mysqli, $result) {
 
     //echo table rows for each row returned
     while ($row = $result->fetch_assoc()) {
-        echo "<tr><td>" . $row["Turn_ID"] . "</td><td>" . $row["Turn_Dir"] . "</td><td>";
+        $output = $output . "<tr><td>" . $row["Turn_ID"] . "</td><td>" . $row["Turn_Dir"] . "</td><td>";
         switch ($row["Turn_Dir"]) {
             case "left":
                 $leftQuote = mt_rand(0, sizeof($_leftArr) - 1);
-                echo $_leftArr[$leftQuote];
+                $output = $output . $_leftArr[$leftQuote];
                 break;
             case "right":
                 $rightQuote = mt_rand(0, sizeof($_rightArr) - 1);
-                echo $_rightArr[$rightQuote];
+                $output = $output . $_rightArr[$rightQuote];
                 break;
         }
-        echo "</td></tr>";
+        $output = $output . "</td></tr>";
     }
+
+    return $output;
 }

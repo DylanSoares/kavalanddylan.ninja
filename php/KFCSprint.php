@@ -73,7 +73,7 @@
                 $mysqli = mysqli_connect("localhost", "cs213user", "letmein", "RALLYCO");
                 $sql = "SELECT * FROM KFC_Sprint";
                 $result = $mysqli->query($sql);
-                GenerateTable($mysqli, $result);
+                echo GenerateTable($mysqli, $result);
                 ?>
                 </tbody>
             </table>
