@@ -35,17 +35,14 @@
         </div>
     </div>
 </nav>
-<!-- Masthead-->
-
 <section class="about-section text-center" id="about">
     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
         <div class="d-flex justify-content-center">
-            <table>
+            <table class="table">
                 <?php
                 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
                 $mysqli = mysqli_connect("localhost", "cs213user", "letmein", "RALLYCO");
 
-                //echo "<h2>Members Table:</h2><br>";
                 $sql = "SELECT * FROM Drivers";
                 $result = $mysqli->query($sql);
 
