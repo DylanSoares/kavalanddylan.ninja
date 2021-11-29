@@ -82,7 +82,7 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
         </a>
         <!-- Project One Row-->
         <!--TODO KFC Sprint Query-->
-        <a class="course" href="KFCSprint.php.php">
+        <a class="course" href="KFCSprint.php">
             <div class="row gx-0 justify-content-center">
                 <div class="col-lg-6"><img class="img-fluid" src="../assets/img/KFC_Sprint.jpg" alt="..." /></div>
                 <div class="col-lg-6 order-lg-first">
