@@ -67,9 +67,9 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
     <div class="container px-4 px-lg-5">
         <!-- Featured Project Row-->
         <!--TODO Costo Cup Query-->
-        <a class="course" href="CosctoCup.php">
+        <a class="course" href="CostcoCup.php">
         <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-            <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/Coscto_Cup.jpg" alt="..." /></div>
+            <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/Costco_Cup.jpg" alt="..." /></div>
             <div class="col-xl-4 col-lg-5">
                 <div class="featured-text bg-mid text-center text-lg-left">
                     <br>
