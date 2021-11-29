@@ -84,20 +84,17 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
         <!-- Project One Row-->
         <!--TODO KFC Sprint Query-->
         <a class="course" href="KFCSprint.php">
-        <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-            <div class="col-lg-6"><img class="img-fluid" src="../assets/img/KFC_Sprint.jpg" alt="..." /></div>
-            <div class="col-lg-6">
-                <div class="bg-mid text-center h-100 project">
-                    <div class="d-flex h-100">
-                        <div class="project-text w-100 my-auto text-center text-lg-left">
-                            <h4 class="text-white">KFC Sprint</h4>
-                            <p class="mb-0 text-white-50">The KFC Sprint is a college student's main event, often done with limited time. A true showcase in parking lot maneuvering.</p>
-                            <hr class="d-none d-lg-block mb-0 ms-0" />
-                        </div>
+            <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="../assets/img/KFC_Sprint.jpg" alt="..." /></div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="featured-text bg-mid text-center text-lg-left">
+                        <br>
+                        <h4 class="text-white">KFC Sprint</h4>
+                        <p class="text-white-50 mb-0">The KFC Sprint is a college student's main event, often done with limited time. A true showcase in parking lot maneuvering.</p>
+                        <br>
                     </div>
                 </div>
             </div>
-        </div>
         </a>
         <!-- Project Two Row-->
         <!--TODO Orchard Park Run Query-->
