@@ -1,14 +1,13 @@
 <?php
-include "db_connect.php";
 //login php to handle the login
-
+$mysqli = mysqli_connect("localhost", "cs213user", "letmein", "RALLYCO");
 //connect to server and select database
 //create and issue the query
 $targetname = filter_input(INPUT_POST, 'email');
 $targetpasswd = filter_input(INPUT_POST, 'password');
 $sql = "SELECT email, fname, lname, team, car FROM Drivers WHERE email = '" . strtolower($targetname) .
     "' AND pword = SHA1('" . $targetpasswd . "')";
-$result = mysqli_query(getDB(), $sql) or die(mysqli_error(getDB()));
+$result = mysqli_query($mysqli, $sql) or die(mysqli_error($mysqli));
 //get the number of rows in the result set; should be 1 if a match
 if (mysqli_num_rows($result) == 1) {
     //if authorized, get the values of f_name l_name
