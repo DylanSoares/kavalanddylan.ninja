@@ -63,7 +63,7 @@
                 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
                 $mysqli = mysqli_connect("localhost", "cs213user", "letmein", "RALLYCO");
 
-                $sql = "SELECT * FROM Drivers";
+                $sql = "SELECT * FROM Orchard_Park_Run";
                 $result = $mysqli->query($sql);
                 //echo table rows for each row returned
                 while ($row = $result->fetch_assoc()) {
