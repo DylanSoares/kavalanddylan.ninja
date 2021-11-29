@@ -104,8 +104,8 @@
                 ?>
                 </tbody>
             </table>
-            <a id="generate" class="btn btn-primary" onclick="$.getScript('../js/GenerateAgain.js', function() {onClick();});">Generate Again</a>
         </div>
+        <a id="generate" class="btn btn-primary" onclick="$.getScript('../js/GenerateAgain.js', function() {onClick();});">Generate Again</a>
     </div>
 </section>
 
