@@ -103,6 +103,7 @@
                 ?>
                 </tbody>
             </table>
+            <a class="btn btn-primary" href="">Generate Again</a>
         </div>
     </div>
 </section>
