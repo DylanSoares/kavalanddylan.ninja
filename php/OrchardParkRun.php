@@ -55,9 +55,9 @@
            onclick="$.getScript('../js/GenerateAgain.js', function() {onClick();});">Generate Again</a>
         <a class="btn btn-primary" href="LandingPage.php#tracks">Select Track</a>
     </div>
-    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-        <div class="d-flex justify-content-center">
-            <table class="table table-primary">
+    <div class="container px-4 px-lg-5  h-100 align-items-center justify-content-center">
+        <div class=" justify-content-center">
+            <table class="table" style="width: 100%">
                 <thead>
                 <tr>
                     <th>Turn No.</th>
