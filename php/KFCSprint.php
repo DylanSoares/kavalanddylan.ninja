@@ -69,11 +69,7 @@
                 </thead>
                 <tbody>
                 <?php
-                mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-                $mysqli = mysqli_connect("localhost", "cs213user", "letmein", "RALLYCO");
-                $sql = "SELECT * FROM KFC_Sprint";
-                $result = $mysqli->query($sql);
-                echo GenerateTable($mysqli, $result);
+                echo GenerateTable("KFC_Sprint");
                 ?>
                 </tbody>
             </table>
