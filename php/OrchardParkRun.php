@@ -29,7 +29,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#welcome">Welcome</a></li>
+                <li class="nav-item"><a class="nav-link" href="./LandingPage.php">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="../index.html">Log Out</a></li>
             </ul>
         </div>
