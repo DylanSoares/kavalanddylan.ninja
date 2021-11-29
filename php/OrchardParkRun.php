@@ -43,7 +43,7 @@
             <table>
                 <?php
                 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-                $mysqli = mysqli_connect("localhost", "cosc219", "letmein", "RALLYCO");
+                $mysqli = mysqli_connect("localhost", "cs213user", "letmein", "RALLYCO");
 
                 //echo "<h2>Members Table:</h2><br>";
                 $sql = "SELECT * FROM Drivers";
