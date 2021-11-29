@@ -60,14 +60,42 @@
                 </thead>
                 <tbody>
                 <?php
+                $i = 0;
+                $j = 0;
                 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
                 $mysqli = mysqli_connect("localhost", "cs213user", "letmein", "RALLYCO");
 
                 $sql = "SELECT * FROM Orchard_Park_Run";
                 $result = $mysqli->query($sql);
+
+                $leftTurns = "SELECT turnQuote FROM LeftTurns";
+                $leftResult = $mysqli->query($leftTurns);
+                while ($row = $leftResult->fetch_assoc()) {
+                    $_leftArr[$i] = $row["turnQuote"];
+                    $i++;
+                }
+
+                $rightTurns = "SELECT turnQuote FROM RightTurns";
+                $rightResult = $mysqli->query($rightTurns);
+                while ($row = $rightResult->fetch_assoc()) {
+                    $_rightArr[$i] = $row["turnQuote"];
+                    $j++;
+                }
+
                 //echo table rows for each row returned
                 while ($row = $result->fetch_assoc()) {
-                    echo "<tr><td>" . $row["Turn_ID"] . "</td><td>" . $row["Turn_Dir"] . "</td></tr>";
+                    echo "<tr><td>" . $row["Turn_ID"] . "</td><td>";
+                    switch ($row["Turn_Dir"]) {
+                        case "left":
+                            $leftQuote = mt_rand(0, sizeof($_leftArr));
+                            echo $_leftArr[$leftQuote];
+                            break;
+                        case "right":
+                            $rightQuote = mt_rand(0, sizeof($_rightArr));
+                            echo $_rightArr[$rightQuote];
+                            break;
+                    }
+                    echo "</td></tr>";
                 }
                 ?>
                 </tbody>
