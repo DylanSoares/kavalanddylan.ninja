@@ -69,6 +69,7 @@
                 </thead>
                 <tbody>
                 <?php
+                include GenerateTable("KFC_Sprint");
                 echo GenerateTable("KFC_Sprint");
                 ?>
                 </tbody>
