@@ -85,6 +85,7 @@
                 }
 
                 echo sizeof($_leftArr);
+                echo$_leftArr[0];
                 //echo table rows for each row returned
                 while ($row = $result->fetch_assoc()) {
                     echo "<tr><td>" . $row["Turn_ID"] . "</td><td>";
