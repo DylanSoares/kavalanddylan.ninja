@@ -120,7 +120,7 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
 </section>
 <!-- Contact-->
 <section class="contact-section bg-black" id="contact">
-    <div class="container px-4 px-lg-5 text-center  bg-dark">
+    <div class="container px-4 px-lg-5 text-center mb-4 mt-4 bg-dark">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-lg-8">
                 <h1 class="text-white mb-4 mt-4">Contact</h1>
