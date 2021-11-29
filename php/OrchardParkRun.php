@@ -39,20 +39,27 @@
     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
         <div class="d-flex justify-content-center">
             <table class="table">
+                <thead>
+                <tr>
+                    <td><p>email</p></td>
+                    <td><p>fname</p></td>
+                    <td><p>lname</p></td>
+                    <td><p>team</p></td>
+                </tr>
+                </thead>
+                <tbody>
                 <?php
                 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
                 $mysqli = mysqli_connect("localhost", "cs213user", "letmein", "RALLYCO");
 
                 $sql = "SELECT * FROM Drivers";
                 $result = $mysqli->query($sql);
-
-                //echo table header for the first row
-                echo "<tr><td><p>email</p></td><td><p>fname</p></td><td><p>lname</p></td><td><p>team</p></td></tr>";
                 //echo table rows for each row returned
                 while ($row = $result->fetch_assoc()) {
                     echo "<tr><td><p>" . $row["email"] . "</p></td><td><p>" . $row["fname"] . "</p></td><td><p>" . $row["lname"] . "</p></td><td><p>" . $row["team"] . "</p></td></tr>";
                 }
                 ?>
+                </tbody>
             </table>
         </div>
     </div>
