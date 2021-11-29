@@ -56,9 +56,8 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
     </div>
 </header>
 <!-- Projects-->
-<!-- TODO fix https://discord.com/channels/799860504407310346/892065204127563806/914956923105869955 -->
 <section class="about-section projects-section" id="tracks">
-    <div class="container px-4 px-lg-5 text-center mb-4 mt-4 bg-dark">
+    <div class="container px-4 px-lg-5 text-center mb-4 bg-dark">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-lg-8">
                 <h1 class="text-white mb-4 mt-4">Courses</h1>
@@ -102,7 +101,7 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
         <!-- Project Two Row-->
         <!--TODO Orchard Park Run Query-->
         <a class="course" href="OrchardParkRun.php">
-        <div class="row gx-0 justify-content-center">
+        <div class="row gx-0 mt-4 justify-content-center">
             <div class="col-lg-6"><img class="img-fluid" src="../assets/img/Orchard_Park_Run.jpg" alt="..." /></div>
             <div class="col-lg-6 order-lg-first">
                 <div class="bg-mid text-center h-100 project">
