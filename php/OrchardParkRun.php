@@ -43,10 +43,10 @@
             <table>
                 <?php
                 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-                $mysqli = mysqli_connect("localhost", "cosc219", "letmein", "Drivers");
+                $mysqli = mysqli_connect("localhost", "cosc219", "letmein", "RALLYCO");
 
                 //echo "<h2>Members Table:</h2><br>";
-                $sql = "SELECT * FROM members_table";
+                $sql = "SELECT * FROM Drivers";
                 $result = $mysqli->query($sql);
 
                 //echo table header for the first row
