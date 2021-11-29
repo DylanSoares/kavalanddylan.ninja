@@ -20,7 +20,7 @@ if (mysqli_num_rows($result) == 1) {
     }
     //set authorization cookie using current Session ID
     setcookie("auth", session_id(), time() + 60 * 30, "/", "", 0);
-    header("Location: landing_page.php");
+    header("Location: LandingPage.php");
     //create display string
 } else {
     //redirect back to login form if not authorized
