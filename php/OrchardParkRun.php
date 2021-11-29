@@ -48,7 +48,7 @@
         </div>
     </div>
 </header>
-<section class="about-section text-center" id="about">
+<section class="about-section text-center" name="about" id="about">
     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
         <div class="d-flex justify-content-center">
             <table class="table">
@@ -103,7 +103,7 @@
                 ?>
                 </tbody>
             </table>
-            <a class="btn btn-primary" href="">Generate Again</a>
+            <a class="btn btn-primary" href="OrchardParkRun.php#about">Generate Again</a>
         </div>
     </div>
 </section>
