@@ -41,10 +41,10 @@
             <table class="table">
                 <thead>
                 <tr>
-                    <td><p>email</p></td>
-                    <td><p>fname</p></td>
-                    <td><p>lname</p></td>
-                    <td><p>team</p></td>
+                    <th>email</th>
+                    <th>fname</th>
+                    <th>lname</th>
+                    <th>team</th>
                 </tr>
                 </thead>
                 <tbody>
