@@ -11630,7 +11630,7 @@ body {
 }
 
 .projects-section {
-    padding: 4rem 0;
+    padding: 0rem 0;
 }
 .projects-section .featured-text {
     padding: 2rem;
@@ -11676,7 +11676,7 @@ body {
 }
 
 .contact-section {
-    padding-top: 4rem;
+    padding-top: 0rem;
 }
 .contact-section .card {
     border: 0;

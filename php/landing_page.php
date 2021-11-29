@@ -57,7 +57,7 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
 </header>
 <!-- Projects-->
 <section class="about-section projects-section" id="tracks">
-    <div class="container px-4 px-lg-5 text-center  bg-dark">
+    <div class="container px-4 px-lg-5 text-center mb-4 mt-4 bg-dark">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-lg-8">
                 <h1 class="text-white mb-4 mt-4">Courses</h1>
