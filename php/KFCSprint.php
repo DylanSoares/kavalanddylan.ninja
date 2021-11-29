@@ -69,7 +69,7 @@
                 </thead>
                 <tbody>
                 <?php
-                include GenerateTable("KFC_Sprint");
+                include('TableGenerator.php');
                 echo GenerateTable("KFC_Sprint");
                 ?>
                 </tbody>
