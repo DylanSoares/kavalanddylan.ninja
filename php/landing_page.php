@@ -57,6 +57,13 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
 </header>
 <!-- Projects-->
 <section class="about-section projects-section" id="tracks">
+    <div class="container px-4 px-lg-5 text-center  bg-dark">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8">
+                <h1 class="text-white mb-4">Courses</h1>
+            </div>
+        </div>
+    </div>
     <div class="container px-4 px-lg-5">
         <!-- Featured Project Row-->
         <!--TODO Costo Cup Query-->
@@ -113,6 +120,13 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
 </section>
 <!-- Contact-->
 <section class="contact-section bg-black" id="contact">
+    <div class="container px-4 px-lg-5 text-center  bg-dark">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8">
+                <h1 class="text-white mb-4">Contact</h1>
+            </div>
+        </div>
+    </div>
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5">
             <div class="col-md-4 mb-3 mb-md-0">
