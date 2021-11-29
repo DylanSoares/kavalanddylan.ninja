@@ -88,14 +88,14 @@
 
                 //echo table rows for each row returned
                 while ($row = $result->fetch_assoc()) {
-                    echo "<tr><td>" . $row["Turn_ID"] ."</td><td>" . $row["Turn_Dir"] . "</td><td>";
+                    echo "<tr><td>" . $row["Turn_ID"] . "</td><td>" . $row["Turn_Dir"] . "</td><td>";
                     switch ($row["Turn_Dir"]) {
                         case "left":
-                            $leftQuote = mt_rand(0, sizeof($_leftArr)-1);
+                            $leftQuote = mt_rand(0, sizeof($_leftArr) - 1);
                             echo $_leftArr[$leftQuote];
                             break;
                         case "right":
-                            $rightQuote = mt_rand(0, sizeof($_rightArr)-1);
+                            $rightQuote = mt_rand(0, sizeof($_rightArr) - 1);
                             echo $_rightArr[$rightQuote];
                             break;
                     }
@@ -105,7 +105,10 @@
                 </tbody>
             </table>
         </div>
-        <a id="generate" class="btn btn-primary" onclick="$.getScript('../js/GenerateAgain.js', function() {onClick();});">Generate Again</a>
+        <div>
+            <a id="generate" class="btn btn-primary"
+               onclick="$.getScript('../js/GenerateAgain.js', function() {onClick();});">Generate Again</a>
+        </div>
     </div>
 </section>
 
