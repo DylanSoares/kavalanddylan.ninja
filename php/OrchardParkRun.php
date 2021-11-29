@@ -62,6 +62,8 @@
                 <?php
                 $i = 0;
                 $j = 0;
+                $_leftArr[0] = "";
+                $_rightArr[0] = "";
                 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
                 $mysqli = mysqli_connect("localhost", "cs213user", "letmein", "RALLYCO");
 
@@ -78,7 +80,7 @@
                 $rightTurns = "SELECT turnQuote FROM RightTurns";
                 $rightResult = $mysqli->query($rightTurns);
                 while ($row = $rightResult->fetch_assoc()) {
-                    $_rightArr[$i] = $row["turnQuote"];
+                    $_rightArr[$j] = $row["turnQuote"];
                     $j++;
                 }
 
