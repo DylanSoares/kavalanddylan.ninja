@@ -54,10 +54,8 @@
             <table class="table">
                 <thead>
                 <tr>
-                    <th>email</th>
-                    <th>fname</th>
-                    <th>lname</th>
-                    <th>team</th>
+                    <th>Turn No.</th>
+                    <th>Note</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -69,7 +67,7 @@
                 $result = $mysqli->query($sql);
                 //echo table rows for each row returned
                 while ($row = $result->fetch_assoc()) {
-                    echo "<tr><td>" . $row["email"] . "</td><td>" . $row["fname"] . "</td><td>" . $row["lname"] . "</td><td>" . $row["team"] . "</td></tr>";
+                    echo "<tr><td>" . $row["Turn_ID"] . "</td><td>" . $row["Turn_Dir"] . "</td></tr>";
                 }
                 ?>
                 </tbody>
