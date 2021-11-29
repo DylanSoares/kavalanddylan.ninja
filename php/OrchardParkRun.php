@@ -104,7 +104,7 @@
                 ?>
                 </tbody>
             </table>
-            <a class="btn btn-primary" href="OrchardParkRun.php#about">Generate Again</a>
+            <a class="btn btn-primary" href="../js/GenerateAgain.js">Generate Again</a>
         </div>
     </div>
 </section>
