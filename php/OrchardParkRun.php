@@ -12,7 +12,7 @@
     <!--Jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="../js/ScrollDown.js"></script>
-    <script src="../js/GenerateAgain.js"></script>
+    <script id="GenerateAgain.js" src="../js/GenerateAgain.js"></script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
@@ -104,7 +104,9 @@
                 ?>
                 </tbody>
             </table>
-            <a id="generate" class="btn btn-primary">Generate Again</a>
+            <a id="generate" class="btn btn-primary" onclick="$.getScript('external.js', function() {
+            addClick();
+        });">Generate Again</a>
         </div>
     </div>
 </section>
