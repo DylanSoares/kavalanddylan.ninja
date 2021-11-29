@@ -1,6 +1,8 @@
 <?php
 //login php to handle the login
-$mysqli = mysqli_connect("localhost", "cs213user", "letmein", "RALLYCO");
+include('DBConnect.php');
+$mysqli = connectToDB();
+
 //connect to server and select database
 //create and issue the query
 $targetname = filter_input(INPUT_POST, 'email');

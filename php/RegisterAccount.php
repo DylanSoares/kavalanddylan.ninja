@@ -4,9 +4,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to edit this template
 -->
 <?php
-
-//connect to server and select database
-$mysqli = mysqli_connect("localhost", "cs213user", "letmein", "RALLYCO");
+include('DBConnect.php');
+$mysqli = connectToDB();
 
 //For more info about mysqli functions, go to the site below:
 //http://www.w3schools.com/php/php_ref_mysqli.asp
