@@ -1,10 +1,8 @@
 <?php
-if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
- //
-} else {
-	//redirect back to login form if not authorized
-	header("Location: Login.php");
-	exit;
+if (filter_input(INPUT_COOKIE, 'auth') != session_id()) {
+    //redirect back to login form if not authorized
+    header("Location: Login.php");
+    exit;
 }
 ?>
 
