@@ -1,5 +1,6 @@
 <?php
-function GenerateTable($mysqli, $result) {
+function GenerateTable($mysqli, $result): string
+{
     $i = 0;
     $j = 0;
     $_leftArr[0] = "";
