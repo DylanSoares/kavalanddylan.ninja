@@ -118,10 +118,9 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
             <div class="col-md-4 mb-3 mb-md-0">
                 <div class="card py-4 h-100">
                     <div class="card-body text-center">
-                        <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                        <h4 class="text-uppercase m-0">Address</h4>
-                        <hr class="my-4 mx-auto" />
-                        <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+                        <iframe src="https://discord.com/widget?id=231104205509754880&theme=light"
+                                height="500" allowtransparency="true" frameborder="0"
+                                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
                     </div>
                 </div>
             </div>
@@ -130,8 +129,8 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
                     <div class="card-body text-center">
                         <i class="fas fa-envelope text-primary mb-2"></i>
                         <h4 class="text-uppercase m-0">Email</h4>
-                        <hr class="my-4 mx-auto" />
-                        <div class="small text-black-50"><a href="#!">hello@yourdomain.com</a></div>
+                        <hr class="my-4 mx-auto"/>
+                        <div class="small text-black-50"><a href="#!">kavalanddylan@ninja.com</a></div>
                     </div>
                 </div>
             </div>
@@ -140,8 +139,8 @@ if (filter_input (INPUT_COOKIE, 'auth') == session_id()) {
                     <div class="card-body text-center">
                         <i class="fas fa-mobile-alt text-primary mb-2"></i>
                         <h4 class="text-uppercase m-0">Phone</h4>
-                        <hr class="my-4 mx-auto" />
-                        <div class="small text-black-50">+1 (555) 902-8832</div>
+                        <hr class="my-4 mx-auto"/>
+                        <div class="small text-black-50">+1 (250) 503-1313</div>
                     </div>
                 </div>
             </div>
