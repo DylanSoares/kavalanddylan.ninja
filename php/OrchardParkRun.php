@@ -57,7 +57,7 @@
     </div>
     <div class="container px-4 px-lg-5  h-100 align-items-center justify-content-center">
         <div class=" justify-content-center">
-            <table class="table" style="width: 100%">
+            <table class="table">
                 <thead>
                 <tr>
                     <th>Turn No.</th>
