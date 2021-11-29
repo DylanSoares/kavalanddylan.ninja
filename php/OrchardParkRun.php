@@ -85,17 +85,19 @@
                 }
 
                 echo sizeof($_leftArr);
-                echo$_leftArr[0];
+
                 //echo table rows for each row returned
                 while ($row = $result->fetch_assoc()) {
                     echo "<tr><td>" . $row["Turn_ID"] . "</td><td>";
                     switch ($row["Turn_Dir"]) {
                         case "left":
                             $leftQuote = mt_rand(0, sizeof($_leftArr));
+                            echo $leftQuote;
                             echo $_leftArr[$leftQuote];
                             break;
                         case "right":
                             $rightQuote = mt_rand(0, sizeof($_rightArr));
+                            echo $rightQuote;
                             echo $_rightArr[$rightQuote];
                             break;
                     }
