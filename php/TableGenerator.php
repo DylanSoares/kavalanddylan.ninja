@@ -1,18 +1,18 @@
 <?php
 function GenerateTable($track): string
 {
-
-    mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-    $mysqli = mysqli_connect("localhost", "cs213user", "letmein", "RALLYCO");
-    $sql = "SELECT * FROM " . $track;
-    $result = $mysqli->query($sql);
-
     $i = 0;
     $j = 0;
     $_leftArr[0] = "";
     $_rightArr[0] = "";
-
     $output = "";
+
+    mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+    $mysqli = mysqli_connect("localhost", "cs213user", "letmein", "RALLYCO");
+    $sql = "SELECT * FROM " . $track . ";";
+    $result = $mysqli->query($sql);
+
+
 
     $leftTurns = "SELECT turnQuote FROM LeftTurns";
     $leftResult = $mysqli->query($leftTurns);
