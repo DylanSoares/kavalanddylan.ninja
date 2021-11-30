@@ -37,7 +37,7 @@ if (filter_input(INPUT_COOKIE, 'auth') != session_id()) {
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#welcome">Welcome</a></li>
+                <li class="nav-item"><a class="nav-link" href="#masthead">Welcome</a></li>
                 <li class="nav-item"><a class="nav-link" href="#tracks">Courses</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 <li class="nav-item"><a class="nav-link" href="../index.html">Log Out</a></li>
@@ -46,7 +46,7 @@ if (filter_input(INPUT_COOKIE, 'auth') != session_id()) {
     </div>
 </nav>
 <!-- Masthead-->
-<header id="welcome" class="masthead">
+<header id="masthead" class="masthead">
     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
         <div class="d-flex justify-content-center">
             <div class="text-center">
