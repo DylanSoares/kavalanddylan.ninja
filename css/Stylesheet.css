@@ -23,8 +23,8 @@
 }
 
 .orange-border {
-    border-color: #d43c00;
-    border-radius: 2rem;
+    border-color: #d43c00 !important;
+    border-radius: 2rem !important;
 }
 
 :root {
