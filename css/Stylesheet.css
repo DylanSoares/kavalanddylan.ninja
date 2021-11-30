@@ -13,6 +13,8 @@
 .course:visited, .course:link, .course:active
 {
     text-decoration: none;
+    border-color: #d43c00;
+    border-radius: 2rem;
 }
 
 .course:hover
