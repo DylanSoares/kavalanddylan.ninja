@@ -21,6 +21,8 @@
 {
     color: #ff4800;
     text-underline-mode: false;
+    border-color: #d43c00;
+    border-radius: 2rem;
 }
 
 :root {
