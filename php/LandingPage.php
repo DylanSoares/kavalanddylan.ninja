@@ -5,7 +5,6 @@ if (filter_input(INPUT_COOKIE, 'auth') != session_id()) {
     exit;
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -181,6 +180,7 @@ if (filter_input(INPUT_COOKIE, 'auth') != session_id()) {
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
-<script src="js/scripts.js"></script>
+<script src="../js/scripts.js"></script>
 </body>
 </html>
+
