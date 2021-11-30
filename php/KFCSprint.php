@@ -49,7 +49,7 @@
         </div>
     </div>
 </header>
-<section class="about-section text-center" id="about">
+<section class="about-section py-5 text-center" id="about">
     <div>
         <a id="generate" class="btn btn-primary"
            onclick="$.getScript('../js/GenerateAgain.js', function() {onClick();});">Generate Again</a>
