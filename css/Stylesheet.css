@@ -13,14 +13,16 @@
 .course:visited, .course:link, .course:active
 {
     text-decoration: none;
-    border-color: #d43c00;
-    border-radius: 2rem;
+
 }
 
 .course:hover
 {
     color: #ff4800;
     text-underline-mode: false;
+}
+
+.orange-border {
     border-color: #d43c00;
     border-radius: 2rem;
 }
