@@ -12,8 +12,8 @@ $mysqli = connectToDB();
 
 $firstname = $_POST["firstname"];
 $lastname = $_POST['lastname'];
-$password = $_POST['password'];
-$email = strtolower($_POST["email"]);
+$email = mysqli_real_escape_string($mysqli, $_POST['email']);
+$password = mysqli_real_escape_string($mysqli, $_POST['password']);
 if (isset($_POST['car'])) {
     $car = $_POST['car'];
     switch ($car) {

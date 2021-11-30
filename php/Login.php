@@ -5,8 +5,8 @@ $mysqli = connectToDB();
 
 //connect to server and select database
 //create and issue the query
-$targetname = filter_input(INPUT_POST, 'email');
-$targetpasswd = filter_input(INPUT_POST, 'password');
+$targetname = mysqli_real_escape_string($mysqli, $_POST['email']);
+$targetpasswd = mysqli_real_escape_string($mysqli, $_POST['password']);
 $sql = "SELECT email, fname, lname, team, car FROM Drivers WHERE email = '" . strtolower($targetname) .
     "' AND pword = SHA1('" . $targetpasswd . "')";
 $result = mysqli_query($mysqli, $sql) or die(mysqli_error($mysqli));
