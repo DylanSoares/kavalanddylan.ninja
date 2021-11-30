@@ -118,10 +118,9 @@ if (filter_input(INPUT_COOKIE, 'auth') != session_id()) {
         </a>
     </div>
 </section>
-
 <!-- Contact-->
 <section class="contact-section bg-black" id="contact">
-    <div class="container px-4 px-lg-5 text-center mb-4 mt-4 bg-dark">
+    <div class="px-4 px-lg-5 text-center mb-4 bg-dark">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-lg-8">
                 <h1 class="text-white mb-4 mt-4">Contact</h1>
@@ -167,12 +166,13 @@ if (filter_input(INPUT_COOKIE, 'auth') != session_id()) {
         </div>
     </div>
 </section>
-</body>
+<!-- Footer-->
 <footer class="footer bg-black small text-center text-white-50">
     <div class="container px-4 px-lg-5">Copyright &copy; Your Website 2021</div>
 </footer>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->
-<script src="../js/scripts.js"></script>
+<script src="js/scripts.js"></script>
+</body>
 </html>
