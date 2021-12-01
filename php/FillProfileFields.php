@@ -11,7 +11,7 @@ function getFname($email): string
 function getLname($email): string
 {
     include('DBConnect.php');
-    $sql = "SELECT lname FROM Drivers WHERE email = '" . $email . "'";
+    $sql = "SELECT lname FROM Drivers WHERE email = '" . strtolower($email) . "'";
     $mysqli = connectToDB();
     $result = $mysqli->query($sql);
     return $result['lname'];
@@ -20,7 +20,7 @@ function getLname($email): string
 function getTeam($email): string
 {
     include('DBConnect.php');
-    $sql = "SELECT team FROM Drivers WHERE email = '" . $email . "'";
+    $sql = "SELECT team FROM Drivers WHERE email = '" . strtolower($email) . "'";
     $mysqli = connectToDB();
     $result = $mysqli->query($sql);
     return $result['team'];
@@ -29,7 +29,7 @@ function getTeam($email): string
 function getCar($email): string
 {
     include('DBConnect.php');
-    $sql = "SELECT car FROM Drivers WHERE email = '" . $email . "'";
+    $sql = "SELECT car FROM Drivers WHERE email = '" . strtolower($email) . "'";
     $mysqli = connectToDB();
     $result = $mysqli->query($sql);
     return $result['car'];
