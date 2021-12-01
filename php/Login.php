@@ -13,7 +13,7 @@ $sql = "SELECT email, fname, lname, team, car FROM Drivers WHERE email = '" . st
 $result = mysqli_query($mysqli, $sql) or die(mysqli_error($mysqli));
 //get the number of rows in the result set; should be 1 if a match
 if (mysqli_num_rows($result) == 1) {
-    $email = "";
+    //$email = "";
     //if authorized, get the values of f_name l_name
     while ($info = mysqli_fetch_array($result)) {
         $f_name = stripslashes($info['firstname']);
