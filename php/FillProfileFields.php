@@ -10,7 +10,10 @@ function getFname($email): string
     echo "Line4";
     $result = mysqli_query($mysqli, $sql) or die(mysqli_error($mysqli));
     echo "Line5";
+    echo $result;
+    echo $result['fname'];
     return $result['fname'];
+
 }
 
 function getLname($email): string
