@@ -5,6 +5,7 @@ function getFname($email): string
     $sql = "SELECT fname FROM Drivers WHERE email = '" . strtolower($email) . "'";
     $mysqli = connectToDB();
     $result = $mysqli->query($sql);
+    echo $result;
     return $result['fname'];
 }
 

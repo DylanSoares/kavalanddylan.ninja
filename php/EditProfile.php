@@ -8,7 +8,6 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
     exit();
 }
 
-echo $_SESSION['id'];
 $fname = getFname($_SESSION['id']);
 ?>
 <!DOCTYPE html>
