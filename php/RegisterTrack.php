@@ -1,8 +1,6 @@
 <?php
 function TrackRegistration($track, $email)
 {
-    echo $email;
-    echo $track;
     include('DBConnect.php');
     $mysqli = connectToDB();
 
@@ -10,6 +8,7 @@ function TrackRegistration($track, $email)
     $result = $mysqli->query($sql1);
 
     if (mysqli_num_rows($result) != 1) {
+        echo "Entered";
         $sql2 = "INSERT INTO TrackRegistration (email, KFC_Sprint, Costco_Cup, Orchard_Park_Run) VALUES (" . $email . ", 0, 0, 0)";
         $mysqli->query($sql2);
     }
