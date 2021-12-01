@@ -7,9 +7,9 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
     header('Location: LoginPage.php');
     exit();
 }
-echo "test1";
+
+echo $_SESSION['id'];
 $fname = getFname($_SESSION['id']);
-echo "test2";
 ?>
 <!DOCTYPE html>
 <html lang="en">
