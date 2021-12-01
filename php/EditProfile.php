@@ -59,7 +59,7 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
             <!-- left column -->
 
             <!-- First name input-->
-            <div class="row input-group-newsletter py-2">
+            <div class="row input-group-newsletter py-4">
                 <div class="col">
                     <form method="post" name="contactForm" id="contactForm"
                           action="RegisterAccount.php"
