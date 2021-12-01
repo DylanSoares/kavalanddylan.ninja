@@ -43,9 +43,9 @@ function GenerateTable($track, $email): string
     }
 
     $sql1 = "SELECT email FROM TrackRegistration WHERE email = '" . strtolower($email) . "'";
-    $result = $mysqli->query($sql1);
+    $result1 = $mysqli->query($sql1);
 
-    if (mysqli_num_rows($result) != 1) {
+    if (mysqli_num_rows($result1) != 1) {
         $sql2 = "INSERT INTO TrackRegistration (email, KFC_Sprint, Costco_Cup, Orchard_Park_Run) VALUES ('" . $email . "', 0, 0, 0)";
         $mysqli->query($sql2);
     }
