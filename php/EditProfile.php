@@ -101,12 +101,12 @@ $car = $row["car"];
                             <div class="col">
                                 <label class="col-form-label" for="team">Select Team</label>
                                 <select class="form-control" name="team" id="team" required>
-                                    <option value="subaru_motorsports">Subaru Motorsports</option>
-                                    <option value="mitsubishi_ralliart">Mitsubishi Ralliart</option>
-                                    <option value="toyota_gazoo_racing">Toyota Gazoo Racing</option>
-                                    <option value="ford_world_rally_team">Ford World Rally Team</option>
-                                    <option value="hyundai_motorsport">Hyundai Motorsport</option>
-                                    <option value="citroen_world_rally_team">Citroën World Rally Team</option>
+                                    <option <?php if($team == "Subaru Motorsports"){echo "selected ";}?> value="subaru_motorsports">Subaru Motorsports</option>
+                                    <option <?php if($team == "Mitsubishi Ralliart"){echo "selected ";}?>value="mitsubishi_ralliart">Mitsubishi Ralliart</option>
+                                    <option <?php if($team == "Toyota Gazoo Racing"){echo "selected ";}?>value="toyota_gazoo_racing">Toyota Gazoo Racing</option>
+                                    <option <?php if($team == "Ford World Rally Team"){echo "selected ";}?>value="ford_world_rally_team">Ford World Rally Team</option>
+                                    <option <?php if($team == "Hyundai Motorsport"){echo "selected ";}?>value="hyundai_motorsport">Hyundai Motorsport</option>
+                                    <option <?php if($team == "Citroën World Rally Team"){echo "selected ";}?>value="citroen_world_rally_team">Citroën World Rally Team</option>
                                 </select>
                             </div>
                             <div class="col-auto">
