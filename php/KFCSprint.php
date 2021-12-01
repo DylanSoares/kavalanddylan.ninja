@@ -79,7 +79,6 @@ if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
                 <?php
                 $track = "KFC_Sprint";
                 include('TableGenerator.php');
-                include('TableGenerator.php');
                 echo GenerateTable($track, $_SESSION['id']);
                 ?>
                 </tbody>
