@@ -9,7 +9,7 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
 
 include('DBConnect.php');
 $mysqli = connectToDB();
-
+echo "test";
 $sql = "SELECT fname, lname, team, car FROM Drivers WHERE email = '" . $_SESSION['id'] . "'";
 
 $result = $mysqli->query($sql);
