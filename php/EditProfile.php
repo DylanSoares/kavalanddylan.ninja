@@ -75,7 +75,7 @@ $car = getCar($_SESSION['id']);
                         <!-- First name input-->
                         <div class="row input-group-newsletter">
                             <div class="col"><input class="form-control" type="text" id="firstname" name="firstname"
-                                                    maxlength="25" <?php echo "value=\"".$fname."\""?> required placeholder="Enter first name..."
+                                                    maxlength="25" value="<?php echo $fname?>" required placeholder="Enter first name..."
                                                     aria-label="Enter first name..." pattern="^[a-zA-Z ,.'-]+$"/></div>
                         </div>
                         <br>
