@@ -53,7 +53,7 @@ if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
         <div class="d-flex justify-content-center">
             <div class="text-center">
                 <h1 class="mx-auto my-0 text-uppercase">Registered Drivers</h1>
-                <h2 class="text-white-50 mx-auto mt-2 mb-5">Driver's who generated course notes will appear here.</h2>
+                <h2 class="text-white-50 mx-auto mt-2 mb-5">Any driver who generated course notes will appear here.</h2>
             </div>
         </div>
     </div>
