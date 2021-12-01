@@ -42,13 +42,13 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 <li class="nav-item"><a class="nav-link" href="Logout.php">Log Out</a></li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Dropdown link
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item nav-link" href="#">Action</a>
+                        <a class="dropdown-item nav-link" href="#">Another action</a>
+                        <a class="dropdown-item nav-link" href="#">Something else here</a>
                     </div>
                 </li>
             </ul>
