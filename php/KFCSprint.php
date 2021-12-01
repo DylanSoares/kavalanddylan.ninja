@@ -1,3 +1,9 @@
+<?php
+if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
+    header('LoginPage.php');
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +40,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="./LandingPage.php">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="../index.html">Log Out</a></li>
+                <li class="nav-item"><a class="nav-link" href="Logout.php">Log Out</a></li>
             </ul>
         </div>
     </div>
@@ -81,7 +87,9 @@
 </body>
 <footer class="footer bg-black small text-center text-white-50">
     <div class="container px-4 px-lg-5">Totally Legit Copyright &copy; Kaval & Dylan 2021</div>
-    <div class="container px-4 px-lg-5">This entire thing is an elaborate inside joke. Kaval can't give directions, and Dylan can't follow them.</div>
+    <div class="container px-4 px-lg-5">This entire thing is an elaborate inside joke. Kaval can't give directions, and
+        Dylan can't follow them.
+    </div>
 </footer>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

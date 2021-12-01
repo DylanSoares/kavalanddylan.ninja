@@ -1,3 +1,9 @@
+<?php
+if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
+    header('LoginPage.php');
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +40,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="./LandingPage.php">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="../index.html">Log Out</a></li>
+                <li class="nav-item"><a class="nav-link" href="Logout.php">Log Out</a></li>
             </ul>
         </div>
     </div>

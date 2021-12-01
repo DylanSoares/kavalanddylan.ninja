@@ -1,8 +1,9 @@
 <?php
-if (filter_input(INPUT_COOKIE, 'auth') != session_id()) {
-    //redirect back to login form if not authorized
-    header("Location: Login.php");
-    exit;
+session_start();
+
+if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
+    header('LoginPage.php');
+    exit();
 }
 ?>
 <!DOCTYPE html>
@@ -39,7 +40,7 @@ if (filter_input(INPUT_COOKIE, 'auth') != session_id()) {
                 <li class="nav-item"><a class="nav-link" href="#masthead">Welcome</a></li>
                 <li class="nav-item"><a class="nav-link" href="#tracks">Courses</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="../index.html">Log Out</a></li>
+                <li class="nav-item"><a class="nav-link" href="Logout.php">Log Out</a></li>
             </ul>
         </div>
     </div>
