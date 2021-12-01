@@ -59,7 +59,7 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
         <div class="d-flex justify-content-center">
             <div class="text-center">
-                <h2 class="text-primary">Edit Profile</h2>
+                <h2>Edit Profile</h2>
             </div>
         </div>
     </div>
