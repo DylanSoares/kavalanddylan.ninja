@@ -1,15 +1,11 @@
 <?php
+
 session_start();
+getFname($_SESSION['id']);
 
 if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
     header('Location: LoginPage.php');
     exit();
-}else{
-    include("FillProfileFields.php");
-    $fname = getFname($_SESSION['id']);
-    $lname = getLname($_SESSION['id']);
-    $team = getTeam($_SESSION['id']);
-    $car = getCar($_SESSION['id']);
 }
 
 ?>
