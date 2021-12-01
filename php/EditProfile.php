@@ -9,20 +9,15 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
 
 include('DBConnect.php');
 $mysqli = connectToDB();
-$sqlFName = "SELECT fname FROM Drivers WHERE email = '" . $_SESSION['id'] . "'";
-$sqlLName = "SELECT lname FROM Drivers WHERE email = '" . $_SESSION['id'] . "'";
-$sqlTeam = "SELECT team FROM Drivers WHERE email = '" . $_SESSION['id'] . "'";
-$sqlCar = "SELECT car FROM Drivers WHERE email = '" . $_SESSION['id'] . "'";
 
-$resultFName = $mysqli->query($sqlFName);
-$resultLName = $mysqli->query($sqlLName);
-$resultTeam = $mysqli->query($sqlTeam);
-$resultCar = $mysqli->query($sqlCar);
+$sql = "SELECT fname, lname, team, car FROM Drivers WHERE email = '" . $_SESSION['id'] . "'";
 
-$fname = $resultFName;
-$lname = $resultLName;
-$team = $resultTeam;
-$car = $resultCar;
+$result = $mysqli->query($sql);
+
+$fname = $result['fname'];
+$lname = $result['lname'];
+$team = $result['team'];
+$car = $result['car'];
 echo $car;
 ?>
 <!DOCTYPE html>
