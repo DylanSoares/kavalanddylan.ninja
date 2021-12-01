@@ -53,14 +53,13 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
 </nav>
 <!-- Edit Profile -->
 <section class="signup-section" id="signup">
-    <form method="post" name="contactForm" id="contactForm"
-          action="RegisterAccount.php"
-          class="form-signup">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5">
-                <!-- <div class="col-md-10 col-lg-8 mx-auto text-center">-->
-                <!-- left column -->
-
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5">
+            <!-- <div class="col-md-10 col-lg-8 mx-auto text-center">-->
+            <!-- left column -->
+            <form method="post" name="contactForm" id="contactForm"
+                  action="RegisterAccount.php"
+                  class="form-signup">
                 <div class="col-md-3">
                     <div class="text-center">
                         <img src="https://bootdey.com/img/Content/avatar/avatar7.png"
@@ -149,10 +148,9 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                         <button class="btn btn-primary" id="submitButton" type="submit">Submit</button>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
-    </form>
-
+    </div>
 </section>
 <!-- Footer-->
 <footer class="footer bg-black small text-center text-white-50">
