@@ -7,6 +7,7 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
     header('Location: LoginPage.php');
     exit();
 }
+$fname = getFname($_SESSION['id']);
 
 ?>
 <!DOCTYPE html>
@@ -71,7 +72,7 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                         <!-- First name input-->
                         <div class="row input-group-newsletter">
                             <div class="col"><input class="form-control" type="text" id="firstname" name="firstname"
-                                                    maxlength="25" value="<?php include("FillProfileFields.php"); echo getFname($_SESSION['id']); ?>" required placeholder="Enter first name..."
+                                                    maxlength="25" value="<?php echo $fname; ?>" required placeholder="Enter first name..."
                                                     aria-label="Enter first name..." pattern="^[a-zA-Z ,.'-]+$"/></div>
                         </div>
                         <br>
