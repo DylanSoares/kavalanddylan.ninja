@@ -68,7 +68,7 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                         <input type="file" class="form-control">
                     </div>
                 </div>
-                <div class="col-auto">
+                <div class="col">
                     <form method="post" name="contactForm" id="contactForm"
                           action="RegisterAccount.php"
                           class="form-signup">
