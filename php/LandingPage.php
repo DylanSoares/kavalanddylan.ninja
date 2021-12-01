@@ -41,7 +41,7 @@ if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
                 <li class="nav-item"><a class="nav-link" href="#tracks">Courses</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 <li class="nav-item"><a class="nav-link" href="Logout.php">Log Out</a></li>
-                <li class="dropdown-menu">Profile</li>
+                <li class="dropdown-menu nav-item">Profile</li>
 
             </ul>
         </div>
