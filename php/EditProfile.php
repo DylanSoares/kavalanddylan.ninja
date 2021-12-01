@@ -144,9 +144,12 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                     </div><br>
                 </div>
             </div>
-            <div class="col">
-                <button class="btn btn-primary" id="submitButton" type="submit">Submit</button>
+            <div class="row input-group-newsletter">
+                <div class="col align-content-end">
+                    <button class="btn btn-primary" id="submitButton" type="submit">Submit</button>
+                </div>
             </div>
+
         </div>
     </div>
 </section>
