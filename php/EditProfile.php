@@ -51,18 +51,8 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
         </div>
     </div>
 </nav>
-<!-- Masthead-->
-<header id="masthead" class="about-section">
-    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
-        <div class="d-flex justify-content-center">
-            <div class="text-center">
-                <h2 class="text-white">Edit Profile</h2>
-            </div>
-        </div>
-    </div>
-</header>
-<!-- Projects-->
-<section class="projects-section" style="background-color: #333333" id="tracks">
+<!-- Edit Profile -->
+<section class="signup-section" id="signup">
     <section class="signup-section" id="signup">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5">
