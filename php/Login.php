@@ -1,4 +1,5 @@
 <?php
+session_start();
 //login php to handle the login
 include('DBConnect.php');
 $mysqli = connectToDB();
