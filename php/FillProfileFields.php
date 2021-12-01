@@ -1,8 +1,8 @@
 <?php
-include('DBConnect.php');
 
 function getFname($email): string
 {
+    include('DBConnect.php');
     $sql = "SELECT fname FROM Drivers WHERE email = '" . $email . "'";
     $mysqli = connectToDB();
     $result = mysqli_query($mysqli, $sql) or die(mysqli_error($mysqli));
@@ -11,6 +11,7 @@ function getFname($email): string
 
 function getLname($email): string
 {
+    include('DBConnect.php');
     $sql = "SELECT lname FROM Drivers WHERE email = '" . $email . "'";
     $mysqli = connectToDB();
     $result = mysqli_query($mysqli, $sql) or die(mysqli_error($mysqli));
@@ -19,6 +20,7 @@ function getLname($email): string
 
 function getTeam($email): string
 {
+    include('DBConnect.php');
     $sql = "SELECT team FROM Drivers WHERE email = '" . $email . "'";
     $mysqli = connectToDB();
     $result = mysqli_query($mysqli, $sql) or die(mysqli_error($mysqli));
@@ -27,6 +29,7 @@ function getTeam($email): string
 
 function getCar($email): string
 {
+    include('DBConnect.php');
     $sql = "SELECT car FROM Drivers WHERE email = '" . $email . "'";
     $mysqli = connectToDB();
     $result = mysqli_query($mysqli, $sql) or die(mysqli_error($mysqli));
