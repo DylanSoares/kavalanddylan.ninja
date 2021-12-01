@@ -66,7 +66,8 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                           class="form-signup">
                         <!-- Email address input-->
                         <div class="row input-group-newsletter">
-                            <div class="col"><input class="form-control" type="email" id="email" name="email" maxlength="50"
+                            <div class="col"><input class="form-control" type="email" id="email" name="email"
+                                                    maxlength="50"
                                                     required placeholder="Enter email address..."
                                                     aria-label="Enter email address..."/></div>
                         </div>
@@ -141,15 +142,16 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                              class="avatar img-circle img-thumbnail" alt="avatar">
                         <h6 class="text-white">Upload a different photo...</h6>
                         <input type="file" class="form-control">
-                    </div><br>
+                    </div>
+                    <br>
                 </div>
-            </div><br>
-            <div class="row input-group-newsletter align-content-end">
+            </div>
+            <br><br>
+            <div class="row input-group-newsletter">
                 <div class="col">
                     <button class="btn btn-primary" id="submitButton" type="submit">Submit</button>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
