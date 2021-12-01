@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
+if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
     header('Location: LoginPage.php');
     exit();
 }
@@ -42,14 +42,13 @@ if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 <li class="nav-item"><a class="nav-link" href="Logout.php">Log Out</a></li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Profile
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Edit Profile</a>
+                        <a class="dropdown-item" href="Logout.php">Log Out</a>
                     </div>
                 </li>
             </ul>
@@ -190,7 +189,9 @@ if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
 <!-- Footer-->
 <footer class="footer bg-black small text-center text-white-50">
     <div class="container px-4 px-lg-5">Totally Legit Copyright &copy; Kaval & Dylan 2021</div>
-    <div class="container px-4 px-lg-5">This entire thing is an elaborate inside joke. Kaval can't give directions, and Dylan can't follow them.</div>
+    <div class="container px-4 px-lg-5">This entire thing is an elaborate inside joke. Kaval can't give directions, and
+        Dylan can't follow them.
+    </div>
 </footer>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
