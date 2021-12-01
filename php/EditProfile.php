@@ -18,7 +18,6 @@ $fname = $result['fname'];
 $lname = $result['lname'];
 $team = $result['team'];
 $car = $result['car'];
-echo $car;
 ?>
 <!DOCTYPE html>
 <html lang="en">
