@@ -60,7 +60,7 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
 
             <!-- First name input-->
             <div class="row input-group-newsletter">
-                <div class="col">
+                <div class="col-md-3">
                     <div class="text-center">
                         <img src="../assets/img/Portrait_Placeholder.png"
                              class="avatar img-circle img-thumbnail" alt="avatar">
