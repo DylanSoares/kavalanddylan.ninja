@@ -14,10 +14,10 @@ $sql = "SELECT fname, lname, team, car FROM Drivers WHERE email = '" . $_SESSION
 
 $result = $mysqli->query($sql);
 
-$fname = $result['fname'];
-$lname = $result['lname'];
-$team = $result['team'];
-$car = $result['car'];
+$fname = $result["fname"];
+$lname = $result["lname"];
+$team = $result["team"];
+$car = $result["car"];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -81,7 +81,7 @@ $car = $result['car'];
                         <!-- First name input-->
                         <div class="row input-group-newsletter">
                             <div class="col"><input class="form-control" type="text" id="firstname" name="firstname"
-                                                    maxlength="25" required placeholder="Enter first name..."
+                                                    maxlength="25" <value="<?php echo $fname ?>" required placeholder="Enter first name..."
                                                     aria-label="Enter first name..." pattern="^[a-zA-Z ,.'-]+$"/></div>
                         </div>
                         <br>
