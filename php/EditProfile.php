@@ -57,9 +57,6 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
         <div class="row gx-4 gx-lg-5">
             <!-- <div class="col-md-10 col-lg-8 mx-auto text-center">-->
             <!-- left column -->
-            <form method="post" name="contactForm" id="contactForm"
-                  action="RegisterAccount.php"
-                  class="form-signup">
 
                 <!-- First name input-->
                 <div class="row input-group-newsletter">
@@ -71,24 +68,26 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                             <input type="file" class="form-control">
                         </div>
                     </div>
-                    <div class="col-auto">
-                        <input class="form-control" type="email" id="email" name="email" maxlength="50"
-                               required placeholder="Enter email address..."
-                               aria-label="Enter email address..."/></div>
-                    <div class="row input-group-newsletter">
-                        <div class="col">
-                            <input class="form-control" type="text" id="firstname" name="firstname"
-                                   maxlength="25" required placeholder="Enter first name..."
-                                   aria-label="Enter first name..." pattern="^[a-zA-Z ,.'-]+$"/></div>
-                        <div class="col-auto">
-                            <input class="form-control" type="text" id="lastname" name="lastname"
-                                   maxlength="25" required placeholder="Enter last name..."
-                                   aria-label="Enter last name..." pattern="^[a-zA-Z ,.'-]+$"/></div>
-                    </div>
                 </div>
+            <form method="post" name="contactForm" id="contactForm"
+                  action="RegisterAccount.php"
+                  class="form-signup">
                 <br>
                 <!-- Last name input-->
-
+                <div class="col-auto">
+                    <input class="form-control" type="email" id="email" name="email" maxlength="50"
+                           required placeholder="Enter email address..."
+                           aria-label="Enter email address..."/></div>
+                <div class="row input-group-newsletter">
+                    <div class="col">
+                        <input class="form-control" type="text" id="firstname" name="firstname"
+                               maxlength="25" required placeholder="Enter first name..."
+                               aria-label="Enter first name..." pattern="^[a-zA-Z ,.'-]+$"/></div>
+                    <div class="col-auto">
+                        <input class="form-control" type="text" id="lastname" name="lastname"
+                               maxlength="25" required placeholder="Enter last name..."
+                               aria-label="Enter last name..." pattern="^[a-zA-Z ,.'-]+$"/></div>
+                </div>
                 <!-- Team input-->
                 <div class="row input-group-newsletter">
                     <div class="col">
