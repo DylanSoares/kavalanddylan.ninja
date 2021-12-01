@@ -22,7 +22,7 @@ if (mysqli_num_rows($result) == 1) {
         $team = stripslashes($info['team']);
         $car = stripslashes($info['car']);
     }
-    $_SESSION['id'] = $email;
+    $_SESSION['id'] = strtolower($email);
     //set authorization cookie using current Session ID
 
     header("Location: LandingPage.php");
