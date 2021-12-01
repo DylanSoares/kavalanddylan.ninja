@@ -65,7 +65,7 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
     </div>
 </header>
 <!-- Projects-->
-<section class="projects-section bg-gradient2" id="tracks">
+<section class="projects-section bg-gradient1" id="tracks">
     <div class="container bootstrap snippets bootdey">
         <div class="row">
             <!-- left column -->
