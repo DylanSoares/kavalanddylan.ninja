@@ -1,7 +1,7 @@
 <?php
-
 function getFname($email): string
 {
+    echo "TEST";
     include('DBConnect.php');
     $sql = "SELECT fname FROM Drivers WHERE email = '" . $email . "'";
     $mysqli = connectToDB();
