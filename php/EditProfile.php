@@ -142,9 +142,9 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                         <h6 class="text-white">Upload a different photo...</h6>
                         <input type="file" class="form-control">
                     </div><br>
-                    <div class="col">
-                        <button class="btn btn-primary" id="submitButton" type="submit">Submit</button>
-                    </div>
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary" id="submitButton" type="submit">Submit</button>
                 </div>
             </div>
         </div>
