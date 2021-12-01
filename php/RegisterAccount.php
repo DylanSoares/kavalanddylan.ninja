@@ -12,7 +12,7 @@ $mysqli = connectToDB();
 
 $firstname = $_POST["firstname"];
 $lastname = $_POST['lastname'];
-$email = mysqli_real_escape_string($mysqli, $_POST['email']);
+$email = strtolower(mysqli_real_escape_string($mysqli, $_POST['email']));
 $password = mysqli_real_escape_string($mysqli, $_POST['password']);
 if (isset($_POST['car'])) {
     $car = $_POST['car'];
