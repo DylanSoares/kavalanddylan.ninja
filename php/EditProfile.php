@@ -53,94 +53,93 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
 </nav>
 <!-- Edit Profile -->
 <section class="signup-section" id="signup">
-    <section class="signup-section" id="signup">
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5">
-                <!-- <div class="col-md-10 col-lg-8 mx-auto text-center">-->
-                <!-- left column -->
-                <div class="col-md-3">
-                    <div class="text-center">
-                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                             class="avatar img-circle img-thumbnail" alt="avatar">
-                        <h6 class="text-white">Upload a different photo...</h6>
-                        <input type="file" class="form-control">
-                    </div>
-                </div>
-
-                <!-- edit form column -->
-                <div class="col-md-9 personal-info">
-                    <h3>Personal info</h3>
-
-                    <form class="form-horizontal" role="form">
-                        <div class="form-group">
-                            <label class="col-lg-3 control-label">First name:</label>
-                            <div class="col-lg-8">
-                                <input class="form-control" type="text" value="dey-dey">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-lg-3 control-label">Last name:</label>
-                            <div class="col-lg-8">
-                                <input class="form-control" type="text" value="bootdey">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-lg-3 control-label">Company:</label>
-                            <div class="col-lg-8">
-                                <input class="form-control" type="text" value="">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-lg-3 control-label">Email:</label>
-                            <div class="col-lg-8">
-                                <input class="form-control" type="text" value="janesemail@gmail.com">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-lg-3 control-label">Time Zone:</label>
-                            <div class="col-lg-8">
-                                <div class="ui-select">
-                                    <select id="user_time_zone" class="form-control">
-                                        <option value="Hawaii">(GMT-10:00) Hawaii</option>
-                                        <option value="Alaska">(GMT-09:00) Alaska</option>
-                                        <option value="Pacific Time (US &amp; Canada)">(GMT-08:00) Pacific Time (US
-                                            &amp;
-                                            Canada)
-                                        </option>
-                                        <option value="Arizona">(GMT-07:00) Arizona</option>
-                                        <option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US
-                                            &amp;
-                                            Canada)
-                                        </option>
-                                        <option value="Central Time (US &amp; Canada)" selected="selected">(GMT-06:00)
-                                            Central Time (US &amp; Canada)
-                                        </option>
-                                        <option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US
-                                            &amp;
-                                            Canada)
-                                        </option>
-                                        <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5">
+            <!-- <div class="col-md-10 col-lg-8 mx-auto text-center">-->
+            <!-- left column -->
+            <div class="col-md-3">
+                <div class="text-center">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                         class="avatar img-circle img-thumbnail" alt="avatar">
+                    <h6 class="text-white">Upload a different photo...</h6>
+                    <input type="file" class="form-control">
                 </div>
             </div>
+
+            <!-- edit form column -->
+            <div class="col-md-9 personal-info">
+                <h3>Personal info</h3>
+
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">First name:</label>
+                        <div class="col-lg-8">
+                            <input class="form-control" type="text" value="dey-dey">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Last name:</label>
+                        <div class="col-lg-8">
+                            <input class="form-control" type="text" value="bootdey">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Company:</label>
+                        <div class="col-lg-8">
+                            <input class="form-control" type="text" value="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Email:</label>
+                        <div class="col-lg-8">
+                            <input class="form-control" type="text" value="janesemail@gmail.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Time Zone:</label>
+                        <div class="col-lg-8">
+                            <div class="ui-select">
+                                <select id="user_time_zone" class="form-control">
+                                    <option value="Hawaii">(GMT-10:00) Hawaii</option>
+                                    <option value="Alaska">(GMT-09:00) Alaska</option>
+                                    <option value="Pacific Time (US &amp; Canada)">(GMT-08:00) Pacific Time (US
+                                        &amp;
+                                        Canada)
+                                    </option>
+                                    <option value="Arizona">(GMT-07:00) Arizona</option>
+                                    <option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US
+                                        &amp;
+                                        Canada)
+                                    </option>
+                                    <option value="Central Time (US &amp; Canada)" selected="selected">(GMT-06:00)
+                                        Central Time (US &amp; Canada)
+                                    </option>
+                                    <option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US
+                                        &amp;
+                                        Canada)
+                                    </option>
+                                    <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
-    </section>
-    <!-- Footer-->
-    <footer class="footer bg-black small text-center text-white-50">
-        <div class="container px-4 px-lg-5">Totally Legit Copyright &copy; Kaval & Dylan 2021</div>
-        <div class="container px-4 px-lg-5">This entire thing is an elaborate inside joke. Kaval can't give directions,
-            and
-            Dylan can't follow them.
-        </div>
-    </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="../js/scripts.js"></script>
+    </div>
+</section>
+<!-- Footer-->
+<footer class="footer bg-black small text-center text-white-50">
+    <div class="container px-4 px-lg-5">Totally Legit Copyright &copy; Kaval & Dylan 2021</div>
+    <div class="container px-4 px-lg-5">This entire thing is an elaborate inside joke. Kaval can't give directions,
+        and
+        Dylan can't follow them.
+    </div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="../js/scripts.js"></script>
 </body>
 </html>
 
