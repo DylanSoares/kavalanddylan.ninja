@@ -65,7 +65,7 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                 <div class="row input-group-newsletter">
                     <div class="col">
                         <div class="text-center">
-                            <img src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                            <img src="../assets/img/Portrait_Placeholder.png"
                                  class="avatar img-circle img-thumbnail" alt="avatar">
                             <h6 class="text-white">Upload a different photo...</h6>
                             <input type="file" class="form-control">
