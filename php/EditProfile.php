@@ -57,18 +57,18 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
         <div class="row gx-4 gx-lg-5">
             <!-- <div class="col-md-10 col-lg-8 mx-auto text-center">-->
             <!-- left column -->
-
-            <div class="col-md-3">
-                <div class="text-center">
-                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                         class="avatar img-circle img-thumbnail" alt="avatar">
-                    <h6 class="text-white">Upload a different photo...</h6>
-                    <input type="file" class="form-control">
-                </div>
-            </div>
             <form method="post" name="contactForm" id="contactForm"
                   action="RegisterAccount.php"
                   class="form-signup">
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                             class="avatar img-circle img-thumbnail" alt="avatar">
+                        <h6 class="text-white">Upload a different photo...</h6>
+                        <input type="file" class="form-control">
+                    </div>
+                </div>
+
                 <div class="row input-group-newsletter">
                     <div class="col"><input class="form-control" type="email" id="email" name="email" maxlength="50"
                                             required placeholder="Enter email address..."
