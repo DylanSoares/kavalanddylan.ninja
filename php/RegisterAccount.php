@@ -102,8 +102,8 @@ if ($firstname != null && mysqli_num_rows($result) >= 1) {
     $sql2 = "INSERT INTO Drivers (email, fname, lname, team, car, pword) VALUES (\"{$email}\",\"{$firstname}\",\"{$lastname}\",\"{$teamSelected}\",\"{$carSelected}\",SHA1(\"{$password}\"))";
     $result2 = mysqli_query($mysqli, $sql2) or die(mysqli_error($mysqli));
     echo "<script> alert(\"Account created successfully\");</script>";
-    mkdir("/var/www/html/uploaddir/".$email, 0733);
-    copy("../assets/img/Portrait_Placeholder.png", "/var/www/html/uploaddir/".$email."/avatar.png");
+    mkdir("../uploaddir/".$email, 0733);
+    copy("../assets/img/Portrait_Placeholder.png", "../uploaddir/".$email."/avatar.png");
     header("Location: LoginPage.php");
     exit();
 }
