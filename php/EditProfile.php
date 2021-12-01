@@ -19,10 +19,10 @@ $resultLName = $mysqli->query($sqlLName);
 $resultTeam = $mysqli->query($sqlTeam);
 $resultCar = $mysqli->query($sqlCar);
 
-$fname = $resultFName['fname'];
-$lname = $resultLName['lname'];
-$team = $resultTeam['team'];
-$car = $resultCar['car'];
+$fname = $resultFName;
+$lname = $resultLName;
+$team = $resultTeam;
+$car = $resultCar;
 
 ?>
 <!DOCTYPE html>
