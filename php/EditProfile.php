@@ -60,14 +60,7 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
             <form method="post" name="contactForm" id="contactForm"
                   action="RegisterAccount.php"
                   class="form-signup">
-                <div class="col-md-3">
-                    <div class="text-center">
-                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                             class="avatar img-circle img-thumbnail" alt="avatar">
-                        <h6 class="text-white">Upload a different photo...</h6>
-                        <input type="file" class="form-control">
-                    </div>
-                </div>
+
 
                 <div class="row input-group-newsletter">
                     <div class="col"><input class="form-control" type="email" id="email" name="email" maxlength="50"
@@ -77,6 +70,16 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                 <br>
                 <!-- First name input-->
                 <div class="row input-group-newsletter">
+
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <img src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                                 class="avatar img-circle img-thumbnail" alt="avatar">
+                            <h6 class="text-white">Upload a different photo...</h6>
+                            <input type="file" class="form-control">
+                        </div>
+                    </div>
+
                     <div class="col"><input class="form-control" type="text" id="firstname" name="firstname"
                                             maxlength="25" required placeholder="Enter first name..."
                                             aria-label="Enter first name..." pattern="^[a-zA-Z ,.'-]+$"/></div>
