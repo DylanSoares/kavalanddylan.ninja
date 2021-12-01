@@ -84,7 +84,7 @@ $car = $row["car"];
                         <!-- First name input-->
                         <div class="row input-group-newsletter">
                             <div class="col"><input class="form-control" type="text" id="firstname" name="firstname"
-                                                    maxlength="25" <value="<?php echo $fname ?>" required placeholder="Enter first name..."
+                                                    maxlength="25" value="<?php echo $fname ?>" required placeholder="Enter first name..."
                                                     aria-label="Enter first name..." pattern="^[a-zA-Z ,.'-]+$"/></div>
                         </div>
                         <br>
@@ -92,7 +92,7 @@ $car = $row["car"];
                         <div class="row input-group-newsletter">
                             <div class="col">
                                 <input class="form-control" type="text" id="lastname" name="lastname"
-                                       maxlength="25" <value="<?php echo $lname ?>" required placeholder="Enter last name..."
+                                       maxlength="25" value="<?php echo $lname ?>" required placeholder="Enter last name..."
                                        aria-label="Enter last name..." pattern="^[a-zA-Z ,.'-]+$"/></div>
                         </div>
                         <br>
