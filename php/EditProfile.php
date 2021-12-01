@@ -143,9 +143,9 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                         <input type="file" class="form-control">
                     </div><br>
                 </div>
-            </div>
-            <div class="row input-group-newsletter">
-                <div class="col align-content-end">
+            </div><br>
+            <div class="row input-group-newsletter align-content-end">
+                <div class="col">
                     <button class="btn btn-primary" id="submitButton" type="submit">Submit</button>
                 </div>
             </div>
