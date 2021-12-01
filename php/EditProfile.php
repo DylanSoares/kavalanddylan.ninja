@@ -1,14 +1,29 @@
 <?php
-
 session_start();
-include("FillProfileFields.php");
+
 
 if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
     header('Location: LoginPage.php');
     exit();
 }
 
-$fname = getFname($_SESSION['id']);
+include('DBConnect.php');
+$mysqli = connectToDB();
+$sqlFName = "SELECT fname FROM Drivers WHERE email = '" . $_SESSION['id'] . "'";
+$sqlLName = "SELECT lname FROM Drivers WHERE email = '" . $_SESSION['id'] . "'";
+$sqlTeam = "SELECT team FROM Drivers WHERE email = '" . $_SESSION['id'] . "'";
+$sqlCar = "SELECT car FROM Drivers WHERE email = '" . $_SESSION['id'] . "'";
+
+$resultFName = $mysqli->query($sqlFName);
+$resultLName = $mysqli->query($sqlLName);
+$resultTeam = $mysqli->query($sqlTeam);
+$resultCar = $mysqli->query($sqlCar);
+
+$fname = $resultFName['fname'];
+$lname = $resultLName['lname'];
+$team = $resultTeam['team'];
+$car = $resultCar['car'];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
