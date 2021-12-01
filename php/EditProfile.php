@@ -23,7 +23,7 @@ $fname = $resultFName;
 $lname = $resultLName;
 $team = $resultTeam;
 $car = $resultCar;
-
+echo $car;
 ?>
 <!DOCTYPE html>
 <html lang="en">
