@@ -79,9 +79,7 @@ if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
                 <?php
                 $track = "Orchard_Park_Run";
                 include('TableGenerator.php');
-                include('RegisterTrack.php');
-                echo GenerateTable($track);
-                TrackRegistration($track, $_SESSION['id']);
+                echo GenerateTable($track, $_SESSION['id']);
                 ?>
                 </tbody>
             </table>

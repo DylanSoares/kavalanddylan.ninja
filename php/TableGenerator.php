@@ -1,5 +1,5 @@
 <?php
-function GenerateTable($track): string
+function GenerateTable($track, $email): string
 {
     include('DBConnect.php');
     $mysqli = connectToDB();
@@ -41,6 +41,18 @@ function GenerateTable($track): string
         }
         $output = $output . "</td></tr>";
     }
+
+    $sql1 = "SELECT email FROM TrackRegistration WHERE email = '" . strtolower($email) . "'";
+    echo $sql1;
+    $result = $mysqli->query($sql1);
+
+    if (mysqli_num_rows($result) != 1) {
+        echo "Entered";
+        $sql2 = "INSERT INTO TrackRegistration (email, KFC_Sprint, Costco_Cup, Orchard_Park_Run) VALUES ('" . $email . "', 0, 0, 0)";
+        $mysqli->query($sql2);
+    }
+    $sql3 = "UPDATE TrackRegistration SET " . $track . "= 1 WHERE email =" . $email;
+    $mysqli->query($sql3);
 
     return $output;
 }
