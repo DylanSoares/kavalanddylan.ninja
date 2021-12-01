@@ -118,26 +118,26 @@ $car = $row["car"];
                                         <option <?php if($car == "Subaru WRX STI"){echo "selected ";}?> value="subaru_wrx_sti">Subaru WRX STI</option>
                                     </optgroup>
                                     <optgroup label="Mitsubishi Cars">
-                                        <option value="mitsubishi_lancer_wrc">Mitsubishi Lancer WRC</option>
-                                        <option value="mitsubishi_lancer_evo">Mitsubishi Lancer EVO</option>
-                                        <option value="mitsubishi_xpander_ap4">Mitsubishi XPANDER AP4</option>
+                                        <option <?php if($car == "Mitsubishi Lancer WRC"){echo "selected ";}?> value="mitsubishi_lancer_wrc">Mitsubishi Lancer WRC</option>
+                                        <option <?php if($car == "Mitsubishi Lancer EVO"){echo "selected ";}?> value="mitsubishi_lancer_evo">Mitsubishi Lancer EVO</option>
+                                        <option <?php if($car == "Mitsubishi XPANDER AP4"){echo "selected ";}?> value="mitsubishi_xpander_ap4">Mitsubishi XPANDER AP4</option>
                                     </optgroup>
                                     <optgroup label="Toyota Cars">
-                                        <option value="toyota_yaris_wrc">Toyota Yaris WRC</option>
-                                        <option value="toyota_yaris_rally1">Toyota GR Yaris Rally1</option>
+                                        <option <?php if($car == "Toyota Yaris WRC"){echo "selected ";}?> value="toyota_yaris_wrc">Toyota Yaris WRC</option>
+                                        <option <?php if($car == "Toyota GR Yaris Rally1"){echo "selected ";}?> value="toyota_yaris_rally1">Toyota GR Yaris Rally1</option>
                                     </optgroup>
                                     <optgroup label="Ford Cars">
-                                        <option value="ford_fiesta_wrc">Ford Fiesta WRC</option>
-                                        <option value="ford_fiesta_rs_wrc">Ford Fiesta RS WRC</option>
-                                        <option value="ford_puma_rally1">Ford Puma Rally1</option>
+                                        <option <?php if($car == "Ford Fiesta WRC"){echo "selected ";}?> value="ford_fiesta_wrc">Ford Fiesta WRC</option>
+                                        <option <?php if($car == "Ford Fiesta RS WRC"){echo "selected ";}?> value="ford_fiesta_rs_wrc">Ford Fiesta RS WRC</option>
+                                        <option <?php if($car == "Ford Puma Rally1"){echo "selected ";}?> value="ford_puma_rally1">Ford Puma Rally1</option>
                                     </optgroup>
                                     <optgroup label="Hyundai Cars">
-                                        <option value="hyundai_i20_coupe_wrc">Hyundai i20 Coupe WRC</option>
-                                        <option value="hyundai_i20_n_rally1">Hyundai i20 N Rally1</option>
+                                        <option <?php if($car == "Hyundai i20 Coupe WRC"){echo "selected ";}?> value="hyundai_i20_coupe_wrc">Hyundai i20 Coupe WRC</option>
+                                        <option <?php if($car == "Hyundai i20 N Rally1"){echo "selected ";}?> value="hyundai_i20_n_rally1">Hyundai i20 N Rally1</option>
                                     </optgroup>
                                     <optgroup label="Citroën Cars">
-                                        <option value="citroen_c3_wrc">Citroën C3 WRC</option>
-                                        <option value="citroen_ds3_wrc">Citroën DS3 WRC</option>
+                                        <option <?php if($car == "Citroën C3 WRC"){echo "selected ";}?> value="citroen_c3_wrc">Citroën C3 WRC</option>
+                                        <option <?php if($car == "Citroën DS3 WRC"){echo "selected ";}?> value="citroen_ds3_wrc">Citroën DS3 WRC</option>
                                     </optgroup>
                                 </select>
                             </div>
