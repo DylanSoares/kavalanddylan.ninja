@@ -60,17 +60,6 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
 
             <!-- First name input-->
             <div class="row input-group-newsletter">
-                <div class="col-md-5">
-                    <div class="text-center">
-                        <img src="../assets/img/Portrait_Placeholder.png"
-                             class="avatar img-circle img-thumbnail" alt="avatar">
-                        <h6 class="text-white">Upload a different photo...</h6>
-                        <input type="file" class="form-control">
-                    </div><br>
-                    <div class="col">
-                        <button class="btn btn-primary" id="submitButton" type="submit">Submit</button>
-                    </div>
-                </div>
                 <div class="col">
                     <form method="post" name="contactForm" id="contactForm"
                           action="RegisterAccount.php"
@@ -144,6 +133,17 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                             </div>
                         </div>
                     </form>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <img src="../assets/img/Portrait_Placeholder.png"
+                             class="avatar img-circle img-thumbnail" alt="avatar">
+                        <h6 class="text-white">Upload a different photo...</h6>
+                        <input type="file" class="form-control">
+                    </div><br>
+                    <div class="col">
+                        <button class="btn btn-primary" id="submitButton" type="submit">Submit</button>
+                    </div>
                 </div>
             </div>
         </div>
