@@ -68,6 +68,9 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                         <input type="file" class="form-control">
                     </div>
                 </div>
+                <div class="col-auto">
+                    <button class="btn btn-primary" id="submitButton" type="submit">Submit</button>
+                </div>
                 <div class="col">
                     <form method="post" name="contactForm" id="contactForm"
                           action="RegisterAccount.php"
@@ -138,18 +141,6 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                                         <option value="citroen_ds3_wrc">Citroën DS3 WRC</option>
                                     </optgroup>
                                 </select>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row input-group-newsletter">
-                            <div class="col">
-                                <input class="form-control" type="password" id="password" name="password" maxlength="100"
-                                       placeholder="Enter password..."
-                                       aria-label="Enter password..."
-                                       required/>
-                            </div>
-                            <div class="col-auto">
-                                <button class="btn btn-primary" id="submitButton" type="submit">Submit</button>
                             </div>
                         </div>
                     </form>
