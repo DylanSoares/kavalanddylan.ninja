@@ -113,9 +113,9 @@ $car = $row["car"];
                                 <label class="col-form-label" for="car">Select Car</label>
                                 <select class="form-control" name="car" id="car" required>
                                     <optgroup label="Subaru Cars">
-                                        <option value="subaru_s8_wrc">Subaru S8 WRC</option>
-                                        <option value="subaru_impreza_wrc">Subaru Impreza WRC</option>
-                                        <option value="subaru_wrx_sti">Subaru WRX STI</option>
+                                        <option <?php if($car == "Subaru S8 WRC"){echo "selected ";}?> value="subaru_s8_wrc">Subaru S8 WRC</option>
+                                        <option <?php if($car == "Subaru Impreza WRC"){echo "selected ";}?> value="subaru_impreza_wrc">Subaru Impreza WRC</option>
+                                        <option <?php if($car == "Subaru WRX STI"){echo "selected ";}?> value="subaru_wrx_sti">Subaru WRX STI</option>
                                     </optgroup>
                                     <optgroup label="Mitsubishi Cars">
                                         <option value="mitsubishi_lancer_wrc">Mitsubishi Lancer WRC</option>
