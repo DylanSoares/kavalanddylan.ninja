@@ -216,7 +216,7 @@ $car = $row["car"];
                 <div class="col-md-3">
                     <div class="text-center">
                         <img src="<?php echo "../uploaddir/" . $_SESSION['id'] . "/avatar.png"; ?>"
-                             class="avatar img-circle img-thumbnail" alt="avatar">
+                             class="avatar img-circle img-thumbnail" alt="avatar"><br>
                         <h6 class="text-white">Upload a different photo...</h6>
                         <input type="file" class="form-control ">
                     </div>
