@@ -75,7 +75,7 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                         <input class="form-control" type="email" id="email" name="email" maxlength="50"
                                required placeholder="Enter email address..."
                                aria-label="Enter email address..."/></div> <br>
-                        <div class="col">
+                        <div class="col-auto">
                             <input class="form-control" type="text" id="firstname" name="firstname"
                                    maxlength="25" required placeholder="Enter first name..."
                                    aria-label="Enter first name..." pattern="^[a-zA-Z ,.'-]+$"/></div>
