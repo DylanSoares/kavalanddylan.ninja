@@ -71,17 +71,17 @@ $car = $row["car"];
 <section class="signup-section" id="signup">
     <div class="container px-4 px-lg-5">
         <form method="post" name="contactForm" id="contactForm"
-        action="RegisterAccount.php"
-        class="form-signup">
-        <div class="row gx-4 gx-lg-5">
-            <h2 class="text-white text-center">Edit Profile</h2>
-            <!-- <div class="col-md-10 col-lg-8 mx-auto text-center">-->
-            <!-- left column -->
+              action="RegisterAccount.php"
+              class="form-signup">
+            <div class="row gx-4 gx-lg-5">
+                <h2 class="text-white text-center">Edit Profile</h2>
+                <!-- <div class="col-md-10 col-lg-8 mx-auto text-center">-->
+                <!-- left column -->
 
-            <!-- First name input-->
-            <div class="row input-group-newsletter py-4">
+                <!-- First name input-->
+                <div class="row input-group-newsletter py-4">
 
-                <div class="col">
+                    <div class="col">
 
                         <!-- First name input-->
                         <div class="row input-group-newsletter">
@@ -210,26 +210,26 @@ $car = $row["car"];
                             </div>
                         </div>
 
-                </div>
-                <div class="col-md-1"></div>
-                <br>
-                <div class="col-md-3">
-                    <div class="text-center">
-                        <img src="<?php echo "../uploaddir/" . $_SESSION['id'] . "/avatar.png"; ?>"
-                             class="avatar img-circle img-thumbnail" alt="avatar"><br>
-                        <h6 class="text-white">Upload a different photo...</h6>
-                        <input type="file" class="form-select-lg">
                     </div>
+                    <div class="col-md-1"></div>
                     <br>
+                    <div class="col-md-3">
+                        <div class="text-center">
+                            <img src="<?php echo "../uploaddir/" . $_SESSION['id'] . "/avatar.png"; ?>"
+                                 class="avatar img-circle img-thumbnail" alt="avatar"><br>
+                            <h6 class="text-white">Upload a different photo...</h6>
+                            <input type="file">
+                        </div>
+                        <br>
+                    </div>
                 </div>
-            </div>
-            <div class="row input-group-newsletter">
-                <div class="col">
-                    <button class="btn btn-primary" id="submitButton" type="submit">Submit</button>
+                <div class="row input-group-newsletter">
+                    <div class="col">
+                        <button class="btn btn-primary" id="submitButton" type="submit">Submit</button>
+                    </div>
                 </div>
-            </div>
-            </form>
-        </div>
+        </form>
+    </div>
 </section>
 <!-- Footer-->
 <footer class="footer bg-black small text-center text-white-50">
