@@ -70,7 +70,7 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
             <div class="col-md-9 personal-info">
                 <h3>Personal info</h3>
 
-                <form class="form-horizontal" role="form">
+                <form class="form-signup" role="form">
                     <div class="form-group">
                         <label class="col-lg-3 control-label">First name:</label>
                         <div class="col-lg-8">
