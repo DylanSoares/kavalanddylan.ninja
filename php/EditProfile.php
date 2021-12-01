@@ -55,7 +55,7 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
     </div>
 </nav>
 <!-- Masthead-->
-<header id="masthead" class="about-section">
+<header id="masthead" class="projects-section">
     <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
         <div class="d-flex justify-content-center">
             <div class="text-center">
