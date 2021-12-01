@@ -9,7 +9,7 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
 }
 echo "test1";
 $fname = getFname($_SESSION['id']);
-
+echo "test2";
 ?>
 <!DOCTYPE html>
 <html lang="en">
