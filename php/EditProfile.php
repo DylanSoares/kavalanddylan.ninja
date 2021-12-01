@@ -66,8 +66,8 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                              class="avatar img-circle img-thumbnail" alt="avatar">
                         <h6 class="text-white">Upload a different photo...</h6>
                         <input type="file" class="form-control">
-                    </div>
-                    <div class="col-auto">
+                    </div><br>
+                    <div class="col">
                         <button class="btn btn-primary" id="submitButton" type="submit">Submit</button>
                     </div>
                 </div>
