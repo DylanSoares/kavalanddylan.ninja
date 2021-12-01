@@ -53,6 +53,8 @@ if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
                 <h1 class="mx-auto my-0 text-uppercase">Course Notes</h1>
                 <h2 class="text-white-50 mx-auto mt-2 mb-5">Welcome to Rally Co!<br><br>Select a course below to get
                     randomly generated course notes.</h2>
+                <a class="btn btn-primary" href="RegisteredDrivers.php">Registered Drivers</a>
+                <a class="btn btn-primary" href="#tracks">Courses</a>
             </div>
         </div>
     </div>
