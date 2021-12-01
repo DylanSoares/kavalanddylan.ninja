@@ -7,9 +7,10 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
     exit();
 }
 
-include('DBConnect.php');
-$mysqli = connectToDB();
-echo "test";
+/*include('DBConnect.php');
+$mysqli = connectToDB();*/
+mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+$mysqli = mysqli_connect("localhost", "cs213user", "letmein", "RALLYCO");
 $sql = "SELECT fname, lname, team, car FROM Drivers WHERE email = '" . $_SESSION['id'] . "'";
 
 $result = $mysqli->query($sql);
