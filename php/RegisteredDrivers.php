@@ -67,6 +67,8 @@ if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
                 <thead>
                 <tr>
                     <th>Name</th>
+                    <th>Team</th>
+                    <th>Car</th>
                     <th>KFC Sprint</th>
                     <th>Costco Cup</th>
                     <th>Orchard Park Run</th>
