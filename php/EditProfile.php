@@ -14,10 +14,10 @@ $sql = "SELECT fname, lname, team, car FROM Drivers WHERE email = '" . $_SESSION
 
 $result = $mysqli->query($sql);
 while ($row = $result->fetch_assoc()) {
-    $fname = $result["fname"];
-    $lname = $result["lname"];
-    $team = $result["team"];
-    $car = $result["car"];
+    $fname = $row["fname"];
+    $lname = $row["lname"];
+    $team = $row["team"];
+    $car = $row["car"];
 }
 
 ?>
