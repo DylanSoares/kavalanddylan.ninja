@@ -13,11 +13,13 @@ echo "test";
 $sql = "SELECT fname, lname, team, car FROM Drivers WHERE email = '" . $_SESSION['id'] . "'";
 
 $result = $mysqli->query($sql);
+while ($row = $result->fetch_assoc()) {
+    $fname = $result["fname"];
+    $lname = $result["lname"];
+    $team = $result["team"];
+    $car = $result["car"];
+}
 
-$fname = $result["fname"];
-$lname = $result["lname"];
-$team = $result["team"];
-$car = $result["car"];
 ?>
 <!DOCTYPE html>
 <html lang="en">
