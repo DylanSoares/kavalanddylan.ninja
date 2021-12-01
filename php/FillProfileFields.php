@@ -1,10 +1,15 @@
 <?php
 function getFname($email): string
 {
+    echo "Line1";
     include('DBConnect.php');
+    echo "Line2";
     $sql = "SELECT fname FROM Drivers WHERE email = '" . strtolower($email) . "'";
+    echo "Line3";
     $mysqli = connectToDB();
+    echo "Line4";
     $result = mysqli_query($mysqli, $sql) or die(mysqli_error($mysqli));
+    echo "Line5";
     return $result['fname'];
 }
 
