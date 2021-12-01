@@ -5,6 +5,13 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
     header('Location: LoginPage.php');
     exit();
 }
+
+include("FillProfileFields.php");
+$fname = getFname($_SESSION['id']);
+$lname = getLname($_SESSION['id']);
+$team = getTeam($_SESSION['id']);
+$car = getCar($_SESSION['id']);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -65,18 +72,10 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                     <form method="post" name="contactForm" id="contactForm"
                           action="RegisterAccount.php"
                           class="form-signup">
-                        <!-- Email address input-->
-                        <div class="row input-group-newsletter">
-                            <div class="col"><input class="form-control" type="email" id="email" name="email"
-                                                    maxlength="50"
-                                                    required placeholder="Enter email address..."
-                                                    aria-label="Enter email address..."/></div>
-                        </div>
-                        <br>
                         <!-- First name input-->
                         <div class="row input-group-newsletter">
                             <div class="col"><input class="form-control" type="text" id="firstname" name="firstname"
-                                                    maxlength="25" required placeholder="Enter first name..."
+                                                    maxlength="25" <?php echo "value=\"".$fname."\""?> required placeholder="Enter first name..."
                                                     aria-label="Enter first name..." pattern="^[a-zA-Z ,.'-]+$"/></div>
                         </div>
                         <br>
