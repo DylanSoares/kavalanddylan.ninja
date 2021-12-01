@@ -1,5 +1,7 @@
 <?php
-if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
+session_start();
+
+if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
     header('LoginPage.php');
     exit();
 }
