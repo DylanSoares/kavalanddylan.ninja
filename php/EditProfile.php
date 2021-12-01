@@ -134,7 +134,7 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                         </div>
                     </form>
                 </div>
-                <div class="col-md-3"></div>
+                <div class="col-md-1"></div>
                 <div class="col-md-3">
                     <div class="text-center">
                         <img src="../assets/img/Portrait_Placeholder.png"
