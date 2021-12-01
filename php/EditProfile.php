@@ -64,7 +64,7 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
 <!-- Projects-->
 <section class="projects-section" style="background-color: #333333" id="tracks">
     <div class="container bootstrap snippets bootdey">
-        <hr>
+        <hr style="background-color: #333333">
         <div class="row">
             <!-- left column -->
             <div class="col-md-3">
