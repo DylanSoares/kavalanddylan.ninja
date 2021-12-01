@@ -1,6 +1,6 @@
 <?php
+include('DBConnect.php');
 session_start();
-
 
 if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
     header('Location: LoginPage.php');
