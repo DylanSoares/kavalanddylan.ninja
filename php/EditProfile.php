@@ -71,11 +71,12 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                             <input type="file" class="form-control">
                         </div>
                     </div>
-                    <div class="col-auto">
+                    <div class="col">
                         <input class="form-control" type="email" id="email" name="email" maxlength="50"
                                required placeholder="Enter email address..."
-                               aria-label="Enter email address..."/></div> <br>
-                        <div class="col-auto">
+                               aria-label="Enter email address..."/></div>
+                    <div class="row">
+                        <div class="col">
                             <input class="form-control" type="text" id="firstname" name="firstname"
                                    maxlength="25" required placeholder="Enter first name..."
                                    aria-label="Enter first name..." pattern="^[a-zA-Z ,.'-]+$"/></div>
@@ -83,6 +84,8 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                             <input class="form-control" type="text" id="lastname" name="lastname"
                                    maxlength="25" required placeholder="Enter last name..."
                                    aria-label="Enter last name..." pattern="^[a-zA-Z ,.'-]+$"/></div>
+                    </div>
+
                 </div>
                 <br>
                 <!-- Last name input-->
