@@ -61,16 +61,8 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                   action="RegisterAccount.php"
                   class="form-signup">
 
-
-                <div class="row input-group-newsletter">
-                    <div class="col"><input class="form-control" type="email" id="email" name="email" maxlength="50"
-                                            required placeholder="Enter email address..."
-                                            aria-label="Enter email address..."/></div>
-                </div>
-                <br>
                 <!-- First name input-->
                 <div class="row input-group-newsletter">
-
                     <div class="col-md-3">
                         <div class="text-center">
                             <img src="https://bootdey.com/img/Content/avatar/avatar7.png"
@@ -79,6 +71,9 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                             <input type="file" class="form-control">
                         </div>
                     </div>
+                    <div class="col"><input class="form-control" type="email" id="email" name="email" maxlength="50"
+                                            required placeholder="Enter email address..."
+                                            aria-label="Enter email address..."/></div>
 
                     <div class="col"><input class="form-control" type="text" id="firstname" name="firstname"
                                             maxlength="25" required placeholder="Enter first name..."
