@@ -74,7 +74,7 @@ if (!isset($_SESSION['id']) ||(trim ($_SESSION['id']) == '')) {
                 <tbody>
                 <?php
                 include('JoinTableGenerator.php');
-                echo JoinGenerateTable($_SESSION['id']);
+                echo JoinGenerateTable();
                 ?>
                 </tbody>
             </table>
