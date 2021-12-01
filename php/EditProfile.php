@@ -55,6 +55,7 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
 <section class="signup-section" id="signup">
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5">
+            <h2 class="text-white text-center">Edit Profile</h2>
             <!-- <div class="col-md-10 col-lg-8 mx-auto text-center">-->
             <!-- left column -->
 
