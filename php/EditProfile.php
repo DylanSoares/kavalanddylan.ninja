@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-getFname($_SESSION['id']);
+include("FillProfileFields.php");
 
 if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
     header('Location: LoginPage.php');
