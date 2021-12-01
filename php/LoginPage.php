@@ -1,7 +1,9 @@
+<?php
+
+?>
 <html lang="en">
 <!--https://startbootstrap.com/theme/grayscale-->
 <!--Took the theme from here-->
-<html lang="en">
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
@@ -32,7 +34,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="php/RegisterAccount.php">Register</a></li>
+                <li class="nav-item"><a class="nav-link" href="RegisterAccount.php">Register</a></li>
             </ul>
         </div>
     </div>
@@ -45,7 +47,7 @@
                 <!--<i class="far fa-paper-plane fa-2x mb-2 text-white"></i>-->
                 <h2 class="text-white mb-5">Driver Log-in</h2>
                 <form method="post" name="loginForm" id="loginForm"
-                      action="php/Login.php"
+                      action="Login.php"
                       class="form-signup">
                     <!-- Email address input-->
                     <div class="row input-group-newsletter">

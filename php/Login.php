@@ -26,6 +26,6 @@ if (mysqli_num_rows($result) == 1) {
     //create display string
 } else {
     //redirect back to login form if not authorized
-    header("Location: ../Login.html");
+    header("Location: ../LoginPage.php");
 }
 exit;

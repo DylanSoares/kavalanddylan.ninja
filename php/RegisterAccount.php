@@ -103,7 +103,7 @@ if ($firstname != null && mysqli_num_rows($result) >= 1) {
     $result2 = mysqli_query($mysqli, $sql2) or die(mysqli_error($mysqli));
 
     echo "<script> alert(\"Account created successfully\");</script>";
-    header("Location: ../Login.html");
+    header("Location: ../LoginPage.php");
     exit();
 }
 
@@ -140,7 +140,7 @@ if ($firstname != null && mysqli_num_rows($result) >= 1) {
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="../index.html"">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="../Login.html"">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="LoginPage.php"">Login</a></li>
             </ul>
         </div>
     </div>
