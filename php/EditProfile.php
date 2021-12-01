@@ -63,8 +63,8 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
 </header>
 <!-- Projects-->
 <section class="projects-section" style="background-color: #333333" id="tracks">
-    <div class="container bootstrap snippets bootdey">
-        <hr style="color: #333333">
+    <div class="container py-4">
+        <br>
         <div class="row">
             <!-- left column -->
             <div class="col-md-3">
@@ -133,9 +133,7 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                 </form>
             </div>
         </div>
-        <hr>
     </div>
-
 </section>
 <!-- Footer-->
 <footer class="footer bg-black small text-center text-white-50">
