@@ -8,7 +8,7 @@ function getFname($email): string
     echo "Line3";
     $mysqli = connectToDB();
     echo "Line4";
-    $result = mysqli_query($mysqli, $sql) or die(mysqli_error($mysqli));
+    $result = $mysqli->query($sql);
     echo "Line5";
     echo $result;
     echo $result['fname'];
