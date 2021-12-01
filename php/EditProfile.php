@@ -68,21 +68,11 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
 
             <!-- edit form column -->
             <div class="col-md-9 personal-info">
-                <h3>Personal info</h3>
+                <h3 class="text-white">Personal info</h3>
 
                 <form class="form-signup" role="form">
                     <div class="row input-group-newsletter">
-                        <div class="col">
-                            <label class="col-form-label" for="team">Select Team</label>
-                            <select class="form-control" name="team" id="team" required>
-                                <option value="subaru_motorsports">Subaru Motorsports</option>
-                                <option value="mitsubishi_ralliart">Mitsubishi Ralliart</option>
-                                <option value="toyota_gazoo_racing">Toyota Gazoo Racing</option>
-                                <option value="ford_world_rally_team">Ford World Rally Team</option>
-                                <option value="hyundai_motorsport">Hyundai Motorsport</option>
-                                <option value="citroen_world_rally_team">Citroën World Rally Team</option>
-                            </select>
-                        </div>
+
                         <div class="col-auto">
                             <label class="col-form-label" for="car">Select Car</label>
                             <select class="form-control" name="car" id="car" required>
@@ -116,7 +106,7 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                             </select>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="col">
                         <label class="col-lg-3 control-label">First name:</label>
                         <div class="col-lg-8">
                             <input class="form-control" type="text" value="dey-dey">
@@ -140,30 +130,18 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                             <input class="form-control" type="text" value="janesemail@gmail.com">
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="row">
                         <label class="col-lg-3 control-label">Time Zone:</label>
                         <div class="col-lg-8">
                             <div class="ui-select">
-                                <select id="user_time_zone" class="form-control">
-                                    <option value="Hawaii">(GMT-10:00) Hawaii</option>
-                                    <option value="Alaska">(GMT-09:00) Alaska</option>
-                                    <option value="Pacific Time (US &amp; Canada)">(GMT-08:00) Pacific Time (US
-                                        &amp;
-                                        Canada)
-                                    </option>
-                                    <option value="Arizona">(GMT-07:00) Arizona</option>
-                                    <option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US
-                                        &amp;
-                                        Canada)
-                                    </option>
-                                    <option value="Central Time (US &amp; Canada)" selected="selected">(GMT-06:00)
-                                        Central Time (US &amp; Canada)
-                                    </option>
-                                    <option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US
-                                        &amp;
-                                        Canada)
-                                    </option>
-                                    <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
+                                <label class="col-form-label" for="team">Select Team</label>
+                                <select class="form-control" name="team" id="team" required>
+                                    <option value="subaru_motorsports">Subaru Motorsports</option>
+                                    <option value="mitsubishi_ralliart">Mitsubishi Ralliart</option>
+                                    <option value="toyota_gazoo_racing">Toyota Gazoo Racing</option>
+                                    <option value="ford_world_rally_team">Ford World Rally Team</option>
+                                    <option value="hyundai_motorsport">Hyundai Motorsport</option>
+                                    <option value="citroen_world_rally_team">Citroën World Rally Team</option>
                                 </select>
                             </div>
                         </div>
