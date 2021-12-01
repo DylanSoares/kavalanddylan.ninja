@@ -1,7 +1,7 @@
 <?php
 function TrackRegistration($track, $email)
 {
-
+    echo $email;
     include('DBConnect.php');
     $mysqli = connectToDB();
 
