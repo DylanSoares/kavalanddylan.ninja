@@ -5,7 +5,7 @@ function TrackRegistration($track, $email)
     include('DBConnect.php');
     $mysqli = connectToDB();
 
-    $sql1 = "SELECT email FROM TrackRegistration";
+    $sql1 = "SELECT email FROM TrackRegistration WHERE email = ".$email;
     $result = $mysqli->query($sql1);
 
     if (mysqli_num_rows($result) == 1) {
