@@ -222,7 +222,6 @@ $car = $row["car"];
                             <h6 class="text-white">Upload a different photo...</h6>
                             <input type="file" name="fileToUpload" id="fileToUpload" class="form-control">
                         </div>
-                        <br>
                     </div>
                 </div>
                 <div class="row input-group-newsletter">
