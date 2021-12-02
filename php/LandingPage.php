@@ -51,9 +51,9 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="navbar-brand" href="#">
-                        <img src="<?php echo "../uploaddir/".$_SESSION['id']."/avatar.png"; ?>" width="30" height="30" alt="">
-                    </a>
+                    <!--<a class="navbar-brand" href="#">-->
+                        <img class="rounded-circle" src="<?php echo "../uploaddir/".$_SESSION['id']."/avatar.png"; ?>" width="30" height="30" alt="">
+                   <!-- </a>-->
                 </li>
             </ul>
         </div>
