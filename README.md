@@ -1,4 +1,6 @@
-# kavalanddylan.ninja
+# https://www.kavalanddylan.ninja
+# https://github.com/DylanSoares/kavalanddylan.ninja
+
 <h1>RALLY CO</h1>
 This website was built for COSC213's final project, and based entirely off a mediocre inside joke.
 It is hosted on a live web server via Digital Ocean, on a Ubuntu LTS LAMP Server.
@@ -10,11 +12,22 @@ It is hosted on a live web server via Digital Ocean, on a Ubuntu LTS LAMP Server
 <h2>Working Features:</h2>
 <ul>
 <li>Bootstrap</li>
-<li>JQuery animation</li>
+<ol>- CSS stylesheet</ol>
+<ol>- Animated navbar</ol>
+<ol>- Dropdown menu in navbar</ol>
 <li>Javascript</li>
-<li>SSL</li>
+<ol>- JQuery animation</ol>
+<ol>- JQuery bootstrap stuff</ol>
+<li>Form validation</li>
+<ol>- Login Process</ol>
+<ol>- Registration Process</ol>
+<ol>- Logout process</ol>
+<li>Queries (Join, Insert, Alter, Update)</li>
+<ol>- Several attempts at preventing SQL injection</ol>
+<ol>- Profile editing, profile pictures</ol>
 <li>Hosted on a live web server</li>
-<li>Profile editing, profile pictures</li>
+<ol>- SSL</ol>
+<li>Built with PHPStorm & Github (Not Netbeans)</li>
 </ul>
 
 <h2>Non-Working Features:</h2>
