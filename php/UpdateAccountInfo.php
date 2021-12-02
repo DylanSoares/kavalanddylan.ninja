@@ -86,6 +86,7 @@ if (isset($_POST['team'])) {
 }
 
 $sql = "UPDATE Drivers SET fname = \"" . $firstname . "\", lname = \"" . $lastname . "\", team =\"".$teamSelected . "\", car = \"". $carSelected ."\" WHERE email = \"". $_SESSION['id'] ."\"";
+$mysqli->query($sql);
 
 if(isset($_FILES['fileupload'])) {
     $target_path = "../uploaddir/" . $_SESSION['id'] . "/avatar.png";
