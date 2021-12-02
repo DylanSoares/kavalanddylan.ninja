@@ -91,11 +91,7 @@ $sql = "UPDATE Drivers SET fname = \"" . $firstname . "\", lname = \"" . $lastna
 $mysqli->query($sql);*/
 
 
-/*//check if file exists
-if (file_exists($target_file)) {
-    chmod($target_file, 0755); //Change the file permissions if allowed
-    unlink($target_file); //remove the file
-}*/
+
 
 $target_dir = "../uploaddir/" . $_SESSION['id'] . "/";
 $target_file = $target_dir . "/avatar.png";
@@ -114,10 +110,10 @@ if(isset($_POST["submitButton"])) {
     }
 }
 
-// Check if file already exists
+//check if file exists
 if (file_exists($target_file)) {
-    echo "Sorry, file already exists.";
-    $uploadOk = 0;
+    chmod($target_file, 0755); //Change the file permissions if allowed
+    unlink($target_file); //remove the file
 }
 
 // Check file size
