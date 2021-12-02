@@ -9,7 +9,7 @@ $target_dir = "../uploaddir/" . $_SESSION['id'] . "/";
 $target_file = $target_dir . "avatar.png";
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
-
+/*
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 $mysqli = mysqli_connect("localhost", "cs213user", "letmein", "RALLYCO");
 
@@ -92,7 +92,7 @@ if (isset($_POST['team'])) {
 }
 
 $sql = "UPDATE Drivers SET fname = \"" . $firstname . "\", lname = \"" . $lastname . "\", team =\"" . $teamSelected . "\", car = \"" . $carSelected . "\" WHERE email = \"" . $_SESSION['id'] . "\"";
-$mysqli->query($sql);
+$mysqli->query($sql);*/
 
 // Check if image file is a actual image or fake image
 
