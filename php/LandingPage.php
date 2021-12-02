@@ -189,7 +189,8 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
 <!-- Footer-->
 <footer class="footer bg-black small text-center text-white-50">
     <div class="container px-4 px-lg-5">Totally Legit Copyright &copy; Kaval & Dylan 2021</div>
-    <div class="container px-4 px-lg-5">This entire thing is an elaborate inside joke. Kaval can't give directions, and
+    <div class="container px-4 px-lg-5">This entire thing is an elaborate inside joke. Kaval can't give directions,
+        and
         Dylan can't follow them.
     </div>
 </footer>
@@ -199,4 +200,5 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
 <script src="../js/scripts.js"></script>
 </body>
 </html>
+
 
