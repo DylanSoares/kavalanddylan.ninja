@@ -97,7 +97,7 @@ if (file_exists($target_file)) {
     unlink($target_file); //remove the file
 }*/
 
-$target_dir = "../uploaddir/".$_SESSION['id']."/";
+$target_dir = "../uploaddir/" . $_SESSION['id'] . "/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
