@@ -145,7 +145,7 @@ if (isset($_POST['submitButton'])) {
 }
 echo "<script> alert(\"Profile updated.\");</script>";
 header('Location: EditProfile.php');
+?>
 
-
-
-
+<html lang="en">
+</html>
