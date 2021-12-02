@@ -97,9 +97,7 @@ if (isset($_POST['submitButton'])) {
     $target_dir = "../uploaddir/" . $_SESSION['id'] . "/";
     $target_file = $target_dir . "/avatar.png";
 
-    if ($_FILES['fileToUpload']['error'] < UPLOAD_ERR_OK) {
-        move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
-    }
+    move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
 
 }
 
