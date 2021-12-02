@@ -76,7 +76,7 @@ $car = $row["car"];
               action="UpdateAccountInfo.php"
               class="form-signup">
             <div class="row gx-4 gx-lg-5">
-                <h1 class="text-white text-center">Edit Profile</h1>
+                <h2 class="text-start text-white text-center">Edit Profile</h2>
                 <!-- <div class="col-md-10 col-lg-8 mx-auto text-center">-->
                 <!-- left column -->
 
