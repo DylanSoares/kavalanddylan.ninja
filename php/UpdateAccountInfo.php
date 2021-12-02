@@ -90,7 +90,7 @@ $sql = "UPDATE Drivers SET fname = \"" . $firstname . "\", lname = \"" . $lastna
 $mysqli->query($sql);
 
 
-if (isset($_POST['fileToUpload'])) {
+if ($_POST['fileToUpload'] != null) {
     $target_dir = "../uploaddir/" . $_SESSION['id'] . "/";
     $target_file = $target_dir . "/avatar.png";
     $uploadOk = 1;
