@@ -23,6 +23,7 @@ It is hosted on a live web server via Digital Ocean, on a Ubuntu LTS LAMP Server
 <ol>- Registration Process</ol>
 <ol>- Logout process</ol>
 <li>Queries (Join, Insert, Alter, Update)</li>
+<ol>- Queries with outer join</ol>
 <ol>- Several attempts at preventing SQL injection</ol>
 <ol>- Profile editing, profile pictures</ol>
 <li>Hosted on a live web server</li>
