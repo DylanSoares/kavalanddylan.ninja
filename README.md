@@ -11,6 +11,7 @@ It is hosted on a live web server via Digital Ocean, on a Ubuntu LTS LAMP Server
 
 <h2>Working Features:</h2>
 <ul>
+<li>Mobile Support</li>
 <li>Bootstrap</li>
 <ol>- CSS stylesheet</ol>
 <ol>- Animated navbar</ol>
