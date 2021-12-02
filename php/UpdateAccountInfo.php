@@ -1,3 +1,4 @@
+<html lang="en">
 <?php
 session_start();
 //attempt to invalidate cache
@@ -147,5 +148,4 @@ echo "<script> alert(\"Profile updated.\");</script>";
 header('Location: EditProfile.php');
 ?>
 
-<html lang="en">
 </html>
