@@ -1,7 +1,9 @@
 <?php
 session_start();
+//attempt to invalidate cache
 header("Cache-Control: no-cache, must-revalidate"); // HTTP/1.1
 header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // Date in the past
+
 if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
     header('Location: LoginPage.php');
     exit();
