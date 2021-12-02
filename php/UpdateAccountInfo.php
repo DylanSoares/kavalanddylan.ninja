@@ -87,7 +87,7 @@ if (isset($_POST['team'])) {
 
 $sql = "UPDATE Drivers SET fname = \"" . $firstname . "\", lname = \"" . $lastname . "\", team =\"".$teamSelected . "\", car = \"". $carSelected ."\" WHERE email = \"". $_SESSION['id'] ."\"";
 
-if(isset($_FILES)) {
+if(isset($_FILES['fileupload'])) {
     $target_path = "../uploaddir/" . $_SESSION['id'] . "/avatar.png";
     $target_path = $target_path . basename($_FILES['fileupload']['name']);
     move_uploaded_file($_FILES['fileupload']['tmp_name'], $target_path);
