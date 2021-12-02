@@ -94,6 +94,7 @@ if (isset($_POST['submitButton'])) {
     $sql = "UPDATE Drivers SET fname = \"" . $firstname . "\", lname = \"" . $lastname . "\", team =\"" . $teamSelected . "\", car = \"" . $carSelected . "\" WHERE email = \"" . $_SESSION['id'] . "\"";
     $mysqli->query($sql);
 
+    echo $_SESSION['id'];
     $target_dir = "../uploaddir/" . $_SESSION['id'] . "/";
     $target_file = $target_dir . "/avatar.png";
 
