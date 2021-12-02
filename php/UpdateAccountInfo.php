@@ -131,7 +131,7 @@ if (isset($_POST['submitButton'])) {
 // Check if $uploadOk is set to 0 by an error
     if ($uploadOk == 0) {
         echo "<script> alert(\"File upload error.\");</script>";
-// if everything is ok, try to upload file
+        // if everything is ok, try to upload file
     } else {
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
             echo "<script> alert(\"Account succesfully updated.\");</script>";
@@ -139,9 +139,10 @@ if (isset($_POST['submitButton'])) {
             echo "<script> alert(\"Error uploading file.\");</script>";
         }
     }
+    header('Location: EditProfile.php');
 
 }
 
-header('Location: EditProfile.php');
+
 
 
