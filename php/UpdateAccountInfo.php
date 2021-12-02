@@ -140,6 +140,6 @@ if (isset($_POST['fileToUpload'])) {
     }
 }
 
-header('Location: LandingPage.php');
+header('Location: EditProfile.php');
 
 
