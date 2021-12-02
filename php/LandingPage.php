@@ -48,6 +48,7 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="EditProfile.php">Edit Profile</a>
+                        <br>
                         <a class="dropdown-item" href="Logout.php">Log Out</a>
                     </div>
                 </li>
