@@ -225,7 +225,7 @@ $car = $row["car"];
                 </div>
                 <div class="row input-group-newsletter">
                     <div class="col">
-                        <button class="btn btn-primary" id="submitButton" type="submit">Submit</button>
+                        <button class="btn btn-primary" name="submitButton" id="submitButton" type="submit">Submit</button>
                     </div>
                 </div>
         </form>
