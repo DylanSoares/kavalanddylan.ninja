@@ -44,8 +44,8 @@ https://www.kavalanddylan.ninja
 Ask Dylan, He'll hook you up
 
 <h2>Resourses/Links:</h2>
-Theme: https://startbootstrap.com/theme/grayscale
 
+Theme: https://startbootstrap.com/theme/grayscale
 
 Inital account page: https://www.bootdey.com/snippets/view/account-setting-or-edit-profile#css
 (heavily modified at this point)
