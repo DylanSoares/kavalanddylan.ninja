@@ -111,10 +111,10 @@ if ($_FILES["fileToUpload"]["size"] > 500000) {
     $uploadOk = 0;
 }
 //check if file exists
-/*if (file_exists($target_file)) {
+if (file_exists($target_file)) {
     chmod($target_file, 0755); //Change the file permissions if allowed
     unlink($target_file); //remove the file
-}*/
+}
 
 // Allow certain file formats
 if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
