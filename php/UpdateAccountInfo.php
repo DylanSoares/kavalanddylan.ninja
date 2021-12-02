@@ -15,6 +15,7 @@ $mysqli = connectToDB();
 
 $firstname = $_POST["firstname"];
 $lastname = $_POST['lastname'];
+
 if (isset($_POST['car'])) {
     $car = $_POST['car'];
     switch ($car) {
@@ -89,21 +90,21 @@ if (isset($_POST['team'])) {
             break;
     }
 }
+
 $sql = "UPDATE Drivers SET fname = \"" . $firstname . "\", lname = \"" . $lastname . "\", team =\"" . $teamSelected . "\", car = \"" . $carSelected . "\" WHERE email = \"" . $_SESSION['id'] . "\"";
 $mysqli->query($sql);
 
-if (isset($_POST["submit"])) {
-    // Check if image file is a actual image or fake image
+// Check if image file is a actual image or fake image
 
-    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-    if ($check !== false) {
-        echo "File is an image - " . $check["mime"] . ".";
-        $uploadOk = 1;
-    } else {
-        echo "File is not an image.";
-        $uploadOk = 0;
-    }
+$check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+if ($check !== false) {
+    echo "File is an image - " . $check["mime"] . ".";
+    $uploadOk = 1;
+} else {
+    echo "File is not an image.";
+    $uploadOk = 0;
 }
+
 
 // Check file size
 if ($_FILES["fileToUpload"]["size"] > 500000) {
@@ -111,7 +112,7 @@ if ($_FILES["fileToUpload"]["size"] > 500000) {
 }
 //check if file exists
 if (file_exists($target_file)) {
-    chmod($target_file,0755); //Change the file permissions if allowed
+    chmod($target_file, 0755); //Change the file permissions if allowed
     unlink($target_file); //remove the file
 }
 
