@@ -139,9 +139,9 @@ if (isset($_POST['submitButton'])) {
             echo "<script> alert(\"Error uploading file.\");</script>";
         }
     }
-    header('Location: EditProfile.php');
-
 }
+echo "<script> alert(\"Profile updated.\");</script>";
+header('Location: EditProfile.php');
 
 
 
