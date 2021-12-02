@@ -58,8 +58,10 @@ $car = $row["car"];
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false">
                         Profile
+                        <img class="rounded-circle" src="<?php echo "../uploaddir/".$_SESSION['id']."/avatar.png"; ?>" width="30" height="30" alt="">
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="EditProfile.php">Edit Profile</a>
                         <a class="dropdown-item" href="Logout.php">Log Out</a>
                     </div>
                 </li>
