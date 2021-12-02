@@ -6,7 +6,7 @@ It is hosted on a live web server via Digital Ocean, on a Ubuntu LTS LAMP Server
 
 300182437 Dylan Soares
 
---Student Number Here-- Kavaljeet Singh
+300315233 Kavaljeet Singh
 
 
 <h2>Live server:</h2>

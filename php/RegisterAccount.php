@@ -81,7 +81,7 @@ if (isset($_POST['team'])) {
             $teamSelected = "Ford World Rally Team";
             break;
         case "hyundai_motorsport":
-            $teamSelected = "THyundai Motorsport";
+            $teamSelected = "Hyundai Motorsport";
             break;
         case "citroen_world_rally_team":
             $teamSelected = "Citroën World Rally Team";

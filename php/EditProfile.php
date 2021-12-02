@@ -70,8 +70,8 @@ $car = $row["car"];
 <!-- Edit Profile -->
 <section class="signup-section" id="signup">
     <div class="container px-4 px-lg-5">
-        <form method="post" name="contactForm" id="contactForm"
-              action="RegisterAccount.php"
+        <form method="post" name="contactForm" enctype="multipart/form-data" id="contactForm"
+              action="UpdateAccountInfo.php"
               class="form-signup">
             <div class="row gx-4 gx-lg-5">
                 <h2 class="text-white text-center">Edit Profile</h2>
@@ -218,7 +218,7 @@ $car = $row["car"];
                             <img src="<?php echo "../uploaddir/" . $_SESSION['id'] . "/avatar.png"; ?>"
                                  class="avatar mb-2 img-circle img-thumbnail" alt="avatar"><
                             <h6 class="text-white">Upload a different photo...</h6>
-                            <input type="file" class="form-control">
+                            <input type="file" name="fileupload" class="form-control">
                         </div>
                         <br>
                     </div>
