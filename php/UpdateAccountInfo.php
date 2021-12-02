@@ -94,10 +94,10 @@ if (isset($_POST['submitButton'])) {
     $sql = "UPDATE Drivers SET fname = \"" . $firstname . "\", lname = \"" . $lastname . "\", team =\"" . $teamSelected . "\", car = \"" . $carSelected . "\" WHERE email = \"" . $_SESSION['id'] . "\"";
     $mysqli->query($sql);
 
+    $target_dir = "../uploaddir/" . $_SESSION['id'] . "/";
+    $target_file = $target_dir . "/avatar.png";
 
     if ($_FILES['fileToUpload']['size'][0] != 0) {
-        $target_dir = "../uploaddir/" . $_SESSION['id'] . "/";
-        $target_file = $target_dir . "/avatar.png";
         move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
     }
 
