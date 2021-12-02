@@ -9,14 +9,14 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 $mysqli = mysqli_connect("localhost", "cs213user", "letmein", "RALLYCO");
 if (isset($_POST['submitButton'])) {
     if (isset($_POST['firstname'])) {
-        $firstname = $_POST["firstname"];
+        $firstname = stripslashes($_POST["firstname"]);
     }
     if (isset($_POST['lastname'])) {
-        $lastname = $_POST['lastname'];
+        $lastname = stripslashes($_POST['lastname']);
     }
 
     if (isset($_POST['car'])) {
-        $car = $_POST['car'];
+        $car = stripslashes($_POST['car']);
         switch ($car) {
             case "subaru_impreza_wrc":
                 $carSelected = "Subaru Impreza WRC";
@@ -67,7 +67,7 @@ if (isset($_POST['submitButton'])) {
     }
 
     if (isset($_POST['team'])) {
-        $team = $_POST['team'];
+        $team = stripslashes($_POST['team']);
         switch ($team) {
             case "subaru_motorsports":
                 $teamSelected = "Subaru Motorsports";
