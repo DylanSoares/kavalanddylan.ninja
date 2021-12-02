@@ -48,7 +48,6 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="EditProfile.php">Edit Profile</a>
-                        <br>
                         <a class="dropdown-item" href="Logout.php">Log Out</a>
                     </div>
                 </li>
@@ -65,6 +64,7 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                 <h2 class="text-white-50 mx-auto mt-2 mb-5">Welcome to Rally Co!<br><br>Select a course below to get
                     randomly generated course notes.</h2>
                 <a class="btn btn-primary" href="RegisteredDrivers.php">Track Registrations</a>
+                <br>
                 <a class="btn btn-primary" href="#tracks">Courses</a>
             </div>
         </div>
