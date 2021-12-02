@@ -10,8 +10,9 @@ $target_file = $target_dir . "avatar.png";
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
-include('DBConnect.php');
-$mysqli = connectToDB();
+mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+$mysqli = mysqli_connect("localhost", "cs213user", "letmein", "RALLYCO");
+
 if (isset($_POST["submitButton"])) {
     $firstname = $_POST["firstname"];
     $lastname = $_POST['lastname'];
