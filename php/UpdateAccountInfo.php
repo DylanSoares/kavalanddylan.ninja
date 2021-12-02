@@ -90,7 +90,7 @@ $sql = "UPDATE Drivers SET fname = \"" . $firstname . "\", lname = \"" . $lastna
 $mysqli->query($sql);
 
 
-if ($_POST['fileToUpload'] != null) {
+/*if ($_POST['fileToUpload'] != null) {*/
     $target_dir = "../uploaddir/" . $_SESSION['id'] . "/";
     $target_file = $target_dir . "/avatar.png";
     $uploadOk = 1;
@@ -139,7 +139,7 @@ if ($_POST['fileToUpload'] != null) {
             echo "Sorry, there was an error uploading your file.";
         }
     }
-}
+/*]*/
 
 header('Location: EditProfile.php');
 
