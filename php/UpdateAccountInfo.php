@@ -89,7 +89,7 @@ $sql = "UPDATE Drivers SET fname = \"" . $firstname . "\", lname = \"" . $lastna
 $mysqli->query($sql);
 
 
-if ($_FILES['fileToUpload']['size'] > 0) {
+if ($_FILES['fileToUpload']['size'][0] != 0) {
     $target_dir = "../uploaddir/" . $_SESSION['id'] . "/";
     $target_file = $target_dir . "/avatar.png";
     $uploadOk = 1;
@@ -99,7 +99,6 @@ if ($_FILES['fileToUpload']['size'] > 0) {
     /*if (isset($_POST["submitButton"])) {*/
     $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
     if ($check !== false) {
-
         echo "File is an image - " . $check["mime"] . ".";
         $uploadOk = 1;
     } else {
