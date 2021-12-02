@@ -41,13 +41,19 @@ if (!isset($_SESSION['id']) || (trim($_SESSION['id']) == '')) {
                 <li class="nav-item"><a class="nav-link" href="#tracks">Courses</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
                         Profile
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="EditProfile.php">Edit Profile</a>
                         <a class="dropdown-item" href="Logout.php">Log Out</a>
                     </div>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-brand" href="#">
+                        <img src="<?php echo "../uploaddir/".$_SESSION['id']."/"; ?>" width="30" height="30" alt="">
+                    </a>
                 </li>
             </ul>
         </div>
