@@ -1,6 +1,5 @@
 # kavalanddylan.ninja
 <h1>RALLY CO</h1>
-
 This website was built for COSC213's final project, and based entirely off a mediocre inside joke.
 It is hosted on a live web server via Digital Ocean, on a Ubuntu LTS LAMP Server.
 
@@ -13,6 +12,7 @@ It is hosted on a live web server via Digital Ocean, on a Ubuntu LTS LAMP Server
 <li>Bootstrap</li>
 <li>JQuery animation</li>
 <li>Javascript</li>
+<li>SSL</li>
 <li>Hosted on a live web server</li>
 <li>Profile editing, profile pictures</li>
 </ul>
@@ -43,3 +43,7 @@ Adding Git to Digital Ocean Droplet: https://www.youtube.com/watch?v=Pz98z8P06wY
 Various stuff from previous CS213 Labs
 
 Bootstrap Dropdowns: https://getbootstrap.com/docs/5.0/components/dropdowns/
+
+SSL: https://www.youtube.com/watch?v=UpAEe9z00es
+
+Discord Embed: Generated via the server menu in the discord application
